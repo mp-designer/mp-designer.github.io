@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { headingClassesMap } from "../marked/elements/heading";
-import projectImageFallback from "../images/projectImageFallback.jpeg";
+import projectImageFallback from "../assets/images/projectImageFallback.jpeg";
 import { className as paragraphClassName } from "../marked/elements/paragraph";
 
 const ProjectCard: React.FC<{

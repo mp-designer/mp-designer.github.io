@@ -1,33 +1,14 @@
-import React, { useState } from "react";
+import React, { useId, useState } from "react";
 import { Link } from "gatsby";
-
-const MenuButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
-  <button
-    className="block lg:hidden absolute top-4 right-4 z-10 p-2 bg-gray-800 text-white"
-    onClick={onClick}
-  >
-    <svg
-      className="w-6 h-6"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M4 6h16M4 12h16m-7 6h7"
-      ></path>
-    </svg>
-  </button>
-);
+import MenuIcon from "../assets/icons/menu-24px.svg";
 
 export const Header: React.FC<{
   general: PageContextGeneral;
-  emailLink: string;
-}> = ({ general, emailLink }) => {
+}> = ({ general }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const id = useId();
+  const menuId = `menu${id}`;
+  const menuButtonId = `menu-button${id}`;
 
   const menuLinks = [
     { text: "Projects", href: "/#projects" },
@@ -36,36 +17,56 @@ export const Header: React.FC<{
 
   return (
     <div className="sticky z-10 top-0 left-0 right-0 bg-white">
-      {/* <MenuButton onClick={() => setIsOpen(!isOpen)} /> */}
-
       <div className="container">
-        {/* <nav className={`block p-4 md:hidden ${isOpen ? "" : "hidden"}`}>
-          <div className="flex flex-col space-y-2">
-            {menuLinks.map(({ text, href }) => (
-              <Link to={href} className="hover:text-gray-300">
-                {text}
-              </Link>
-            ))}
-          </div>
-        </nav> */}
-
-        <nav className="py-4 flex justify-between">
-          <div>
-            <Link to="/#">
+        <div className="h-16 md:h-24 flex justify-between items-center">
+          <div className="h-full">
+            <Link to="/#" className="h-full inline-flex items-center">
               <span className="">{general.homeText}</span>
             </Link>
           </div>
 
-          <div className="flex space-x-8">
+          <div className="flex lg:hidden flex-col items-end">
+            <button
+              id={menuButtonId}
+              aria-controls={menuId}
+              aria-label="Menu"
+              className="p-2"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <MenuIcon />
+            </button>
+          </div>
+
+          <nav className="hidden lg:flex h-full space-x-8">
             {menuLinks.map(({ text, href }) => (
               <Link
+                key={text}
                 to={href}
-                className="uppercase hover:underline underline-offset-8"
+                className="uppercase hover:underline underline-offset-8 inline-flex items-center"
               >
-                {text}
+                <span>{text}</span>
               </Link>
             ))}
-          </div>
+          </nav>
+        </div>
+
+        <nav
+          id={menuId}
+          className={`${
+            isOpen ? "flex" : "hidden"
+          } lg:hidden flex-col items-end space-y-2`}
+          aria-hidden={!isOpen}
+          aria-labelledby={menuButtonId}
+        >
+          {menuLinks.map(({ text, href }) => (
+            <Link
+              key={text}
+              to={href}
+              className="uppercase hover:underline underline-offset-8"
+            >
+              {text}
+            </Link>
+          ))}
         </nav>
       </div>
     </div>

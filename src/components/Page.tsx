@@ -27,10 +27,7 @@ const Page: React.FC<{
 
   return (
     <div className="text-grey6 bg-slate-100 min-h-screen flex flex-col">
-      <Header
-        general={general}
-        emailLink={`${linkPrefixesMap.Email}${general.links.Email}`}
-      />
+      <Header general={general} />
 
       <main className="container py-4 flex-grow">{children}</main>
 
@@ -39,9 +36,9 @@ const Page: React.FC<{
           <div className="container py-4">
             <div className="flex justify-center">
               {socialLinks.map(({ text, href }) => (
-                <Link to={href} className="hover:underline mx-4">
+                <a key={text} href={href} className="hover:underline mx-4">
                   {text}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
