@@ -1,9 +1,8 @@
 import React from "react";
-import { HeadFC } from "gatsby";
 
-export const Head: HeadFC<{}, PageContext> = ({ pageContext }) => (
+export const HtmlHead: React.FC<{ title: string; }> = ({ title }) => (
   <>
-    <title>{pageContext.title || 'Not found'}</title>
+    <title>{title}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link

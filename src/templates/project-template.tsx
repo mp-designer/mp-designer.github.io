@@ -1,8 +1,9 @@
 import React from "react";
-import { PageProps } from "gatsby";
+import { HeadFC, PageProps } from "gatsby";
 import { Page } from "../components/Page";
+import { HtmlHead } from "../components/HtmlHead";
 
-const PageTemplate: React.FC<PageProps<{}, PageContext<ProjectData>>> = ({
+const ProjectPageTemplate: React.FC<PageProps<{}, PageContext<ProjectData>>> = ({
   pageContext,
 }) => {
   const { slug, title, html } = pageContext.data;
@@ -14,6 +15,8 @@ const PageTemplate: React.FC<PageProps<{}, PageContext<ProjectData>>> = ({
   );
 };
 
-export default PageTemplate;
+export default ProjectPageTemplate;
 
-export { Head } from "../components/Head";
+export const Head: HeadFC<{}, PageContext<ProjectData>> = ({
+  pageContext,
+}) => <HtmlHead title={pageContext.title}></HtmlHead>;

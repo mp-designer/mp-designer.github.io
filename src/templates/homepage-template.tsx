@@ -1,12 +1,13 @@
 import React from "react";
-import { PageProps, Link } from "gatsby";
+import { HeadFC, PageProps } from "gatsby";
 import { Page } from "../components/Page";
 
 import { headingClassesMap } from "../marked/elements/heading";
 import { className as paragraphClassName } from "../marked/elements/paragraph";
 import { ProjectCard } from "../components/ProjectCard";
+import { HtmlHead } from "../components/HtmlHead";
 
-const PageTemplate: React.FC<PageProps<{}, PageContext<HomepageData>>> = ({
+const HomePageTemplate: React.FC<PageProps<{}, PageContext<HomepageData>>> = ({
   pageContext,
 }) => {
   const { general, data } = pageContext;
@@ -40,6 +41,8 @@ const PageTemplate: React.FC<PageProps<{}, PageContext<HomepageData>>> = ({
   );
 };
 
-export default PageTemplate;
+export default HomePageTemplate;
 
-export { Head } from "../components/Head";
+export const Head: HeadFC<{}, PageContext<HomepageData>> = ({
+  pageContext,
+}) => <HtmlHead title={pageContext.title}></HtmlHead>;
