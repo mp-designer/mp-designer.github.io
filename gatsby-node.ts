@@ -45,6 +45,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
     path: `/`,
     component: path.resolve("./src/templates/homepage-template.tsx"),
     context: {
+      title: "Homepage",
       general,
       data: {
         projects,
@@ -57,6 +58,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
       path: `/project/${project.slug}`,
       component: path.resolve("./src/templates/project-template.tsx"),
       context: {
+        title: project.title,
         general,
         data: project,
       },

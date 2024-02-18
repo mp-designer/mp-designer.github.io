@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 const MenuButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
   <button
-    className="block md:hidden absolute top-4 right-4 z-10 p-2 bg-gray-800 text-white"
+    className="block lg:hidden absolute top-4 right-4 z-10 p-2 bg-gray-800 text-white"
     onClick={onClick}
   >
     <svg
@@ -21,26 +21,25 @@ const MenuButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
       ></path>
     </svg>
   </button>
-)
+);
 
 export const Header: React.FC<{
+  general: PageContextGeneral;
   emailLink: string;
-}> = ({ emailLink }) => {
+}> = ({ general, emailLink }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuLinks = [
-    { text: "Home", href: "/" },
     { text: "Projects", href: "/#projects" },
     { text: "About", href: "/#about" },
-    { text: "Contact", href: emailLink },
   ];
 
   return (
-    <div className="sticky z-10 top-0 left-0 right-0 bg-gray-700 text-white">
-      <MenuButton onClick={() => setIsOpen(!isOpen)} />
+    <div className="sticky z-10 top-0 left-0 right-0 bg-white">
+      {/* <MenuButton onClick={() => setIsOpen(!isOpen)} /> */}
 
-      <div className="container mx-auto">
-        <nav className={`block p-4 md:hidden ${isOpen ? "" : "hidden"}`}>
+      <div className="container">
+        {/* <nav className={`block p-4 md:hidden ${isOpen ? "" : "hidden"}`}>
           <div className="flex flex-col space-y-2">
             {menuLinks.map(({ text, href }) => (
               <Link to={href} className="hover:text-gray-300">
@@ -48,12 +47,21 @@ export const Header: React.FC<{
               </Link>
             ))}
           </div>
-        </nav>
+        </nav> */}
 
-        <nav className="hidden p-4 md:flex justify-end">
+        <nav className="py-4 flex justify-between">
+          <div>
+            <Link to="/#">
+              <span className="">{general.homeText}</span>
+            </Link>
+          </div>
+
           <div className="flex space-x-8">
             {menuLinks.map(({ text, href }) => (
-              <Link to={href} className="hover:text-gray-300">
+              <Link
+                to={href}
+                className="uppercase hover:underline underline-offset-8"
+              >
                 {text}
               </Link>
             ))}
@@ -63,4 +71,3 @@ export const Header: React.FC<{
     </div>
   );
 };
-

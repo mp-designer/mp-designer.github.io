@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
+import { Link, PageProps } from "gatsby";
 import { Header } from "./Header";
 
-const linkPrefixesMap: Record<keyof PageContextGeneral['links'], string> = {
+const linkPrefixesMap: Record<keyof PageContextGeneral["links"], string> = {
   Email: "mailto:",
   Phone: "tel:",
-  Blog: '',
-  GitHub: '',
-  Instagram: '',
-  LinkedIn: '',
-  X: ''
+  Blog: "",
+  GitHub: "",
+  Instagram: "",
+  LinkedIn: "",
+  X: "",
 };
 
 const Page: React.FC<{
@@ -26,14 +26,17 @@ const Page: React.FC<{
     }));
 
   return (
-    <div className="bg-slate-100 min-h-screen flex flex-col">
-      <Header emailLink={socialLinks.find(({text}) => text === 'Email')?.href || '#'} />
+    <div className="text-grey6 bg-slate-100 min-h-screen flex flex-col">
+      <Header
+        general={general}
+        emailLink={`${linkPrefixesMap.Email}${general.links.Email}`}
+      />
 
-      <main className="container mx-auto p-4 flex-grow">{children}</main>
+      <main className="container py-4 flex-grow">{children}</main>
 
       <footer>
         <div className="bg-gray-200 text-gray-900 py-4">
-          <div className="container mx-auto p-4">
+          <div className="container py-4">
             <div className="flex justify-center">
               {socialLinks.map(({ text, href }) => (
                 <Link to={href} className="hover:underline mx-4">
@@ -44,7 +47,7 @@ const Page: React.FC<{
           </div>
         </div>
         <div className="bg-gray-800 text-white text-center py-2">
-          <div className="container mx-auto p-4">
+          <div className="container py-4">
             <p>&copy; 2023 Portfolio. All rights reserved.</p>
           </div>
         </div>
@@ -54,3 +57,20 @@ const Page: React.FC<{
 };
 
 export default Page;
+
+export const Head: React.FC<PageProps<{}, PageContext>> = ({ pageContext }) => (
+  <>
+    <title>{pageContext.title}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossOrigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    ></link>
+  </>
+);

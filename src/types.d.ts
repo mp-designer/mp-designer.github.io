@@ -25,7 +25,8 @@ interface HomepageData {
 
 type PageContextGeneral = typeof import('./content/general.json');
 
-interface PageContext<TData> {
+interface PageContext<TData = unknown> {
+  title: string;
   general: PageContextGeneral;
   data: TData;
 }

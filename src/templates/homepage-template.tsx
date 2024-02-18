@@ -13,7 +13,7 @@ const PageTemplate: React.FC<PageProps<{}, PageContext<HomepageData>>> = ({
 
   return (
     <Page general={general}>
-      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div className="mx-auto max-w-2xl py-32 md:py-48 lg:py-56">
         <div className="text-center">
           <h1 className={headingClassesMap.h1}>{general.greet}</h1>
           <p className={paragraphClassName}>{general.greetSubText}</p>
@@ -54,3 +54,5 @@ const PageTemplate: React.FC<PageProps<{}, PageContext<HomepageData>>> = ({
 };
 
 export default PageTemplate;
+
+export { Head } from "../components/Page";

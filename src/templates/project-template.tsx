@@ -15,3 +15,5 @@ const PageTemplate: React.FC<PageProps<{}, PageContext<ProjectData>>> = ({
 };
 
 export default PageTemplate;
+
+export { Head } from "../components/Page";
