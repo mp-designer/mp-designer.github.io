@@ -32,7 +32,7 @@ export const Header: React.FC<{
               id={menuButtonId}
               aria-controls={menuId}
               aria-label="Menu"
-              className="p-2"
+              className="p-2 text-grey6"
               onClick={() => setIsOpen(!isOpen)}
             >
               <MenuIcon />
