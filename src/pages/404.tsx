@@ -1,8 +1,9 @@
 import * as React from "react";
 import { Link, HeadFC, PageProps } from "gatsby";
-import Page from "../components/Page";
+import { Page } from "../components/Page";
+import { HtmlHead } from "../components/HtmlHead";
 
-import general from '../content/general.json';
+import general from "../content/general.json";
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
@@ -14,12 +15,13 @@ const NotFoundPage: React.FC<PageProps> = () => {
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
-            Try creating a page in <code className="text-orange-800 p-1 bg-yellow-100 text-lg rounded">src/pages/</code>.
+            Try creating a page in{" "}
+            <code className="p-1 text-body2 rounded">src/pages/</code>.
             <br />
           </>
         ) : null}
         <br />
-        <Link className="text-blue-800 hover:underline" to="/">
+        <Link className="hover:underline" to="/">
           Go home
         </Link>
         .
@@ -30,4 +32,4 @@ const NotFoundPage: React.FC<PageProps> = () => {
 
 export default NotFoundPage;
 
-export const Head: HeadFC = () => <title>Not found</title>;
+export const Head: HeadFC = () => <HtmlHead title="Not found"></HtmlHead>;

@@ -16,11 +16,15 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "src",
-        path: "./src/",
+        path: './src/assets/'
       },
-      __key: "src",
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        path: './src/assets/'
+      }
+    }
   ],
 };
 

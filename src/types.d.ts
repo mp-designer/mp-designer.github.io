@@ -10,6 +10,10 @@ declare module "*.jpg" {
   const value: any;
   export default value;
 }
+declare module "*.svg" {
+  const value: any;
+  export default value;
+}
 
 interface ProjectData {
   slug: string;
@@ -25,7 +29,8 @@ interface HomepageData {
 
 type PageContextGeneral = typeof import('./content/general.json');
 
-interface PageContext<TData> {
+interface PageContext<TData = unknown> {
+  title: string;
   general: PageContextGeneral;
   data: TData;
 }
