@@ -25,6 +25,11 @@ module.exports = {
       'sans': '"Bai Jamjuree", sans-serif',
     },
     fontSize: {
+      'logo': ['1.75rem', {
+        lineHeight: '2.45rem',
+        letterSpacing: '0.06em',
+        fontWeight: '500',
+      }],
       'body1': ['1.75rem', {
         lineHeight: '2.45rem',
         // letterSpacing: '-0.01em',

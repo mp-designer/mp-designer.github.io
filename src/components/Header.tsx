@@ -4,7 +4,8 @@ import MenuIcon from "../assets/icons/menu-24px.svg";
 
 export const Header: React.FC<{
   general: PageContextGeneral;
-}> = ({ general }) => {
+  emailLink: string;
+}> = ({ general, emailLink }) => {
   const [isOpen, setIsOpen] = useState(false);
   const id = useId();
   const menuId = `menu${id}`;
@@ -13,15 +14,16 @@ export const Header: React.FC<{
   const menuLinks = [
     { text: "Projects", href: "/#projects" },
     { text: "About", href: "/#about" },
+    { text: "Contact", href: emailLink },
   ];
 
   return (
-    <div className="sticky z-10 top-0 left-0 right-0 bg-white">
+    <div className="sticky z-10 top-0 left-0 right-0 bg-white text-h4">
       <div className="container">
         <div className="h-16 md:h-24 flex justify-between items-center">
           <div className="h-full">
             <Link to="/#" className="h-full inline-flex items-center">
-              <span className="">{general.homeText}</span>
+              <span className="text-logo">{general.homeText}</span>
             </Link>
           </div>
 
