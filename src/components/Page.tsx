@@ -25,7 +25,7 @@ export const Page: React.FC<{
     }));
 
   return (
-    <div className="text-grey6 bg-slate-100 min-h-screen flex flex-col">
+    <div className="text-grey6 text-body3 bg-slate-100 min-h-screen flex flex-col">
       <Header general={general} emailLink={`${linkPrefixesMap.Email}${general.links.Email}`} />
 
       <main className="container py-4 flex-grow">{children}</main>
