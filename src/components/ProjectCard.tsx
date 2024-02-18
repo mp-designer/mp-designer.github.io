@@ -5,7 +5,7 @@ import { headingClassesMap } from "../marked/elements/heading";
 import projectImageFallback from "../assets/images/projectImageFallback.jpeg";
 import { className as paragraphClassName } from "../marked/elements/paragraph";
 
-const ProjectCard: React.FC<{
+export const ProjectCard: React.FC<{
   project: ProjectData;
 }> = ({ project }) => {
   return (
@@ -24,5 +24,3 @@ const ProjectCard: React.FC<{
     </div>
   );
 };
-
-export default ProjectCard;

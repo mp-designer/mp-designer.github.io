@@ -1,6 +1,6 @@
 import React from "react";
 import { PageProps } from "gatsby";
-import Page from "../components/Page";
+import { Page } from "../components/Page";
 
 const PageTemplate: React.FC<PageProps<{}, PageContext<ProjectData>>> = ({
   pageContext,
@@ -16,4 +16,4 @@ const PageTemplate: React.FC<PageProps<{}, PageContext<ProjectData>>> = ({
 
 export default PageTemplate;
 
-export { Head } from "../components/Page";
+export { Head } from "../components/Head";

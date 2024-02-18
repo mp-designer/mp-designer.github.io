@@ -1,10 +1,10 @@
 import React from "react";
 import { PageProps, Link } from "gatsby";
-import Page from "../components/Page";
+import { Page } from "../components/Page";
 
 import { headingClassesMap } from "../marked/elements/heading";
 import { className as paragraphClassName } from "../marked/elements/paragraph";
-import ProjectCard from "../components/ProjectCard";
+import { ProjectCard } from "../components/ProjectCard";
 
 const PageTemplate: React.FC<PageProps<{}, PageContext<HomepageData>>> = ({
   pageContext,
@@ -42,4 +42,4 @@ const PageTemplate: React.FC<PageProps<{}, PageContext<HomepageData>>> = ({
 
 export default PageTemplate;
 
-export { Head } from "../components/Page";
+export { Head } from "../components/Head";

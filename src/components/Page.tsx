@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link, PageProps } from "gatsby";
+import React from "react";
 import { Header } from "./Header";
 
 const linkPrefixesMap: Record<keyof PageContextGeneral["links"], string> = {
@@ -12,7 +11,7 @@ const linkPrefixesMap: Record<keyof PageContextGeneral["links"], string> = {
   X: "",
 };
 
-const Page: React.FC<{
+export const Page: React.FC<{
   children: React.ReactNode;
   general: PageContextGeneral;
 }> = ({ children, general }) => {
@@ -52,22 +51,3 @@ const Page: React.FC<{
     </div>
   );
 };
-
-export default Page;
-
-export const Head: React.FC<PageProps<{}, PageContext>> = ({ pageContext }) => (
-  <>
-    <title>{pageContext.title}</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossOrigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    ></link>
-  </>
-);
