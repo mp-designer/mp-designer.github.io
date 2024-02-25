@@ -5,34 +5,25 @@
   "description": "portfolio",
   "author": "Vadym Veremeichyk",
   "keywords": [
-    "gatsby"
+    "eleventy"
   ],
   "scripts": {
-    "dev": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "gatsby": "^5.12.4",
-    "gatsby-plugin-google-gtag": "^5.12.3",
-    "gatsby-plugin-react-svg": "^3.3.0",
-    "gatsby-source-filesystem": "^5.12.1",
-    "marked": "10.0.0",
-    "node-html-parser": "^6.1.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "dev": "npm-run-all -p dev:*",
+    "build": "run-s build:*",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "tailwindcss -i src/styles/global.css -o public/assets/css/tailwind.css --watch --postcss",
+    "build:11ty": "eleventy",
+    "build:css": "tailwindcss -i src/styles/global.css -o public/assets/css/tailwind.css --postcss"
   },
   "devDependencies": {
-    "@types/node": "^20.3.3",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "autoprefixer": "^10.4.16",
-    "gatsby-plugin-postcss": "^6.12.0",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
-    "typescript": "^5.1.6"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^4.0.2",
+    "autoprefixer": "^10.4.17",
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7",
+    "node-html-parser": "^6.1.12",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
   }
 }

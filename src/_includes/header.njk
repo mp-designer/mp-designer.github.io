@@ -1,0 +1,49 @@
+<div class="sticky z-10 top-0 left-0 right-0 bg-white text-h4">
+  <div class="container">
+    <div class="h-16 md:h-24 flex justify-between items-center">
+      <div class="h-full">
+        <a href="/#" class="h-full inline-flex items-center">
+          <span class="text-logo">VV</span>
+        </a>
+      </div>
+
+      <div class="flex md:hidden flex-col items-end">
+        <button
+          id="menu-button"
+          aria-controls="menu"
+          aria-label="Menu"
+          class="p-2 text-grey6"
+          onClick="document.getElementById('menu').classList.toggle('hidden')"
+        >
+          {% svgIcon 'src/assets/icons/menu-24px.svg' %}
+        </button>
+      </div>
+
+      <nav class="hidden md:flex h-full space-x-8">
+        {% for link in global.menuLinks %}
+          <a
+            href="/#{{ link }}"
+            class="text-element uppercase hover:underline underline-offset-8 inline-flex items-center"
+          >
+            <span>{{ link }}</span>
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
+
+    <nav
+      id="menu"
+      class="flex hidden md:hidden flex-col items-end space-y-2"
+      aria-labelledby="menu-button"
+    >
+      {% for link in global.menuLinks %}
+        <a
+          href="/#{{ link }}"
+          class="text-element uppercase hover:underline underline-offset-8"
+        >
+          {{ link }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</div>

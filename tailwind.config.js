@@ -1,11 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}",
-    "./src/templates/**/*.{js,jsx,ts,tsx}",
-    "./src/marked/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{njk,md}", "./.eleventy.md.{js,ts}"],
   // see https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme
   theme: {
     screens: {
@@ -22,66 +17,105 @@ module.exports = {
     //   '5xl': '3.052rem',
     // },
     fontFamily: {
-      'sans': '"Bai Jamjuree", sans-serif',
+      sans: "Inter, sans-serif",
+      "sans-heading": '"Bai Jamjuree", sans-serif',
     },
     fontSize: {
-      'logo': ['1.75rem', {
-        lineHeight: '2.45rem',
-        letterSpacing: '0.06em',
-        fontWeight: '500',
-      }],
-      'body1': ['1.75rem', {
-        lineHeight: '2.45rem',
-        // letterSpacing: '-0.01em',
-        fontWeight: '300',
-      }],
-      'body2': ['1.25rem', {
-        lineHeight: '1.75rem',
-        fontWeight: '300',
-      }],
-      'body3': ['1.125rem', {
-        lineHeight: '1.575rem',
-        fontWeight: '400',
-      }],
-      'h1': ['3.75rem', {
-        lineHeight: '5.25rem',
-        fontWeight: '700',
-      }],
-      'h2': ['2rem', {
-        lineHeight: '2.8rem',
-        letterSpacing: '0.02em',
-        fontWeight: '700',
-      }],
-      'h3': ['1.875rem', {
-        lineHeight: '2.625rem',
-        letterSpacing: '0.02em',
-        fontWeight: '500',
-      }],
-      'h4': ['1.125rem', {
-        lineHeight: '1.575rem',
-        letterSpacing: '0.02em',
-        fontWeight: '400',
-      }],
-      // '3xl': ['1.875rem', {
-      //   lineHeight: '2.25rem',
-      //   letterSpacing: '-0.02em',
-      //   fontWeight: '700',
-      // }],
+      logo: [
+        "1.75rem",
+        {
+          lineHeight: "2.45rem",
+          letterSpacing: "0.06em",
+          fontWeight: "500",
+        },
+      ],
+      hXL: [
+        "3.75rem",
+        {
+          lineHeight: "1.4em",
+          letterSpacing: "0.02em",
+          fontWeight: "700",
+        },
+      ],
+      hL: [
+        "2rem",
+        {
+          lineHeight: "1.4em",
+          letterSpacing: "0.02em",
+          fontWeight: "700",
+        },
+      ],
+      hM: [
+        "1.75rem",
+        {
+          lineHeight: "1.4em",
+          letterSpacing: "0.02em",
+          fontWeight: "500",
+        },
+      ],
+      hS: [
+        "1.5rem",
+        {
+          lineHeight: "1.4em",
+          letterSpacing: "0.02em",
+          fontWeight: "500",
+        },
+      ],
+      element: [
+        "1.125rem",
+        {
+          lineHeight: "1.4em",
+          letterSpacing: "0.02em",
+          fontWeight: "400",
+        },
+      ],
+      bodyXL: [
+        "1.75rem",
+        {
+          lineHeight: "1.4em",
+          fontWeight: "300",
+        },
+      ],
+      bodyL: [
+        "1.25rem",
+        {
+          lineHeight: "1.4em",
+          fontWeight: "400",
+        },
+      ],
+      bodyM: [
+        "1.125rem",
+        {
+          lineHeight: "1.4em",
+          fontWeight: "400",
+        },
+      ],
+      bodyS: [
+        "1rem",
+        {
+          lineHeight: "1.4em",
+          fontWeight: "400",
+        },
+      ],
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: '#ffffff',
-      grey6: '#333333',
-      grey5: '#5C5C5C',
-      grey1: '#EFEFF1'
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#ffffff",
+      grey1: "#EFEFF1",
+      grey2: "#DEDEDF",
+      grey3: "#A1A1A1",
+      grey4: "#7E7E7F",
+      grey5: "#5C5C5C",
+      grey6: "#333333",
+      grey7: "#131313",
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: '1.25rem',
-        md: '1.5rem',
-        lg: '1.5rem',
+        DEFAULT: "1.25rem",
+        md: "1.5rem",
+        lg: "1.5rem",
       },
       // screens: {
       //   md: '744px',

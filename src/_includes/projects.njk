@@ -1,0 +1,17 @@
+<div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+  {% for project in projects %}
+  <div class="group">
+    <a href="{{ project.url | url }}">
+      <div class="overflow-hidden mb-4 rounded-lg">
+        <img
+          src="{{ project.data.imgSrc }}"
+          class="object-cover group-hover:scale-110 transition-all ease-out duration-300 w-full aspect-square"
+          alt="Illustration of {{ project.data.title }}"
+        />
+      </div>
+      <h3 class="mb-4 font-sans-heading text-hS md:text-hM">{{ project.data.title }}</h3>
+      <p class="text-bodyM md:text-bodyL text-grey5">{{ project.data.description }}</p>
+    </a>
+  </div>
+  {% endfor %}
+</div>
