@@ -28,7 +28,7 @@ jobs:
       - name: Build bundle
         run: npm run build
         env:
-          PREFIX_PATHS: true
+          PATH_PREFIX: /portfolio/
 
       - name: Upload production bundle
         uses: actions/upload-artifact@v3

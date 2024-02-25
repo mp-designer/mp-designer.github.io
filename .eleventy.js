@@ -1,8 +1,11 @@
-const mdLibrary = require("./.eleventy.md");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 const htmlParser = require("node-html-parser");
 
+const mdLibrary = require("./.eleventy.md");
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.setLibrary("md", mdLibrary);
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addNunjucksAsyncShortcode(
@@ -17,11 +20,9 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addCollection("projects", function (collectionApi) {
-    const indexData = collectionApi
-      .getAllSorted()
-      .filter(function (item) {
-        return item.inputPath.includes("/index.");
-      })[0].data;
+    const indexData = collectionApi.getAllSorted().filter(function (item) {
+      return item.inputPath.includes("/index.");
+    })[0].data;
 
     return collectionApi
       .getAllSorted()
@@ -39,9 +40,12 @@ module.exports = function (eleventyConfig) {
 
         item.data.global = indexData.global;
         item.data.layout ??= "base.njk";
-        item.data.title ??= (() => getParsed().querySelector("h1")?.innerText)();
-        item.data.imgSrc ??= (() => getParsed().querySelector("img")?.attributes.src)();
-        item.data.description ??= (() => getParsed().querySelector("p")?.innerText)();
+        item.data.title ??= (() =>
+          getParsed().querySelector("h1")?.innerText)();
+        item.data.imgSrc ??= (() =>
+          getParsed().querySelector("img")?.attributes.src)();
+        item.data.description ??= (() =>
+          getParsed().querySelector("p")?.innerText)();
         return item;
       });
   });
