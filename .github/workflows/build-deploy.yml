@@ -28,7 +28,7 @@ jobs:
       - name: Build bundle
         run: npm run build
         env:
-          PATH_PREFIX: /portfolio/
+          PATH_PREFIX: ${{ github.repository_owner == 'em-per' && '/' || '/em-per.github.io/' }}
 
       - name: Upload production bundle
         uses: actions/upload-artifact@v3
