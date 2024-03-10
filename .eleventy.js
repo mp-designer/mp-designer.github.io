@@ -20,34 +20,20 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addCollection("projects", function (collectionApi) {
-    const indexData = collectionApi.getAllSorted().filter(function (item) {
-      return item.inputPath.includes("/index.");
-    })[0].data;
+    return collectionApi.getFilteredByTag("projects").map((item) => {
+      let parsed;
+      const getParsed = () => {
+        if (parsed) return parsed;
 
-    return collectionApi
-      .getAllSorted()
-      .filter(function (item) {
-        return item.inputPath.includes("/projects/");
-      })
-      .map((item) => {
-        let parsed;
-        const getParsed = () => {
-          if (parsed) return parsed;
+        const html = mdLibrary.render(item.template._frontMatter.content);
+        return (parsed = htmlParser.parse(html));
+      };
 
-          const html = mdLibrary.render(item.template._frontMatter.content);
-          return (parsed = htmlParser.parse(html));
-        };
-
-        item.data.global = indexData.global;
-        item.data.layout ??= "base.njk";
-        item.data.title ??= (() =>
-          getParsed().querySelector("h1")?.innerText)();
-        item.data.imgSrc ??= (() =>
-          getParsed().querySelector("img")?.attributes.src)();
-        item.data.description ??= (() =>
-          getParsed().querySelector("p")?.innerText)();
-        return item;
-      });
+      item.data.title ??= getParsed().querySelector("h1")?.innerText;
+      item.data.imgSrc ??= getParsed().querySelector("img")?.attributes.src;
+      item.data.description ??= getParsed().querySelector("p")?.innerText;
+      return item;
+    });
   });
 
   return {

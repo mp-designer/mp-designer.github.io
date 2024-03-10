@@ -1,49 +1,76 @@
 <div class="sticky z-10 top-0 left-0 right-0 bg-white text-h4">
   <div class="container">
-    <div class="h-16 md:h-24 flex justify-between items-center">
+    <div class="h-16 md:h-14 md:my-6 flex justify-between items-center">
       <div class="h-full">
-        <a href="/#" class="h-full inline-flex items-center">
-          <span class="text-logo">VV</span>
+        <a href="/#" class="h-full inline-flex items-center -ml-3.5" onClick="_headerMenuHide()">
+          {% svgIcon 'src/assets/icons/logo-animated.svg' %}
         </a>
       </div>
-
       <div class="flex md:hidden flex-col items-end">
         <button
           id="menu-button"
           aria-controls="menu"
           aria-label="Menu"
-          class="p-2 text-grey6"
-          onClick="document.getElementById('menu').classList.toggle('hidden')"
-        >
+          class="p-2 text-grey6 group"
+          onClick="_headerMenuToggle()">
           {% svgIcon 'src/assets/icons/menu-24px.svg' %}
         </button>
       </div>
-
-      <nav class="hidden md:flex h-full space-x-8">
-        {% for link in global.menuLinks %}
-          <a
-            href="/#{{ link }}"
-            class="text-element uppercase hover:underline underline-offset-8 inline-flex items-center"
-          >
-            <span>{{ link }}</span>
-          </a>
-        {% endfor %}
-      </nav>
+      <div class="h-full hidden md:flex items-center">
+        <nav class="flex h-full space-x-8">
+          {% for text, link in global.menuLinks %}
+            <a href="{{ link }}" class="group text-element uppercase inline-flex items-center">
+              <span class="custom-underline">{{ text }}</span>
+            </a>
+          {% endfor %}
+        </nav>
+        <button class="h-full px-9 ml-8 bg-grey6 text-white text-element">Contact</button>
+      </div>
     </div>
-
-    <nav
+    <div
       id="menu"
-      class="flex hidden md:hidden flex-col items-end space-y-2"
-      aria-labelledby="menu-button"
-    >
-      {% for link in global.menuLinks %}
-        <a
-          href="/#{{ link }}"
-          class="text-element uppercase hover:underline underline-offset-8"
-        >
-          {{ link }}
-        </a>
-      {% endfor %}
-    </nav>
+      class="flex hidden md:hidden bg-white pt-16 pb-10 px-5 fixed -z-10 top-0 bottom-0 left-0 right-0 flex-col items-center
+        justify-between">
+      <div></div>
+      <div>
+        <nav class="flex flex-col items-center space-y-1" aria-labelledby="menu-button">
+          {% for text, link in global.menuLinks %}
+            <a href="{{ link }}" class="text-element uppercase group inline-flex items-center h-16" onClick="_headerMenuHide()">
+              <span class="custom-underline">{{ text }}</span>
+            </a>
+          {% endfor %}
+        </nav>
+        <div class="w-full flex flex-wrap justify-center mt-2 space-x-3">
+          {% for name, link in global.socialLinks %}
+            <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
+              {% svgIcon 'src/assets/icons/' + name + '-24px.svg' %}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      <button class="w-full h-12 p-2 bg-grey6 text-white text-element">Contact</button>
+    </div>
+    <script>
+      function _headerMenuToggle() {
+        document
+          .getElementById('menu')
+          .classList
+          .toggle('hidden');
+        document
+          .getElementById('menu-button')
+          .classList
+          .toggle('active');
+      }
+      function _headerMenuHide() {
+        document
+          .getElementById('menu')
+          .classList
+          .add('hidden');
+        document
+          .getElementById('menu-button')
+          .classList
+          .remove('active');
+      }
+    </script>
   </div>
 </div>
