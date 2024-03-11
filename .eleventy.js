@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addCollection("projects", function (collectionApi) {
-    return collectionApi.getFilteredByTag("projects").map((item) => {
+    return collectionApi.getFilteredByTag("projects").map((item, index) => {
       let parsed;
       const getParsed = () => {
         if (parsed) return parsed;
@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
       item.data.title ??= getParsed().querySelector("h1")?.innerText;
       item.data.imgSrc ??= getParsed().querySelector("img")?.attributes.src;
       item.data.description ??= getParsed().querySelector("p")?.innerText;
+      item.data.index = index;
       return item;
     });
   });

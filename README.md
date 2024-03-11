@@ -1,4 +1,4 @@
-[![Build & deploy](https://github.com/haiarha/portfolio/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/haiarha/portfolio/actions/workflows/build-deploy.yml)
+[![Build & deploy](https://github.com/haiarha/em-per.github.io/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/haiarha/em-per.github.io/actions/workflows/build-deploy.yml)
 
 # MP portfolio
 

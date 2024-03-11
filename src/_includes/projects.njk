@@ -1,17 +1,16 @@
-<div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+<div class="grid gap-[3.75rem] grid-cols-1">
   {% for project in collections.projects %}
-  <div class="group">
-    <a href="{{ project.url }}">
-      <div class="overflow-hidden mb-4 rounded-lg">
-        <img
-          src="{{ project.data.imgSrc }}"
-          class="object-cover group-hover:scale-110 transition-all ease-out duration-300 w-full aspect-square"
-          alt="Illustration of {{ project.data.title }}"
-        />
+    <div>
+      <div class="mb-4 md:mb-8">
+        <img src="{{ project.data.imgSrc }}" class="object-cover w-full aspect-square md:aspect-[696/540] lg:aspect-[1200/540]" alt="Illustration of {{ project.data.title }}" style="view-transition-name: project-image-{{project.data.index}}"/>
       </div>
-      <h3 class="mb-4 font-sans-heading text-hS md:text-hM">{{ project.data.title }}</h3>
-      <p class="text-bodyM md:text-bodyL text-grey5">{{ project.data.description }}</p>
-    </a>
-  </div>
+      <div class="flex flex-col lg:flex-row justify-between items-start">
+        <div class="mb-8 lg:mb-0">
+          <h3 class="mb-4 text-grey6 font-sans-heading text-hS md:text-hM">{{ project.data.title }}</h3>
+          <p class="text-bodyS md:text-bodyL">{{ project.data.description }}</p>
+        </div>
+        <a href="{{ project.url }}" class="w-full md:w-auto h-12 md:h-[3.75rem] px-9 bg-grey6 text-white text-element inline-flex items-center justify-center">View case study</a>
+      </div>
+    </div>
   {% endfor %}
 </div>

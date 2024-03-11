@@ -1,27 +1,19 @@
 ---
-layout: base.njk
-title: Homepage
-greet: Hi, I'm Margo.
-greetSubText: UX/UI designer | Product designer, based in Lisbon, Portugal. Welcome to my portfolio.
-about: Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+layout: layout-default.njk
+title: Hi, I'm Margo.
+description: UX/UI designer | Product designer, based in Lisbon, Portugal. Welcome to my portfolio.
 ---
 
-<div class="py-16 md:py-46 lg:py-52">
+<div class="py-16 md:py-[11.625rem] lg:py-52">
   <div class="">
-    <h1 class="mb-3 font-sans-heading text-hL md:text-hXL uppercase">{{ greet }}</h1>
+    <h1 class="mb-3 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
 
-    <p class="text-grey5 text-bodyM md:text-bodyXL">{{ greetSubText }}</p>
+    <p class="text-bodyM md:text-bodyXL">{{ description }}</p>
   </div>
 </div>
 
-<div id="projects" class="py-16">
-  <h2 class="mb-8 font-sans-heading text-hS md:text-hL uppercase">Projects</h2>
+<div id="projects" class="pb-16 md:pb-[7.5rem] lg:pb-40 ">
+  <h2 class="mb-8 text-grey6 font-sans-heading text-hS md:text-hL uppercase">Projects</h2>
 
   {% include "projects.njk" %}
-</div>
-
-<div id="about" class="py-32 max-w-screen-sm">
-  <h2 class="mb-8 font-sans-heading text-hS md:text-hL uppercase">About</h2>
-
-  <p class="text-lg leading-8 text-grey6">{{ about }}</p>
 </div>
