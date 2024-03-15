@@ -1,7 +1,7 @@
 ---
 title: Logistics Management System
 description: Short project description
-imgSrc: https://github.com/haiarha/em-per.github.io/assets/28811614/4062ee02-c444-4290-9458-08a2fc877d23
+imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/a4d6ed15-36d0-4072-93ff-1b773a7d250c
 keywords:
   - Product design
   - UX design
@@ -29,7 +29,7 @@ Design solutions from this project influenced other company initiatives.
 
 The UI library I created was successfully reused in another MUI 4-based project.
 
-<img width="100%" alt="Screenshot 2023-10-30 at 16 19 02" src="https://github.com/haiarha/em-per.github.io/assets/28811614/4062ee02-c444-4290-9458-08a2fc877d23">
+![Frame 685-min](https://github.com/em-per/em-per.github.io/assets/163604385/96ca3966-78ef-4588-b64e-929ae037ec29)
 
 ## 01. Empathize
 
