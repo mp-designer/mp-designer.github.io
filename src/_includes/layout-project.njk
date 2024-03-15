@@ -6,7 +6,7 @@
     <style>
       ._project-content img {
         width: 100%;
-        margin-top: 3rem;
+        margin-top: 2.25rem;
       }
     </style>
   </head>
@@ -16,10 +16,10 @@
       <main>
         <div class="container">
           <div class="mb-[3.375rem]">
-            <h1 class="mb-6 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
+            <h1 class="mb-6 mt-14 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
             <div class="flex flex-wrap -ml-4 -mb-4">
               {% for keyword in keywords %}
-                <div class="h-9 px-4 ml-4 mb-4 text-element text-grey6 bg-grey1 inline-flex items-center rounded-[1.125rem]">
+                <div class="h-9 px-4 ml-4 mb-4 text-grey6 bg-grey1 inline-flex items-center rounded-[1.125rem]">
                   {{ keyword }}
                 </div>
               {% endfor %}
@@ -29,7 +29,17 @@
         <div class="mb-20">
           <img src="{{ imgSrc }}" class="object-cover w-full aspect-square md:aspect-auto md:h-[540px] lg:h-[648px]" alt="Illustration of {{ project.data.title }}" style="view-transition-name: project-image-{{ index }}"/>
         </div>
-        <div class="container _project-content">
+        <div class="container">
+          <div class="mt-20 md:mt-[7.5rem] max-w-[793px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+            {% for name, value in meta %}
+              <div>
+                <h2 class="mb-2 md:mb-4 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">{{ name }}</h2>
+                <div>{{ value }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="container _project-content mb-16 md:mb-[7.5rem]">
           {{ content | safe }}
         </div>
       </main>

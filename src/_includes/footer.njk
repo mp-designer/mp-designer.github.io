@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex justify-between flex-col md:flex-row space-y-12 md:space-y-0">
         <div class="flex flex-col">
-          <p class="mb-4 text-hS md:text-hM text-grey6">{{ global.fullName }}</p>
+          <p class="mb-4 font-sans-heading text-hS md:text-hM text-grey6">{{ global.fullName }}</p>
 
           <div class="h-9 md:h-10 inline-flex items-center">
             <a href="mailto:{{ global.email }}">{{ global.email }}</a>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="flex flex-col">
-          <p class="mb-4 text-hS md:text-hM text-grey6">Projects</p>
+          <p class="mb-4 font-sans-heading text-hS md:text-hM text-grey6">Projects</p>
 
           {% for project in collections.projects %}
             <div class="h-9 md:h-10 inline-flex items-center">
