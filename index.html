@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Hi, I&#39;m Margo. | Margo&#39;s portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="view-transition" content="same-origin" />
+<meta name="description" content="UX/UI designer | Product designer, based in Lisbon, Portugal. Welcome to my portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+
+  </head>
+  <body>
+    <div class="text-grey5 text-bodyS md:text-bodyM bg-slate-100 min-h-screen flex flex-col">
+      <div class="sticky z-10 top-0 left-0 right-0 bg-white text-grey6 text-h4">
+  <div class="container">
+    <div class="h-16 md:h-[3.75rem] md:my-4 flex justify-between items-center">
+      <div class="h-full">
+        <a href="/#" class="h-full inline-flex items-center -ml-3.5" aria-label="Homepage" onClick="_headerMenuHide()">
+          <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  #mPart, #pPart1, #pPart2 {
+    opacity: 0;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  svg:hover #mPart {
+    animation-name: logo-animated-m;
+  }
+  svg:hover #pPart1 {
+    animation-name: logo-animated-p1;
+  }
+  svg:hover #pPart2 {
+    animation-name: logo-animated-p2;
+  }
+
+  @keyframes logo-animated-m {
+    0% {
+      transform-origin: 15px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    10% {
+      transform-origin:15px 11px;
+      transform: scaleX(100%);
+      opacity: 1;
+    }
+    30% {
+      transform-origin: 53px 11px;
+      transform: scaleX(100%);
+      opacity: 1;
+    }
+    40% {
+      transform-origin: 53px 11px;
+      transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      transform-origin:15px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes logo-animated-p1 {
+    0% {
+      transform-origin: 66px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    45% {
+      transform-origin: 66px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    49.5% {
+      transform-origin: 66px 11px;
+      transform: scaleX(100%);
+      opacity: 1;
+    }
+    72% {
+      transform-origin: 72px 11px;
+      transform: scaleX(100%);
+      opacity: 1;
+    }
+    76.5% {
+      transform-origin: 72px 11px;
+      transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      transform-origin: 66px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes logo-animated-p2 {
+    0% {
+      transform-origin: 72px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    54% {
+      transform-origin: 72px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    58.5% {
+      transform-origin: 72px 11px;
+      transform: scaleX(100%);
+      opacity: 1;
+    }
+    84.6% {
+      transform-origin: 66px 11px;
+      transform: scaleX(100%);
+      opacity: 1;
+    }
+    89.1% {
+      transform-origin: 66px 11px;
+      transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      transform-origin: 72px 11px;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+  }
+</style>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28 11H15V37H28V11ZM47 11H34V37H47V11ZM53 11H66V37H53V11ZM85 11H72V24H85V11Z" fill="currentColor"/>
+<rect id="mPart" x="28" y="11" width="25" height="1" fill="currentColor"/>
+<rect id="pPart1" x="66" y="11" width="6" height="1" fill="currentColor"/>
+<rect id="pPart2" x="66" y="23" width="6" height="1" fill="currentColor"/>
+</svg>
+
+        </a>
+      </div>
+      <div class="flex md:hidden flex-col items-end">
+        <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  #line1, #line2, #line3 {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform-origin: 12px 12px;
+  }
+
+  .active #line1 {
+    transform: rotate(45deg) scaleX(1.4) translateY(7px);
+  }
+
+  .active #line2 {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+
+  .active #line3 {
+    transform: rotate(-45deg) scaleX(1.4) translateY(-7px);
+  }
+</style>
+<path id="line1" d="M3 5H21" stroke="currentColor" stroke-width="1.3" stroke-linecap="square" stroke-linejoin="round"/>
+<path id="line2" d="M3 12H21" stroke="currentColor" stroke-width="1.3" stroke-linecap="square" stroke-linejoin="round"/>
+<path id="line3" d="M3 19H21" stroke="currentColor" stroke-width="1.3" stroke-linecap="square" stroke-linejoin="round"/>
+</svg>
+
+        </button>
+      </div>
+      <div class="h-full hidden md:flex items-center">
+        <nav class="flex h-full space-x-8">
+          
+            <a href="/#projects" class="group text-element uppercase inline-flex items-center">
+              <span class="custom-underline">Projects</span>
+            </a>
+          
+            <a href="/about" class="group text-element uppercase inline-flex items-center">
+              <span class="custom-underline">About Me</span>
+            </a>
+          
+        </nav>
+        <a href="mailto:m.m.perevalova@gmail.com" class="h-full px-9 ml-8 bg-grey6 text-white text-element inline-flex items-center">Contact</a>
+      </div>
+    </div>
+    <div
+      id="menu"
+      class="flex hidden md:hidden bg-white pt-16 pb-10 px-5 fixed -z-10 top-0 bottom-0 left-0 right-0 flex-col items-center
+        justify-between">
+      <div></div>
+      <div>
+        <nav class="flex flex-col items-center space-y-1" aria-labelledby="menu-button">
+          
+            <a href="/#projects" class="text-element uppercase group inline-flex items-center h-16" onClick="_headerMenuHide()">
+              <span class="custom-underline">Projects</span>
+            </a>
+          
+            <a href="/about" class="text-element uppercase group inline-flex items-center h-16" onClick="_headerMenuHide()">
+              <span class="custom-underline">About Me</span>
+            </a>
+          
+        </nav>
+        <div class="w-full flex flex-wrap justify-center mt-2 space-x-3">
+          
+            <a href="https://www.linkedin.com/in/marharyta-perevalova/" target="_blank" class="p-2" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.959 13.7189V21.0979H17.681V14.2129C17.681 12.4829 17.062 11.3029 15.514 11.3029C14.332 11.3029 13.628 12.0989 13.319 12.8679C13.206 13.1429 13.177 13.5259 13.177 13.9109V21.0979H8.897C8.897 21.0979 8.955 9.43788 8.897 8.22888H13.177V10.0529L13.149 10.0949H13.177V10.0529C13.745 9.17788 14.76 7.92688 17.033 7.92688C19.848 7.92688 21.959 9.76688 21.959 13.7189ZM4.421 2.02588C2.958 2.02588 2 2.98588 2 4.24888C2 5.48388 2.93 6.47288 4.365 6.47288H4.393C5.886 6.47288 6.813 5.48388 6.813 4.24888C6.787 2.98588 5.887 2.02588 4.422 2.02588H4.421ZM2.254 21.0979H6.532V8.22888H2.254V21.0979Z" fill="currentColor"/>
+</svg>
+
+            </a>
+          
+        </div>
+      </div>
+      <a href="mailto:m.m.perevalova@gmail.com" class="w-full h-12 p-2 bg-grey6 text-white text-element">Contact</a>
+    </div>
+    <script>
+      function _headerMenuToggle() {
+        document
+          .getElementById('menu')
+          .classList
+          .toggle('hidden');
+        document
+          .getElementById('menu-button')
+          .classList
+          .toggle('active');
+        document
+          .getElementsByTagName('body')[0]
+          .classList
+          .toggle('overflow-hidden');
+      }
+      function _headerMenuHide() {
+        document
+          .getElementById('menu')
+          .classList
+          .add('hidden');
+        document
+          .getElementById('menu-button')
+          .classList
+          .remove('active');
+        document
+          .getElementsByTagName('body')[0]
+          .classList
+          .remove('overflow-hidden');
+      }
+    </script>
+  </div>
+</div>
+
+
+      <main class="container flex-grow"> 
+<div class="py-16 md:py-[11.625rem] lg:py-52">
+  <div class="">
+    <h1 class="mb-3 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">Hi, I&#39;m Margo.</h1>
+
+    <p class="text-bodyM md:text-bodyXL">UX/UI designer | Product designer, based in Lisbon, Portugal. Welcome to my portfolio.</p>
+  </div>
+</div>
+
+<div id="projects" class="pb-16 md:pb-[7.5rem] lg:pb-40 ">
+  <h2 class="mb-8 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">Projects</h2>
+
+  <div class="grid gap-[3.75rem] grid-cols-1">
+  
+</div>
+
+</div>
+</main>
+
+      <footer>
+  <div class="bg-grey1 py-9 md:py-10">
+    <div class="container">
+      <div class="flex justify-between flex-col md:flex-row space-y-12 md:space-y-0">
+        <div class="flex flex-col">
+          <p class="mb-4 font-sans-heading text-hS md:text-hM text-grey6">Marharyta Perevalova</p>
+
+          <div class="h-9 md:h-10 inline-flex items-center">
+            <a href="mailto:m.m.perevalova@gmail.com">m.m.perevalova@gmail.com</a>
+          </div>
+
+          <div class="h-9 md:h-10 inline-flex items-center">
+            <p>Lisbon, Portugal</p>
+          </div>
+
+          <div class="-ml-2 mt-6 flex flex-wrap justify-start space-x-3 text-grey6">
+            
+              <a href="https://www.linkedin.com/in/marharyta-perevalova/" target="_blank" class="p-2" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.959 13.7189V21.0979H17.681V14.2129C17.681 12.4829 17.062 11.3029 15.514 11.3029C14.332 11.3029 13.628 12.0989 13.319 12.8679C13.206 13.1429 13.177 13.5259 13.177 13.9109V21.0979H8.897C8.897 21.0979 8.955 9.43788 8.897 8.22888H13.177V10.0529L13.149 10.0949H13.177V10.0529C13.745 9.17788 14.76 7.92688 17.033 7.92688C19.848 7.92688 21.959 9.76688 21.959 13.7189ZM4.421 2.02588C2.958 2.02588 2 2.98588 2 4.24888C2 5.48388 2.93 6.47288 4.365 6.47288H4.393C5.886 6.47288 6.813 5.48388 6.813 4.24888C6.787 2.98588 5.887 2.02588 4.422 2.02588H4.421ZM2.254 21.0979H6.532V8.22888H2.254V21.0979Z" fill="currentColor"/>
+</svg>
+
+              </a>
+            
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <p class="mb-4 font-sans-heading text-hS md:text-hM text-grey6">Projects</p>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>
