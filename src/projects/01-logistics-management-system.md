@@ -21,11 +21,11 @@ MYRIG ecosystem—an innovation ecosystem for efficient mining, including indust
 
 ## Goal
 
-Create a comprehensive database that records and tracks all inventory items operated by the logistics department or owned by the company, with detailed information about their status, location, the person responsible for them, etc.
+* To create a comprehensive database that records and tracks all inventory items operated by the logistics department or owned by the company, with detailed information about their status, location, the person responsible for them, etc.
 
-Provide a flexible and transparent system of interaction with all inventory items (import, relocation, export).
+* To provide a flexible and transparent system of interaction with all inventory items (import, relocation, export).
 
-Minimize interface development costs.
+* To minimise interface development costs.
 
 ## Main design process points
 
@@ -35,9 +35,9 @@ I conducted several interviews with the Business Analyst (BA), stakeholders, and
 
 ### Key pains
 
-1. To find the placement of the equipment items that are assigned to the logistics department;
-2. To find a free place for storaging equipment items;
-3. To monitor all the actions with the equipment by the department staff.
+* To find the placement of the equipment items that are assigned to the logistics department;
+* To find a free place for storing equipment items;
+* To monitor all the actions with the equipment by the department staff.
 
 ### Information architecture
 
@@ -47,7 +47,7 @@ Based on the results of the interviews with stakeholders and the department head
 
 ### UI library
 
-To minimize development costs, the React UI library MUI 4 was used, and ready-made development solutions were reused between teams.
+The React UI library MUI 4 was used to minimise development costs, and ready-made development solutions were reused between teams for the same purpose.
 
 I designed a UI kit to speed up the design process and maintain the consistency of the project.
 
@@ -55,7 +55,7 @@ I designed a UI kit to speed up the design process and maintain the consistency 
 
 ### Key solutions
 
-The emploees' main pain was finding a location and a free place to store equipment and inventory items. The following solutions show how to cover these needs within the interface.
+The users' primary pain was finding a location and a free place to store equipment and inventory items. The following solutions show how to cover these needs within the interface.
 
 ![Inventory database solution](https://github.com/em-per/em-per.github.io/assets/163604385/64315303-2262-4f0b-acdc-0579d507d52b)
 
