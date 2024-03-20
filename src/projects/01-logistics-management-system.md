@@ -9,48 +9,62 @@ keywords:
   - UI kit
 meta:
   Role: UX Designer
-  Team: Dedicated team of BA, developers and QA
+  Team: Dedicated team of BA, stakeholders, developers and QA
   Scope: Full product design from scratch
 ---
 
-## Project overview
+## Project Overview
 
-Logistics module is an internal project and a part of MYRIG ecosystem for covering needs of logistics department as well as business needs of the company.
+The logistics module is an internal project that is part of the MYRIG ecosystem. It covers the needs of the logistics department and the company's business needs.
 
-MYRIG ecosystem – innovation ecosystem for efficient mining including industrial mining infrastructure, repair shop chain and professional mining equipment marketplace.
+MYRIG ecosystem—an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
 
 ## Goal
 
-At the time of my work in the company, the project was in active development.
+Create a comprehensive database that records and tracks all inventory items operated by the logistics department or owned by the company, with detailed information about their status, location, the person responsible for them, etc.
 
-I also reduced the time and costs of the development process by addressing complex issues and foreseeing variable scenarios.
+Provide a flexible and transparent system of interaction with all inventory items (import, relocation, export).
 
-Design solutions from this project influenced other company initiatives.
+Minimize interface development costs.
 
-The UI library I created was successfully reused in another MUI 4-based project.
+## Main design process points
 
-![Frame 685-min](https://github.com/em-per/em-per.github.io/assets/163604385/96ca3966-78ef-4588-b64e-929ae037ec29)
+### Interviews
 
-## 01. Empathize
+I conducted several interviews with the Business Analyst (BA), stakeholders, and head of the logistics department to identify key pain points, essential functionality, and the overall product vision.
 
-### Users interviews
+### Key pains
 
-My key value is quality work. In my work I always balance between user needs and business goals.
+1. To find the placement of the equipment items that are assigned to the logistics department;
+2. To find a free place for storaging equipment items;
+3. To monitor all the actions with the equipment by the department staff.
 
-I always collaborate with developing and business management teams to enhance engagement and work productivity.
+### Information architecture
 
-I actively use different self-management techniques to stay efficient.
+Based on the results of the interviews with stakeholders and the department head, I developed the information architecture of the logistics management system.
 
-I follow a minimalist lifestyle and apply its principles to my design work.
+![Information Architecture of the logistics management system](https://github.com/em-per/em-per.github.io/assets/163604385/3a9a5dbb-372d-4700-ad69-f05d105a81dc)
 
-### Requirements
+### UI library
 
-My key value is quality work. In my work I always balance between user needs and business goals.
+To minimize development costs, the React UI library MUI 4 was used, and ready-made development solutions were reused between teams.
 
-I always collaborate with developing and business management teams to enhance engagement and work productivity.
+I designed a UI kit to speed up the design process and maintain the consistency of the project.
 
-I actively use different self-management techniques to stay efficient.
+![UI kit of the logistics management system](https://github.com/em-per/em-per.github.io/assets/163604385/7e6d3d48-d8b5-4db7-bcda-b006ea48a0d1)
 
-I follow a minimalist lifestyle and apply its principles to my design work.
+### Key solutions
 
-My key value is quality work. In my work I always balance between user needs and business goals.
+The emploees' main pain was finding a location and a free place to store equipment and inventory items. The following solutions show how to cover these needs within the interface.
+
+![Inventory database solution](https://github.com/em-per/em-per.github.io/assets/163604385/64315303-2262-4f0b-acdc-0579d507d52b)
+
+![Sell system solution](https://github.com/em-per/em-per.github.io/assets/163604385/4100256b-8067-4683-82a4-fac5c5004a07)
+
+## Main takeaways
+
+Reduced the time and costs of the development process by addressing complex issues and foreseeing variable scenarios;
+
+Design solutions from this project influenced other company initiatives;
+
+The UI KIT I created was successfully reused in another MUI 4-based project.
