@@ -1,22 +1,15 @@
 ---
 layout: layout-about.njk
 title: About Me
-imgSrc: https://github.com/haiarha/em-per.github.io/assets/28811614/4062ee02-c444-4290-9458-08a2fc877d23
+imgSrc: ![Photo](https://github.com/em-per/em-per.github.io/assets/163604385/3b9d58d6-88c0-413e-a736-97f90836e2bf)
 cvUrl: https://www.ucl.ac.uk/careers/sites/careers/files/your_cv_ucg.pdf
 ---
 
-My key value is quality work. In my work I always balance between user needs and business goals.
+Hi, I'm Margo Perevalova, a UX designer from Ukraine. 
+When I was a child, my mother, a skilled seamstress, inspired my creativity. I started designing and creating dresses for my dolls with the leftover fabric scraps from her sewing projects. When my parents asked me who I wanted to be, I answered, " A designer of clothes." It was my childhood dream.
 
-I always collaborate with developing and business management teams to enhance engagement and work productivity.
+My passion for design and art began at a young age: I sewed clothes for dolls, drew pictures and banners, and tried body art, academic painting, photo shooting, and retouching. 
 
-I actively use different self-management techniques to stay efficient.
+Finally, my dream came true through a long life path. Now, I'm an experienced UX designer, or "designer of cloth" for user interfaces. After entering the UX sphere, I started to value a minimalist lifestyle and simple things. I sincerely enjoy the usability of everyday things such as food packages or household items.
 
-I follow a minimalist lifestyle and apply its principles to my design work.
-
-My key value is quality work. In my work I always balance between user needs and business goals.
-
-I always collaborate with developing and business management teams to enhance engagement and work productivity.
-
-I actively use different self-management techniques to stay efficient.
-
-I follow a minimalist lifestyle and apply its principles to my design work.
+My experience in UX design has taught me to think several steps ahead, be curious about how things work and strive for simplicity and efficiency in all design aspects. I approach each project with a passion for creating seamless user experiences, always aiming to make the digital world more intuitive and enjoyable for everyone.
