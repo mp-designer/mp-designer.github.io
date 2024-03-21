@@ -1,6 +1,6 @@
 ---
 title: Logistics Management System
-description: Short project description
+description: A centralized web platform for the logistics department, featuring an inventory database, transparent employee workflows, a ticketing system, and equipment location tracking.
 imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/a4d6ed15-36d0-4072-93ff-1b773a7d250c
 keywords:
   - Product design
@@ -9,7 +9,7 @@ keywords:
   - UI kit
 meta:
   Role: UX Designer
-  Team: Dedicated team of BA, stakeholders, developers and QA
+  Team: Dedicated team of BA, stakeholder, developers and QA
   Scope: Full product design from scratch
 ---
 
