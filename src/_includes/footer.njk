@@ -6,7 +6,7 @@
           <p class="mb-4 font-sans-heading text-hS md:text-hM text-grey6">{{ global.fullName }}</p>
 
           <div class="h-9 md:h-10 inline-flex items-center">
-            <a href="mailto:{{ global.email }}">{{ global.email }}</a>
+            <a href="mailto:{{ global.email }}" class="hover:underline">{{ global.email }}</a>
           </div>
 
           <div class="h-9 md:h-10 inline-flex items-center">
@@ -16,7 +16,7 @@
           <div class="-ml-2 mt-6 flex flex-wrap justify-start space-x-3 text-grey6">
             {% for name, link in global.socialLinks %}
               <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
-                {% svgIcon 'src/assets/icons/' + name + '-24px.svg' %}
+                {% svgIcon '/assets/icons/' + name + '-24px.svg' %}
               </a>
             {% endfor %}
           </div>
@@ -27,7 +27,7 @@
 
           {% for project in collections.projects %}
             <div class="h-9 md:h-10 inline-flex items-center">
-              <a href="{{ project.url }}">{{ project.data.title }}</a>
+              <a href="{{ project.url }}" class="hover:underline">{{ project.data.title }}</a>
             </div>
           {% endfor %}
         </div>

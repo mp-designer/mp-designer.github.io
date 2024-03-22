@@ -14,7 +14,7 @@ const headingClassesMap = {
 };
 const maxWidthClass = "max-w-[793px] mx-auto"
 
-let markdownLibrary = markdownIt({
+let md = markdownIt({
   html: true,
   breaks: true,
   linkify: true,
@@ -26,7 +26,7 @@ let markdownLibrary = markdownIt({
 // });
 
 // Add a custom plugin to add classes to headings
-markdownLibrary.renderer.rules.heading_open = function (
+md.renderer.rules.heading_open = function (
   tokens,
   idx,
   options,
@@ -36,12 +36,15 @@ markdownLibrary.renderer.rules.heading_open = function (
   const token = tokens[idx];
   // Add a class based on the heading level
   if (headingClassesMap[token.tag]) {
-    token.attrSet("class", `${headingClassesMap[token.tag]} ${maxWidthClass}`);
+    token.attrSet("class", `md ${headingClassesMap[token.tag]} ${maxWidthClass}`);
   }
 
   return self.renderToken(tokens, idx, options);
 };
-markdownLibrary.renderer.rules.paragraph_open = () => `<p class="mb-[0.875rem] ${maxWidthClass}">`;
-markdownLibrary.renderer.rules.image_open = () => `<img class="mb-20 w-full">`;
+md.renderer.rules.paragraph_open = (tokens, idx, options, env, self) => `<p class="md mb-[0.875rem] ${maxWidthClass}">`;
+md.renderer.rules.image_open = (tokens, idx, options, env, self) => `<img class="md mb-20 w-full">`;
+md.renderer.rules.bullet_list_open = (tokens, idx, options, env, self) => `<ul class="md pl-8 list-disc ${maxWidthClass}">`;
+md.renderer.rules.ordered_list_open = (tokens, idx, options, env, self) => `<ol class="md pl-8 list-decimal ${maxWidthClass}">`;
+md.renderer.rules.link_open = (tokens, idx, options, env, self) => `<a class="md cursor-pointer hover:underline">`;
 
-module.exports = markdownLibrary;
+module.exports = md;

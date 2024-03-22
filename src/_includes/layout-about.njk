@@ -9,10 +9,10 @@
       {% include "header.njk" %}
 
       <main class="container flex-grow">
-        <div class="pt-6 pb-16 md:pt-20 md:pb-[7.5rem] lg:pt-[9.75rem] lg:pb-40 grid grid-cols-1 lg:grid-cols-[24rem_auto] gap-6">
+        <div class="pt-6 pb-16 md:pt-20 md:pb-[7.5rem] lg:pb-40 grid grid-cols-1 lg:grid-cols-[24rem_auto] gap-6">
           <div class="">
             <h1 class="mb-10 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
-            <div class="overflow-hidden rounded-[50%] w-[19.0625rem] h-[19.0625rem]">
+            <div class="overflow-hidden rounded-[50%] w-full max-w-[19.0625rem] aspect-square">
               <img src="{{ imgSrc }}" class="w-full h-full object-cover"/>
             </div>
           </div>
@@ -21,7 +21,7 @@
               {{ content | safe }}
             </div>
             <a href="{{ cvUrl }}" target="_blank" download="cv" class="w-auto h-12 md:h-[3.75rem] px-9 border-[1px] border-grey6 text-grey6  text-element inline-flex items-center justify-center">
-              {% svgIcon 'src/assets/icons/download-24px.svg' %}
+              {% svgIcon '/assets/icons/download-24px.svg' %}
 
               <span class="ml-2">
                 Download CV

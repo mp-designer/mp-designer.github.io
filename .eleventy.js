@@ -10,8 +10,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addNunjucksAsyncShortcode(
     "svgIcon",
-    async (src, alt, sizes) => {
-      let metadata = await Image(src, {
+    async (path, alt, sizes) => {
+      let metadata = await Image(`src${path}`, {
         formats: ["svg"],
         dryRun: true,
       });
