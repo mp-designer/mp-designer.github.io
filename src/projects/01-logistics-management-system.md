@@ -17,7 +17,7 @@ meta:
 
 The logistics module is an internal project that is part of the MYRIG ecosystem. It covers the needs of the logistics department and the company's business needs.
 
-MYRIG ecosystem—an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
+MYRIG ecosystem is an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
 
 ## Goal
 
