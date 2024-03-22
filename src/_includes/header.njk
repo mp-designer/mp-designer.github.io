@@ -3,12 +3,12 @@
     <div class="h-16 md:h-[3.75rem] md:my-4 flex justify-between items-center">
       <div class="h-full">
         <a href="/#" class="h-full inline-flex items-center -ml-3.5" aria-label="Homepage" onClick="_headerMenuHide()">
-          {% svgIcon 'src/assets/icons/logo-animated.svg' %}
+          {% svgIcon '/assets/icons/logo-animated.svg' %}
         </a>
       </div>
       <div class="flex md:hidden flex-col items-end">
         <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
-          {% svgIcon 'src/assets/icons/menu-24px.svg' %}
+          {% svgIcon '/assets/icons/menu-24px.svg' %}
         </button>
       </div>
       <div class="h-full hidden md:flex items-center">
@@ -38,12 +38,12 @@
         <div class="w-full flex flex-wrap justify-center mt-2 space-x-3">
           {% for name, link in global.socialLinks %}
             <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
-              {% svgIcon 'src/assets/icons/' + name + '-24px.svg' %}
+              {% svgIcon '/assets/icons/' + name + '-24px.svg' %}
             </a>
           {% endfor %}
         </div>
       </div>
-      <a href="mailto:{{ global.email }}" class="w-full h-12 p-2 bg-grey6 text-white text-element">Contact</a>
+      <a href="mailto:{{ global.email }}" class="w-full h-12 p-2 bg-grey6 text-white text-element inline-flex items-center justify-center">Contact</a>
     </div>
     <script>
       function _headerMenuToggle() {

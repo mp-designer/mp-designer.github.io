@@ -29,3 +29,9 @@ html {
   opacity: 1;
   transform: scaleX(1);
 }
+
+/* additional md styles */
+p.md:has(img, picture, video, iframe) {
+  width: 100%;
+  max-width: 100%;
+}

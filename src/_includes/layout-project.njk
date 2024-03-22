@@ -15,8 +15,8 @@
       {% include "header.njk" %}
       <main>
         <div class="container">
-          <div class="mb-[3.375rem]">
-            <h1 class="mb-6 mt-14 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
+          <div class="pt-6 md:pt-20 mb-8 md:mb-[3.375rem]">
+            <h1 class="mb-6 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
             <div class="flex flex-wrap -ml-4 -mb-4">
               {% for keyword in keywords %}
                 <div class="h-9 px-4 ml-4 mb-4 text-grey6 bg-grey1 inline-flex items-center rounded-[1.125rem]">
@@ -26,11 +26,11 @@
             </div>
           </div>
         </div>
-        <div class="mb-20">
+        <div class="mb-14 md:mb-20">
           <img src="{{ imgSrc }}" class="object-cover w-full aspect-square md:aspect-auto md:h-[540px] lg:h-[648px]" alt="Illustration of {{ project.data.title }}" style="view-transition-name: project-image-{{ index }}"/>
         </div>
         <div class="container">
-          <div class="mt-20 md:mt-[7.5rem] max-w-[793px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="max-w-[793px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
             {% for name, value in meta %}
               <div>
                 <h2 class="mb-2 md:mb-4 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">{{ name }}</h2>
