@@ -772,8 +772,8 @@ video {
   width: 100%;
 }
 
-.max-w-\[19\.0625rem\] {
-  max-width: 19.0625rem;
+.max-w-\[25rem\] {
+  max-width: 25rem;
 }
 
 .max-w-\[793px\] {
@@ -1137,6 +1137,10 @@ p.md:has(img, picture, video, iframe) {
 
   .md\:h-\[540px\] {
     height: 540px;
+  }
+
+  .md\:max-w-\[19\.0625rem\] {
+    max-width: 19.0625rem;
   }
 
   .md\:grid-cols-3 {
