@@ -8,7 +8,7 @@ keywords:
   - UX research
   - UI kit
 meta:
-  Role: UX Designer
+  Role: UX Designer | 2022
   Team: Dedicated team of BA, stakeholder, developers and QA
   Scope: Full product design from scratch
 ---
@@ -19,13 +19,13 @@ The logistics module is an internal project that is part of the MYRIG ecosystem.
 
 MYRIG ecosystem is an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
 
-## Goal
+## Goals
 
-* To create a comprehensive database that records and tracks all inventory items operated by the logistics department or owned by the company, with detailed information about their status, location, the person responsible for them, etc.
+To create a comprehensive database that records and tracks all inventory items operated by the logistics department or owned by the company, with detailed information about their status, location, the person responsible for them, etc.
 
-* To provide a flexible and transparent system of interaction with all inventory items (import, relocation, export).
+To provide a flexible and transparent system of interaction with all inventory items (import, relocation, export).
 
-* To minimise interface development costs.
+To minimise interface development costs.
 
 ## Main design process points
 
