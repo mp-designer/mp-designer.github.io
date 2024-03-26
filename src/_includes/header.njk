@@ -1,3 +1,4 @@
+{% from "components/button.njk" import button %}
 <div class="sticky z-10 top-0 left-0 right-0 bg-white text-grey6 text-h4">
   <div class="container">
     <div class="h-16 md:h-[3.75rem] md:my-4 flex justify-between items-center">
@@ -19,7 +20,11 @@
             </a>
           {% endfor %}
         </nav>
-        <a href="mailto:{{ global.email }}" class="h-full px-9 ml-8 bg-grey6 text-white text-element inline-flex items-center">Contact</a>
+        <div class="ml-8">
+          {{ button(tag="a", attrs={
+            href: 'mailto:' + global.email
+          }, text="Contact" )}}
+        </div>
       </div>
     </div>
     <div
@@ -43,7 +48,9 @@
           {% endfor %}
         </div>
       </div>
-      <a href="mailto:{{ global.email }}" class="w-full h-12 p-2 bg-grey6 text-white text-element inline-flex items-center justify-center">Contact</a>
+      {{ button(tag="a", attrs={
+        href: 'mailto:' + global.email
+      }, text="Contact" )}}
     </div>
     <script>
       function _headerMenuToggle() {

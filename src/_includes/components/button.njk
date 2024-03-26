@@ -1,0 +1,36 @@
+{% macro button(tag='button', variant='primary', iconBefore=false, attrs, text) %}
+  <{{ tag }}
+    class="
+      h-12 md:h-[3.75rem] w-full md:w-auto px-2 md:px-9 py-2
+      inline-flex items-center justify-center
+      text-element
+      transition-all ease-out duration-300
+      {% if attrs.disabled %}
+        cursor-not-allowed
+        text-grey4
+        bg-grey1
+      {% else %}
+        cursor-pointer
+        {% if variant === 'primary' %}
+          text-white active:text-grey3
+          bg-grey6 hover:bg-grey7
+        {% elif variant === 'secondary' %}
+          text-grey6 hover:text-grey7 active:text-grey5
+          border border-grey6
+          bg-white hover:bg-grey1 active:bg-grey2
+        {% endif %}
+      {% endif %}
+    "
+    {% for name, value in attrs %}
+      {{ name }}="{{ value }}"
+    {% endfor %}
+  >
+    {% if iconBefore %}
+      <img src="{{ iconBefore }}" class="mr-2 w-6 h-6 object-contain"/>
+    {% endif %}
+
+    <span class="text-nowrap">
+      {{ text | safe }}
+    </span>
+  </{{ tag }}>
+{% endmacro %}
