@@ -9,7 +9,7 @@ keywords:
   - UI kit
 meta:
   Role: UX Designer | 2022
-  Team: Dedicated team of BA, stakeholder, developers and QA
+  Team: Dedicated team of BA, stakeholder, developers and QA
   Scope: Full product design from scratch
 ---
 
