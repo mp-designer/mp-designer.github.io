@@ -15,7 +15,7 @@ meta:
 
 ## Project Overview
 
-The *Logistics Management System* is a centralized web platform for the logistics department, featuring an inventory database, transparent employee workflows, a ticketing system, and equipment location tracking. 
+**Logistics Management System** is a centralized web platform for the logistics department, featuring an inventory database, transparent employee workflows, a ticketing system, and equipment location tracking. 
 
 ## Goals
 
