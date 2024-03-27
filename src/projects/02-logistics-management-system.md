@@ -1,7 +1,7 @@
 ---
 title: Logistics Management System
 description: A centralized web platform for the logistics department, featuring an inventory database, transparent employee workflows, a ticketing system, and equipment location tracking.
-imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/a4d6ed15-36d0-4072-93ff-1b773a7d250c
+imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/b3935940-7aef-4cf0-a6d9-6acad0bb7ac0
 keywords:
   - Product design
   - UX design
@@ -15,7 +15,7 @@ meta:
 
 ## Project Overview
 
-**Logistics Management System** is a centralized web platform for the logistics department, featuring an inventory database, transparent employee workflows, a ticketing system, and equipment location tracking. 
+Logistics Management System is a centralized web platform for the logistics department, featuring an inventory database, transparent employee workflows, a ticketing system, and equipment location tracking. 
 
 ## Goals
 
@@ -41,7 +41,7 @@ I conducted several interviews with the Business Analyst (BA), stakeholders, and
 
 Based on the results of the interviews with stakeholders and the department head, I developed the information architecture of the logistics management system.
 
-![Information Architecture of the logistics management system](https://github.com/em-per/em-per.github.io/assets/163604385/3a9a5dbb-372d-4700-ad69-f05d105a81dc)
+![LGST _ information architecture-min](https://github.com/em-per/em-per.github.io/assets/163604385/8cd691fd-f1ac-493e-b126-bb13c31fed55)
 
 ### UI library
 
@@ -49,15 +49,15 @@ The React UI library MUI 4 was used to minimise development costs, and ready-mad
 
 I designed a UI kit to speed up the design process and maintain the consistency of the project.
 
-![UI kit of the logistics management system](https://github.com/em-per/em-per.github.io/assets/163604385/7e6d3d48-d8b5-4db7-bcda-b006ea48a0d1)
+![LGST _ UI kit-min](https://github.com/em-per/em-per.github.io/assets/163604385/0ecb1b9e-ad53-4044-a1ae-7edf3cdda001)
 
 ### Key solutions
 
 The users' primary pain was finding a location and a free place to store equipment and inventory items. The following solutions show how to cover these needs within the interface.
 
-![Inventory database solution](https://github.com/em-per/em-per.github.io/assets/163604385/64315303-2262-4f0b-acdc-0579d507d52b)
+![LGST _ inventory database solution-min](https://github.com/em-per/em-per.github.io/assets/163604385/815d16a5-e785-4307-ae01-1403dc111161)
 
-![Sell system solution](https://github.com/em-per/em-per.github.io/assets/163604385/4100256b-8067-4683-82a4-fac5c5004a07)
+![LGST _  Cell system-min](https://github.com/em-per/em-per.github.io/assets/163604385/3c1d42d4-64cd-4737-93a1-680da446a74c)
 
 ## Main takeaways
 
