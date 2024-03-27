@@ -41,7 +41,7 @@ I conducted several interviews with the Business Analyst (BA), stakeholders, and
 
 Based on the results of the interviews with stakeholders and the department head, I developed the information architecture of the logistics management system.
 
-![LGST _ information architecture-min](https://github.com/em-per/em-per.github.io/assets/163604385/8cd691fd-f1ac-493e-b126-bb13c31fed55)
+![Information architecture](https://github.com/em-per/em-per.github.io/assets/163604385/8cd691fd-f1ac-493e-b126-bb13c31fed55)
 
 ### UI library
 
@@ -49,15 +49,15 @@ The React UI library MUI 4 was used to minimise development costs, and ready-mad
 
 I designed a UI kit to speed up the design process and maintain the consistency of the project.
 
-![LGST _ UI kit-min](https://github.com/em-per/em-per.github.io/assets/163604385/0ecb1b9e-ad53-4044-a1ae-7edf3cdda001)
+![UI kit](https://github.com/em-per/em-per.github.io/assets/163604385/0ecb1b9e-ad53-4044-a1ae-7edf3cdda001)
 
 ### Key solutions
 
 The users' primary pain was finding a location and a free place to store equipment and inventory items. The following solutions show how to cover these needs within the interface.
 
-![LGST _ inventory database solution-min](https://github.com/em-per/em-per.github.io/assets/163604385/815d16a5-e785-4307-ae01-1403dc111161)
+![Inventory database solution](https://github.com/em-per/em-per.github.io/assets/163604385/815d16a5-e785-4307-ae01-1403dc111161)
 
-![LGST _  Cell system-min](https://github.com/em-per/em-per.github.io/assets/163604385/3c1d42d4-64cd-4737-93a1-680da446a74c)
+![Cell system](https://github.com/em-per/em-per.github.io/assets/163604385/3c1d42d4-64cd-4737-93a1-680da446a74c)
 
 ## Main takeaways
 
