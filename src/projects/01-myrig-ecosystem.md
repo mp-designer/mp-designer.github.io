@@ -10,13 +10,13 @@ keywords:
   - Design system
 meta:
   Role: UX Designer | 2021-2023
-  Team: Dedicated teams of UX designers, BAs, stakeholders, developers, QAs, marketing manager and project managers
+  Team: Dedicated teams of UX designers, BAs, stakeholders, developers, QAs, marketing and project managers
   Scope: Product design, conceptualisation, testing and improvement
 ---
 
 ## Product Overview
 
-**MYRIG ecosystem** is an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
+MYRIG ecosystem is an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
 
 ## Goals
 
@@ -32,7 +32,7 @@ To develop and maintain a design system to keep all products consistent.
 
 ### About project
 
-**Hosting** is a monitoring system for all clients' devices set on the mining firm, a transparent invoice payment system, and device settings.
+Hosting is a monitoring system for all clients' devices set on the mining firm, a transparent invoice payment system, and device settings.
 
 ### My impact
 
