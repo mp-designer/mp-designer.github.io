@@ -3,9 +3,10 @@
   <div class="container">
     <div class="h-16 md:h-[3.75rem] md:my-4 flex justify-between items-center">
       <div class="h-full">
-        <a href="/#" class="h-full inline-flex items-center -ml-3.5" aria-label="Homepage" onClick="_headerMenuHide()">
+        <a id="logo-link" href="/#" class="h-full inline-flex items-center -ml-3.5" aria-label="Homepage" onClick="_headerMenuHide()">
           {% svgIcon '/assets/icons/logo-animated.svg' %}
         </a>
+        <div id="logo-overlay" class="hidden fixed w-full h-full top-0 left-0 bg-white z-50"></div>
       </div>
       <div class="flex md:hidden flex-col items-end">
         <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
@@ -63,7 +64,7 @@
           .classList
           .toggle('active');
         document
-          .getElementsByTagName('body')[0]
+          .querySelector('body')
           .classList
           .toggle('overflow-hidden');
       }
@@ -77,10 +78,53 @@
           .classList
           .remove('active');
         document
-          .getElementsByTagName('body')[0]
+          .querySelector('body')
           .classList
           .remove('overflow-hidden');
       }
+      (function _animateEntry() {
+        const isVisited = window.localStorage.getItem('isVisited');
+        if (isVisited) return;
+        window.localStorage.setItem('isVisited', 'true');
+
+        const bodyEl = document.querySelector('body');
+        const logoOverlayEl = document.getElementById('logo-overlay');
+        const logoEl = document.querySelector('#logo-link .logo-animated');
+        const logoElRect = logoEl.getBoundingClientRect();
+
+        // block body scroll
+        bodyEl.classList.add('overflow-hidden')
+        // show overlay
+        logoOverlayEl.classList.remove('hidden');
+        // activate logo built in animation
+        logoEl.classList.add('active');
+        // translate logo to the center
+        const logoCenterDiffX = window.innerWidth/2 - (logoElRect.left + logoElRect.width/2);
+        const logoCenterDiffY = window.innerHeight/2 - (logoElRect.top + logoElRect.height/2);
+        logoEl.style.transform = `translate(${logoCenterDiffX}px, ${logoCenterDiffY}px) scale(${window.innerWidth >= 744 ? '6.26' : '2'})`;
+
+        // wait for logo built in animation
+        setTimeout(() => {
+          const shrinkDelayMs = 600;
+
+          // shrink animation to put back logo
+          logoEl.style.transition = `transform ${shrinkDelayMs}ms ease-in-out`;
+          logoEl.style.transform = 'translate(0, 0) scale(100%)';
+
+          // overlay disappear animation
+          logoOverlayEl.style.transition = `opacity ${shrinkDelayMs}ms ease-in-out`;
+          logoOverlayEl.style.opacity = '0';
+
+          setTimeout(() => {
+            // unblock body scroll
+            bodyEl.classList.remove('overflow-hidden');
+            // hide overlay
+            logoOverlayEl.classList.add('hidden');
+            // disable logo animation
+            logoEl.classList.remove('active');
+          }, shrinkDelayMs);
+        }, 1500);
+      })();
     </script>
   </div>
 </div>
