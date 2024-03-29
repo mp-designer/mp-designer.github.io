@@ -356,9 +356,9 @@
           .remove('overflow-hidden');
       }
       (function _animateEntry() {
-        const isVisited = window.localStorage.getItem('isVisited');
+        const isVisited = window.sessionStorage.getItem('isVisited');
         if (isVisited) return;
-        window.localStorage.setItem('isVisited', 'true');
+        window.sessionStorage.setItem('isVisited', 'true');
 
         const bodyEl = document.querySelector('body');
         const logoOverlayEl = document.getElementById('logo-overlay');
