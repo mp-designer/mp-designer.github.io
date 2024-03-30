@@ -6,7 +6,14 @@
         <a id="logo-link" href="/#" class="h-full inline-flex items-center -ml-3.5" aria-label="Homepage" onClick="_headerMenuHide()">
           {% svgIcon '/assets/icons/logo-animated.svg' %}
         </a>
-        <div id="logo-overlay" class="hidden fixed w-full h-full top-0 left-0 bg-white z-50"></div>
+        <div id="logo-wrapper" class="hidden fixed w-full h-full top-0 left-0 z-50 flex items-center justify-center">
+          <div id="logo-overlay" class="absolute -z-10 w-full h-full bg-white transition-opacity ease-in-out duration-700"></div>
+
+          <style>#logo-transitioned > svg {width: 100%; height: 100%} </style>
+          <div id="logo-transitioned" class="w-[200px] h-[96px] md:w-[626px] md:h-[300px] transition-transform ease-in-out duration-700">
+            {% svgIcon '/assets/icons/logo-animated.svg' %}
+          </div>
+        </div>
       </div>
       <div class="flex md:hidden flex-col items-end">
         <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
@@ -24,7 +31,7 @@
         <div class="ml-8">
           {{ button(tag="a", attrs={
             href: 'mailto:' + global.email
-          }, text="Contact" )}}
+          }, text="Contact" ) }}
         </div>
       </div>
     </div>
@@ -51,7 +58,7 @@
       </div>
       {{ button(tag="a", attrs={
         href: 'mailto:' + global.email
-      }, text="Contact" )}}
+      }, text="Contact" ) }}
     </div>
     <script>
       function _headerMenuToggle() {
@@ -88,41 +95,47 @@
         window.sessionStorage.setItem('isVisited', 'true');
 
         const bodyEl = document.querySelector('body');
+        const logoWrapperEl = document.getElementById('logo-wrapper');
         const logoOverlayEl = document.getElementById('logo-overlay');
+        const logoTransitionedEl = document.getElementById('logo-transitioned');
         const logoEl = document.querySelector('#logo-link .logo-animated');
-        const logoElRect = logoEl.getBoundingClientRect();
 
         // block body scroll
-        bodyEl.classList.add('overflow-hidden')
-        // show overlay
-        logoOverlayEl.classList.remove('hidden');
+        bodyEl.classList.add('overflow-hidden');
+        // show transitioned logo
+        logoWrapperEl.classList.remove('hidden');
+        // hide original logo
+        logoEl.classList.add('opacity-0');
         // activate logo built in animation
-        logoEl.classList.add('active');
-        // translate logo to the center
-        const logoCenterDiffX = window.innerWidth/2 - (logoElRect.left + logoElRect.width/2);
-        const logoCenterDiffY = window.innerHeight/2 - (logoElRect.top + logoElRect.height/2);
-        logoEl.style.transform = `translate(${logoCenterDiffX}px, ${logoCenterDiffY}px) scale(${window.innerWidth >= 744 ? '6.26' : '2'})`;
+        logoTransitionedEl.querySelector('.logo-animated').classList.add('active');
 
         // wait for logo built in animation
         setTimeout(() => {
-          const shrinkDelayMs = 600;
-
           // shrink animation to put back logo
-          logoEl.style.transition = `transform ${shrinkDelayMs}ms ease-in-out`;
-          logoEl.style.transform = 'translate(0, 0) scale(100%)';
+          let isAnimated = true;
+          const updateCoordinates = () => {
+            const logoElRect = logoEl.getBoundingClientRect();
+            const logoCenterDiffX = window.innerWidth / 2 - (logoElRect.left + logoElRect.width / 2);
+            const logoCenterDiffY = window.innerHeight / 2 - (logoElRect.top + logoElRect.height / 2);
+            logoTransitionedEl.style.transform = `translate(${-logoCenterDiffX}px, ${-logoCenterDiffY}px) scale(${window.innerWidth >= 744 ? 1/6.26 : 1/2})`;
+
+            if (isAnimated) window.requestAnimationFrame(updateCoordinates);
+          }
+          updateCoordinates();
 
           // overlay disappear animation
-          logoOverlayEl.style.transition = `opacity ${shrinkDelayMs}ms ease-in-out`;
           logoOverlayEl.style.opacity = '0';
 
           setTimeout(() => {
+            // stop transitioned logo position update
+            let isAnimated = false;
             // unblock body scroll
             bodyEl.classList.remove('overflow-hidden');
             // hide overlay
-            logoOverlayEl.classList.add('hidden');
-            // disable logo animation
-            logoEl.classList.remove('active');
-          }, shrinkDelayMs);
+            logoWrapperEl.classList.add('hidden');
+            // show original logo
+            logoEl.classList.remove('opacity-0');
+          }, 700);
         }, 1500);
       })();
     </script>
