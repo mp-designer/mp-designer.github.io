@@ -1,7 +1,7 @@
 ---
 layout: layout-about.njk
 title: About Me
-imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/3838356e-895d-4423-9f99-804c80341d8d
+imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/5930c2b2-2708-49b7-9e5a-727b0e3b1366
 cvUrl: https://www.ucl.ac.uk/careers/sites/careers/files/your_cv_ucg.pdf
 ---
 
