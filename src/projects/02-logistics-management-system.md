@@ -7,6 +7,7 @@ keywords:
   - UX design
   - UX research
   - UI kit
+  - Dark theme
 meta:
   Role: UX Designer | 2022
   Team: Dedicated team of BA, stakeholder, developers and QA
