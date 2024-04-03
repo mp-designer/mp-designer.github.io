@@ -1,13 +1,13 @@
 ---
 layout: layout-about.njk
 title: About Me
-imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/5930c2b2-2708-49b7-9e5a-727b0e3b1366
+imgSrc: https://github.com/mp-designer/mp-designer.github.io/assets/163604385/b7baf736-8248-43a3-87f7-d13bbcf7641b
 cvUrl: https://www.ucl.ac.uk/careers/sites/careers/files/your_cv_ucg.pdf
 ---
 
-Hi, I'm Margarita Perevalova, a UX designer from Ukraine. 
+Hi, I'm Marharyta Perevalova, or simply Margo. I'm a UX designer from Ukraine. 
 
-When I was a child, my mother, a skilled seamstress, inspired my creativity. I started designing and creating dresses for my dolls with the leftover fabric scraps from her sewing projects. When my parents asked me who I wanted to be, I answered, " A designer of clothes." It was my childhood dream.
+When I was a child, my mother, a skilled seamstress, inspired my creativity. I started designing and creating dresses for my dolls with the leftover fabric scraps from her sewing projects. When my parents asked me who I wanted to be, I answered, "A designer of clothes." It was my childhood dream.
 
 My passion for design and art began at a young age: I sewed clothes for dolls, drew pictures and banners, tried body art, academic painting, photo shooting and retouching. 
 
