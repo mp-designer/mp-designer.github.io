@@ -1,0 +1,40 @@
+{% from "components/button.njk" import button %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% set metaDescription = description %}
+    {% include "head.njk" %}
+  </head>
+  <body>
+    <div class="text-grey5 text-bodyS md:text-bodyM bg-slate-100 min-h-screen flex flex-col">
+      {% include "header.njk" %}
+
+      <div class="relative overflow-hidden grow">
+        <main class="container flex-grow">
+          <div class="min-h-[506px] md:min-h-[1042px] h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-4rem)] flex flex-col justify-around
+              overflow-hidden">
+            <div>
+              <h1 class="mb-3 text-hL md:text-hXL text-grey6 font-sans-heading">{{ title }}</h1>
+              <div class="mb-9 max-w-xl">
+                {{ content | safe }}
+              </div>
+              {{ button(tag="a", variant="secondary", attrs={
+                href: '/#'
+              }, text="Go Home" ) }}
+            </div>
+            <div class="lg:hidden"></div>
+            <img
+              src="/assets/images/404-bg.jpg"
+              alt=""
+              aria-hidden="true"
+              class="min-w-[568px] max-w-[568px] md:min-w-[1048px] min-h-[483px] md:min-h-[892px] absolute -z-10 -bottom-[241px]
+                md:-bottom-[236px] left-1/2 lg:left-auto lg:-right-[424px] -ml-[284px] md:-ml-[524px]">
+          </div>
+
+        </main>
+      </div>
+
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>

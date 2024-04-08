@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% set metaDescription = description %}
+    {% include "head.njk" %}
+  </head>
+  <body>
+    <div class="text-grey5 text-bodyS md:text-bodyM bg-slate-100 min-h-screen flex flex-col">
+      {% include "header.njk" %}
+
+      <main class="container flex-grow">
+        <div class="min-h-[calc(75vh-4rem)] py-8 flex items-center">
+          <div class="">
+            <h1 class="mb-3 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
+
+            <div class="text-bodyM md:text-bodyXL">
+              {{ content | safe }}
+            </div>
+          </div>
+        </div>
+
+        <div id="projects" class="pb-16 md:pb-[7.5rem] lg:pb-40 ">
+          <h2 class="mb-8 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">Projects</h2>
+
+          {% include "projects.njk" %}
+        </div>
+      </main>
+
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>
