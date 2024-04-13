@@ -1,32 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% set metaDescription = description %}
-    {% include "head.njk" %}
-  </head>
-  <body>
-    <div class="text-grey5 text-bodyS md:text-bodyM bg-slate-100 min-h-screen flex flex-col">
-      {% include "header.njk" %}
-
-      <main class="container flex-grow">
-        <div class="min-h-[calc(75vh-4rem)] py-8 flex items-center">
-          <div class="">
-            <h1 class="mb-3 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
-
-            <div class="text-bodyM md:text-bodyXL">
-              {{ content | safe }}
-            </div>
-          </div>
+{% extends "layout-base.njk" %}
+{% block main %}
+  <main class="container flex-grow">
+    <div class="min-h-[calc(75vh-4rem)] py-8 flex items-center">
+      <div class="">
+        <h1 class="mb-3 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
+        <div class="text-bodyM md:text-bodyXL">
+          {{ content | safe }}
         </div>
-
-        <div id="projects" class="pb-16 md:pb-[7.5rem] lg:pb-40 ">
-          <h2 class="mb-8 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">Projects</h2>
-
-          {% include "projects.njk" %}
-        </div>
-      </main>
-
-      {% include "footer.njk" %}
+      </div>
     </div>
-  </body>
-</html>
+    <div id="projects" class="pb-16 md:pb-[7.5rem] lg:pb-40">
+      <h2 class="mb-8 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">Projects</h2>
+      <div class="grid gap-20 grid-cols-1">
+        {% for project in collections.projects %}
+          <a href="{{ project.url }}" class="group">
+            <div class="mb-4 md:mb-8 overflow-hidden">
+              <img src="{{ project.data.imgSrc }}" class="object-cover w-full aspect-square md:aspect-[696/540] lg:aspect-[1200/540] group-hover:scale-110 transition-all ease-out duration-300" alt="Illustration of {{ project.data.title }}" style="view-transition-name: project-image-{{ project.data.index }}"/>
+            </div>
+            <div class="flex flex-col justify-between items-start">
+              <div class="max-w-[793px]">
+                <h3 class="mb-4 text-grey6 font-sans-heading text-hS md:text-hM">{{ project.data.title }}</h3>
+                <p class="text-bodyS md:text-bodyL">{{ project.data.description }}</p>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </main>
+{% endblock %}

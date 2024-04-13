@@ -1,7 +1,7 @@
 ---
 layout: layout-about.njk
 title: About Me
-imgSrc: https://github.com/haiarha/em-per.github.io/assets/28811614/4062ee02-c444-4290-9458-08a2fc877d23
+imgSrc: /assets/images/project-image-fallback.jpeg
 cvUrl: https://www.ucl.ac.uk/careers/sites/careers/files/your_cv_ucg.pdf
 ---
 
