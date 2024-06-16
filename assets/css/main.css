@@ -1151,6 +1151,10 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
