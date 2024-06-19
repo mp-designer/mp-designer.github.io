@@ -1,7 +1,7 @@
 ---
 title: QR menu 
 description: Coming soon
-imgSrc: https://github.com/mp-designer/mp-designer.github.io/assets/163604385/a4f0cbe3-66a8-4ac7-b578-4e39163af55b
+imgSrc: https://github.com/mp-designer/mp-designer.github.io/assets/163604385/75567688-4482-4180-bf27-e663120c28f4
 keywords:
   - Product design
   - UX design
