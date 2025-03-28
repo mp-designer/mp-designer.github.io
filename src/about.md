@@ -2,7 +2,8 @@
 layout: layout-about.njk
 title: About Me
 imgSrc: https://github.com/mp-designer/mp-designer.github.io/assets/163604385/b7baf736-8248-43a3-87f7-d13bbcf7641b
-cvUrl: https://github.com/user-attachments/files/16782012/CV_Product.designer_PerevalovaMNEW_compressed.pdf
+cvUrl: https://github.com/user-attachments/files/19511337/CV_Product-designer_PerevalovaM.pdf)
+
 ---
 
 Hi, I'm Marharyta Perevalova, or simply Margo. I'm a UX designer from Ukraine.
