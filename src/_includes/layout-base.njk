@@ -18,15 +18,16 @@
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
+    <a href="#maincontent" class="skip-link" role="link" aria-label="Skip directly to main content">
+      Skip to Main Content
+    </a>
     <div class="text-grey5 text-bodyS md:text-bodyM bg-slate-100 min-h-screen flex flex-col">
       {% include "header.njk" %}
-
       {% block main %}
-        <main class="container flex-grow">
+        <main id="maincontent" class="container flex-grow">
           {{ content | safe }}
         </main>
       {% endblock %}
-
       {% include "footer.njk" %}
     </div>
   </body>

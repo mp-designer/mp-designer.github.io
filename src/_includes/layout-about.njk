@@ -1,12 +1,12 @@
 {% extends "layout-base.njk" %}
 {% from "components/button.njk" import button %}
 {% block main %}
-  <main class="container flex-grow">
+  <main id="maincontent" class="container flex-grow">
     <div class="pt-6 pb-16 md:pt-20 md:pb-[7.5rem] lg:pb-40 grid grid-cols-1 lg:grid-cols-[24rem_auto] gap-6">
       <div class="">
         <h1 class="mb-10 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
         <div class="overflow-hidden rounded-[50%] w-full max-w-[25rem] md:max-w-[19.0625rem] aspect-square">
-          <img src="{{ imgSrc }}" class="w-full h-full object-cover"/>
+          <img src="{{ imgSrc }}" alt="Photo of {{ global.fullName }}" class="w-full h-full object-cover"/>
         </div>
       </div>
       <div>
@@ -16,7 +16,8 @@
         {{ button(tag="a", variant="secondary", iconBefore="/assets/icons/download-24px.svg", attrs={
           href: cvUrl,
           target: "_blank",
-          download: "cv"
+          download: "cv",
+          "aria-label": "Download my Curriculum Vitae in PDF format"
         }, text="Download CV" ) }}
       </div>
     </div>
