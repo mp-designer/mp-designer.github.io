@@ -20,12 +20,12 @@ meta:
 
 ## Context and Problem
 
-When relocating to Portugal, I encountered a surprisingly common friction point: difficulty ordering food in local restaurants.
+When relocating to Portugal, I encountered a surprisingly common friction point: **difficulty ordering food in local restaurants.**
 Many places lacked printed menus or had menus written in handwritten Portuguese on blackboards — unintelligible to non-locals.
 This created friction for:
 
 * **Customers:** due to language barriers, lack of photos, and regional dish names.
-* **Restaurants:** due to time-consuming interactions, fewer international clients, difficulties to serve foreign customers, and inconsistent ways to share menu updates.
+* **Restaurants:** due to time-consuming interactions, difficulties to serve foreign customers, and inconsistent ways to share menu updates.
 
 ## Goals
 
@@ -46,65 +46,58 @@ Explored 6 major global QR menu systems and ~10 Portuguese solutions.
 
 ### User Interviews: Restaurant Owners
 
-10+ interviews with small-to-medium business owners.
+10+ interviews with small-to-medium business owners gave me valuable findings.
 
-#### Key insights
-
-##### 1. Work Habits & Tools
+#### 1. Work Habits & Tools
 
 * Most restaurant owners use laptops, not mobile, for operations.
 * Workflow focus: optimization of accounting, procurement, inventory, CRM, business processes.
 
-##### 2. Customer-Facing Needs
+#### 2. Customer-Facing Needs
 
 * Owners want to combine physical + digital menus — clients prefer having both.
 * Frequent menu changes common in bars, food trucks, catering — flexibility is essential.
 * Language is a pain point — English menus needed, but staff often struggle to explain in English.
-* Clients frequently ask:
-  * For dish recommendations
-  * For ingredients
-  * For portion sizes
+* Clients frequently ask for: dish recommendations, ingredients and portion sizes.
 
-##### 3. Client Demographics
+#### 3. Client Demographics
 
-* Most frequent customers: ages 26–35 (avg. 36.5)
-* Owners: mostly 30–40 y.o.
+* Most frequent customers: ages 26–35 (average 36.5 years old)
+* Owners: mostly 30–40 years old.
 
-##### 4. Marketing & Promotion
+#### 4. Marketing & Promotion
 
 * Owners actively use social media for promotion.
 
-##### 5. Product Requirements
+#### 5. Product Requirements
 
 * Highlight fresh desserts, dish rating, and “out of stock” indicator
 * Enable online payment
 * For food trucks: allow location changes
 
-##### 6. Pricing Expectations
+#### 6. Pricing Expectations
 
 * Owners are open to free plans or pricing under 10€/month
 
 ### User Interviews: Diners (Local & Foreign)
 
-15+ interviews with people who frequently eat out at restaurants, cafes, and bars.
+15+ interviews with people who frequently eat out at restaurants, cafes, and bars helped to define key moments.
 
-#### Key Insights
-
-##### 1. Language & Communication Barriers
+#### 1. Language & Communication Barriers
 * Foreigners struggle to order food in traditional restaurants.
 * Waiters often don’t speak English.
 * Dish names are unclear or too traditional.
 * Clients don’t know if a restaurant has what they want if they don’t speak the language.
 
-##### 2. Cognitive Load & Choice Paralysis
+#### 2. Cognitive Load & Choice Paralysis
 * Menus with only names take a long time to understand (even if client knows Portuguese).
 * Portion size expectations don’t match (one-person dish ends up being for 3–4, or vice versa).
 
-##### 3. Information Gaps
+#### 3. Information Gaps
 * Missing ingredient lists make it hard to ask waiters for clarification.
 * Dish photos significantly help decision-making (especially for sushi).
 
-##### 4. Operational Issues
+#### 4. Operational Issues
 * Many local restaurants accept only cash.
 * People resort to fast food chains with kiosks or pictures when overwhelmed.
 
@@ -115,10 +108,6 @@ Explored 6 major global QR menu systems and ~10 Portuguese solutions.
 
 ## Job Stories
 Based on user interviews, I transformed core pain points into structured job stories, which guided the definition of essential product features and flows.
-
-_"When I'm setting up the dining experience, 
-I want to offer both digital and physical menus, 
-so my clients can choose what they’re more comfortable with and I don’t lose tech-averse customers."_
 
 _"When I update my menu frequently (e.g. new drinks or ingredients), 
 I want a fast way to change it digitally, 
@@ -132,57 +121,25 @@ _"When a customer is choosing a dish,
 I want the digital menu to show portion size, ingredients, and staff picks, 
 so I can reduce questions and speed up service."_
 
-_"When I move my food truck to a new location, 
-I want to update the address in my menu/app quickly, 
-so customers can always find me."_
-
-_"When I’m considering a new tool for my restaurant, 
-I want a free or affordable version, 
-so I can test it without financial risk."_
-
-_"When I post on social media, 
-I want to link or embed my menu, 
-so customers can immediately check what’s available."_
-
 _"When I'm dining in a foreign country and can’t speak the local language, 
 I want the menu to be available in English with clear dish descriptions, 
 so I can confidently place an order without needing help from staff."_
- 
-_"When I’m trying to communicate with a waiter who doesn’t speak English,
- I want to rely on a digital menu with multilingual support,
- so I avoid misunderstandings and feel more welcome."_
  
 _"When I'm unfamiliar with the local cuisine,
  I want to see pictures of each dish,
  so I can decide based on appearance and avoid surprises."_
  
-_"When I don't understand a dish name or description,
- I want to select my order based on clear visuals,
- so I can still make an informed choice."_
- 
 _"When the menu uses only traditional or regional names,
  I want short explanations or ingredient lists,
  so I can quickly understand what the dish contains."_
  
-_"When a menu is long and filled with unfamiliar items,
-I want quick filters or highlights (e.g., chef’s picks, vegetarian, spicy),
-so I can shorten decision time and reduce decision fatigue."_
- 
 _"When I’m browsing the menu,
 I want to see a list of key ingredients for each dish,
 so I can avoid allergens, unwanted ingredients, or meat if I’m vegetarian."_
- 
-_"When I’m at a restaurant,
-I want to know upfront whether I can pay by card or digitally,
-so I don’t face inconvenience or embarrassment when it’s time to pay."_
 
 _"When I'm choosing a dish,
 I want to know if it’s meant for sharing or is an individual portion,
 so I don’t overorder or waste food."_
-
-_"When I’m reviewing the menu,
-I want an easy way to search or filter by dish type or ingredient,
-so I can quickly find what I want without scanning every item."_
 
 ## Market Insights
 * about 42,000 potential establishments in Portugal
@@ -199,7 +156,7 @@ so I can quickly find what I want without scanning every item."_
 
 ### MVP Prioritization
 #### Client View:
-* Browse by filters (vegan, spicy)
+* Browse by filters (categories and food preferencies, e.g. vegan, spicy)
 * Photos, ingredients, portion sizing
 * Cafe location/contact integration
 
