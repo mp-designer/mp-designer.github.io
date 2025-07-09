@@ -16,16 +16,18 @@ meta:
 ---
 ## Project Overview
 
-**QR Menu** is a lightweight digital menu and CMS system designed for small restaurants and cafés. It helps customers browse menus visually with translations and filters, while giving business owners a simple tool to update dishes, manage info, and share menus via QR codes — all without needing tech expertise.
+QR Menu is a lightweight digital menu and CMS system designed for small restaurants and cafés. It helps customers browse menus visually with translations and filters, while giving business owners a simple tool to update dishes, manage info, and share menus via QR codes — all without needing tech expertise.
 
 ## Context and Problem
 
-When relocating to Portugal, I encountered a surprisingly common friction point: **difficulty ordering food in local restaurants.**
-Many places lacked printed menus or had menus written in handwritten Portuguese on blackboards — unintelligible to non-locals.
+Upon moving to Portugal, I noticed a recurring issue: ordering food at local restaurants was challenging for non-locals. Many establishments used handwritten Portuguese menus on blackboards, which were difficult to decipher, or lacked menus entirely, requiring verbal communication to understand offerings.
+
 This created friction for:
 
-* **Customers:** due to language barriers, lack of photos, and regional dish names.
-* **Restaurants:** due to time-consuming interactions, difficulties to serve foreign customers, and inconsistent ways to share menu updates.
+* **Customers:** Language barriers, unfamiliar regional dish names, and lack of visual references made ordering difficult.
+* **Restaurants:** Staff spent excessive time explaining menus, struggled to serve foreign customers efficiently, and faced challenges in consistently updating and sharing menu information.
+
+[menu pictures]
 
 ## Goals
 
@@ -37,12 +39,18 @@ To design a dual-sided system serving both restaurant owners/managers and custom
 
 ### Competitive Analysis
 
-Explored 6 major global QR menu systems and ~10 Portuguese solutions.
+Explored 6 major global QR menu systems and about 10 Portuguese solutions.
 
 #### Key findings:
 1. Global apps were more polished, but often overbuilt or too expensive for local use.
 2. Portuguese offerings were underdesigned, mostly PDFs behind QR codes, with negligible traffic (≤200 users).
-3. **Gap:** no local, lightweight, freemium SaaS menu editor with native usability and mobile-first CMS.
+3. **Gap:** no local, lightweight, cheap SaaS menu editor with native usability and mobile-first CMS.
+
+### Brainstorm
+
+Prior to conducting in-depth interviews, our small team held a brainstorming session to explore potential features and strategies for scaling the QR menu product.
+
+![Brainstorm](https://github.com/user-attachments/assets/ffa5f238-93c8-4d86-bc21-3e67f771f461)
 
 ### User Interviews: Restaurant Owners
 
@@ -102,9 +110,24 @@ Explored 6 major global QR menu systems and ~10 Portuguese solutions.
 * People resort to fast food chains with kiosks or pictures when overwhelmed.
 
 ## Personas & Target Groups
-**Carlos, 38 years** – café manager in Porto; wants to minimize staff-client friction
-**Elena, 34 years** – food truck owner; needs agile menu changes and analytics
-**Ravi, 29 years** – tourist from India; prefers ordering visually without language friction
+
+### Maria, 45 years old
+Maria owns a traditional Portuguese restaurant in Coimbra. She's looking to modernize her restaurant's operations without losing its traditional charm. 
+Maria needs a user-friendly QR menu solution that can handle multiple languages and easily showcase her traditional Portuguese dishes.
+
+![User Persona - Maria Silva](https://github.com/user-attachments/assets/94f25693-5467-44de-a047-e8d623b181e1)
+
+### Sophie, 34 years old 
+Sophie runs a French-inspired food truck that moves around Lisbon. She requires a highly flexible QR menu system that can quickly update based on location and daily specials. 
+Sophie's ideal solution would integrate with social media, allow for real-time updates on sold-out items, and support customer pre-orders.
+
+![User Persona - Sophie Dubois](https://github.com/user-attachments/assets/e3c212cb-5bcd-4d86-90d1-459c849c0013)
+
+### Alex, 29 years old
+Alex is a freelance graphic designer and travel blogger exploring local cuisines globally. 
+Tech-savvy and health-conscious, he need a multilingual QR menu with clear photos, ingredient lists, and dietary tags to confidently order authentic dishes without language barriers or surprises.
+
+![User Persona - Alex Kowalski](https://github.com/user-attachments/assets/ed80e55b-56b9-4bbd-b157-d832d0171efa)
 
 ## Job Stories
 Based on user interviews, I transformed core pain points into structured job stories, which guided the definition of essential product features and flows.
@@ -141,34 +164,47 @@ _"When I'm choosing a dish,
 I want to know if it’s meant for sharing or is an individual portion,
 so I don’t overorder or waste food."_
 
+[carousel with pictures]
+
 ## Market Insights
-* about 42,000 potential establishments in Portugal
-* 66% of global restaurants already use some form of QR menus
-* Potential market volume: up to 1.2M €/mo
-* Realistic paid users after first year: about 140 users
-* Realistic market volume: from 8,400 up to 25,200 €/year
-* Viable entry point through freemium + paid upgrades
+About 42,000 potential establishments in Portugal
+66% of global restaurants already use some form of QR menus
+Potential market volume: up to 1.2M €/mo
+Realistic paid users after first year: about 140 users
+Realistic market volume: from 8,400 up to 25,200 €/year
+Viable entry point through freemium + paid upgrades
 
 ## Design Approach & MVP Scope
+
 ### Concept Ideation
-**Client-side:** mobile-friendly web menu, filters, dish visuals, and dish info
-**Admin-side (CMS):** simple category & position editor, QR generator, rush hour analytics
+
+**Client-side:** mobile-friendly web menu, filters, dish visuals, and dish info.
+**Admin-side (CMS):** simple category & position editor, QR generator, rush hour analytics.
 
 ### MVP Prioritization
+
 #### Client View:
-* Browse by filters (categories and food preferencies, e.g. vegan, spicy)
-* Photos, ingredients, portion sizing
-* Cafe location/contact integration
+1. Browse by filters (categories and food preferencies, e.g. vegan, spicy)
+2. Photos, ingredients, portion sizing
+3. Cafe location/contact integration
+
+[Client side design picture]
+[Client side design picture]
+[UI KIT picture]
 
 #### Admin CMS:
-* Menu builder with drag-and-drop dish editor
-* QR code generation for download/print
-* Analytics: scans per day/hour, dish views
+1. Menu builder with drag-and-drop dish editor
+2. QR code generation for download/print
+3. Analytics: scans per day/hour, dish views
+
+[CMS design picture]
+[CMS design picture]
+[UI KIT picture]
 
 ## Validation Activities
 * Clickable prototype shared with café owners in Viseu
 * Collected qualitative feedback + pricing expectations
-* All were interested in using a free tier; ~30% expressed willingness to pay
+* All were interested in using a free tier; about 30% expressed willingness to pay
 * Gathered contacts for early access beta
 
 ## Pause & Strategic Pivot
@@ -180,13 +216,13 @@ Despite promising feedback, we made a deliberate decision to pause.
 * Further investment would’ve required deeper integration (e.g., POS, orders, payments)
 
 ## What We Learned:
-* Align MVP scope to monetization model from the start
-* Free tier must either drive fast adoption or build up-sell potential
-* Initial retention and engagement features matter more than surface UX polish
-* Research-backed insight and demand do not always equal execution readiness
+1. Align MVP scope to monetization model from the start
+2. Free tier must either drive fast adoption or build up-sell potential
+3. Initial retention and engagement features matter more than surface UX polish
+4. Research-backed insight and demand do not always equal execution readiness
 
 ## Next Steps 
-* We’ve outlined a v2 roadmap that can re-engage:
-* Micro-monetization hooks: e.g., branded templates, analytics insights, social integrations
-* Extended features: ordering, multilingual auto-translation, loyalty tools
-* Community and AI-powered menu copywriting to reduce restaurant owner friction
+We’ve outlined a v2 roadmap that can re-engage:
+1. **Micro-monetization hooks:** e.g., branded templates, analytics insights, social integrations
+2. **Extended features:** ordering, multilingual auto-translation, loyalty tools, online payment, dish characteristics
+3. Community and AI-powered menu copywriting to reduce restaurant owner friction
