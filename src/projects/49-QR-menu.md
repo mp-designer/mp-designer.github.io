@@ -1,7 +1,7 @@
 ---
 title: QR menu 
 description: QR Menu is a lightweight digital menu and CMS system designed for small restaurants and cafés.
-imgSrc: https://github.com/user-attachments/assets/e8083255-dbb4-4843-84c3-afffba96be1e
+imgSrc: https://github.com/user-attachments/assets/2b289149-7792-41ab-9d32-b2e136523785
 keywords:
   - Product design
   - UX design
