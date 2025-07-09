@@ -109,7 +109,7 @@ Prior to conducting in-depth interviews, our small team held a brainstorming ses
 * Many local restaurants accept only cash.
 * People resort to fast food chains with kiosks or pictures when overwhelmed.
 
-## Personas & Target Groups
+## Personas
 
 ### Maria, 45 years old
 Maria owns a traditional Portuguese restaurant in Coimbra. She's looking to modernize her restaurant's operations without losing its traditional charm. 
@@ -125,7 +125,7 @@ Sophie's ideal solution would integrate with social media, allow for real-time u
 
 ### Alex, 29 years old
 Alex is a freelance graphic designer and travel blogger exploring local cuisines globally. 
-Tech-savvy and health-conscious, he need a multilingual QR menu with clear photos, ingredient lists, and dietary tags to confidently order authentic dishes without language barriers or surprises.
+Tech-savvy and health-conscious, he needs a multilingual QR menu with clear photos, ingredient lists, and dietary tags to confidently order authentic dishes without language barriers or surprises.
 
 ![User Persona - Alex Kowalski](https://github.com/user-attachments/assets/ed80e55b-56b9-4bbd-b157-d832d0171efa)
 
