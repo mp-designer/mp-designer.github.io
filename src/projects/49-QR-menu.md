@@ -27,13 +27,13 @@ This created friction for:
 * **Customers:** Language barriers, unfamiliar regional dish names, and lack of visual references made ordering difficult.
 * **Restaurants:** Staff spent excessive time explaining menus, struggled to serve foreign customers efficiently, and faced challenges in consistently updating and sharing menu information.
 
-[menu pictures]
-
 ## Goals
 
 To design a dual-sided system serving both restaurant owners/managers and customers:
 * **For customers:** easier dish discovery, less anxiety ordering, and clearer understanding of menu options.
 * **For restaurant owners:** quicker service flow, multilingual accessibility, easy content updates, and low-friction digital menu adoption.
+
+![mockuuups-e8q38jpydc8x3nuazyqwk9](https://github.com/user-attachments/assets/3e109dd7-c45c-4e51-ba3f-f91ed2b087c7)
 
 ## Research & Discovery
 
@@ -167,12 +167,12 @@ so I don’t overorder or waste food."_
 [carousel with pictures]
 
 ## Market Insights
-About 42,000 potential establishments in Portugal
-66% of global restaurants already use some form of QR menus
-Potential market volume: up to 1.2M €/mo
-Realistic paid users after first year: about 140 users
-Realistic market volume: from 8,400 up to 25,200 €/year
-Viable entry point through freemium + paid upgrades
+* About **42,000** potential establishments in Portugal
+* **66%** of global restaurants already use some form of QR menus
+* **Potential market volume:** up to 1.2M €/mo
+* **Realistic paid users after first year:** about 140 users
+* **Realistic market volume:** from 8,400 up to 25,200 €/year
+* Viable entry point through freemium + paid upgrades
 
 ## Design Approach & MVP Scope
 
@@ -188,14 +188,16 @@ Viable entry point through freemium + paid upgrades
 2. Photos, ingredients, portion sizing
 3. Cafe location/contact integration
 
-[Client side design picture]
-[Client side design picture]
-[UI KIT picture]
+![Wireframes](https://github.com/user-attachments/assets/5a55851a-2fe2-4d1a-bc51-3c113b29bc55)
+
+![QR MENU design](https://github.com/user-attachments/assets/40eaf73c-710d-47bb-be62-304710c17894)
 
 #### Admin CMS:
 1. Menu builder with drag-and-drop dish editor
 2. QR code generation for download/print
 3. Analytics: scans per day/hour, dish views
+
+![CMS design presentation](https://github.com/user-attachments/assets/7d236aa5-032f-47d5-8594-c76145ab1f39)
 
 [CMS design picture]
 [CMS design picture]
