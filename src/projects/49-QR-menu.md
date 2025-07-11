@@ -33,7 +33,8 @@ To design a dual-sided system serving both restaurant owners/managers and custom
 * **For customers:** easier dish discovery, less anxiety ordering, and clearer understanding of menu options.
 * **For restaurant owners:** quicker service flow, multilingual accessibility, easy content updates, and low-friction digital menu adoption.
 
-![mockuuups-e8q38jpydc8x3nuazyqwk9](https://github.com/user-attachments/assets/3e109dd7-c45c-4e51-ba3f-f91ed2b087c7)
+![QR menu on the table with coffee and pastel de nata](https://github.com/user-attachments/assets/95a76b7f-ef45-4a02-8fe1-114060bee169)
+
 
 ## Research & Discovery
 
@@ -197,7 +198,9 @@ so I don’t overorder or waste food."_
 2. QR code generation for download/print
 3. Analytics: scans per day/hour, dish views
 
-![CMS design presentation](https://github.com/user-attachments/assets/7d236aa5-032f-47d5-8594-c76145ab1f39)
+![CMS design presentation2](https://github.com/user-attachments/assets/e2fcf64f-2257-4d90-be93-745f48edf66b)
+![QR MENU Admin presentation4](https://github.com/user-attachments/assets/119bb9e1-8c43-4afe-ad74-1ade9ee8bfe5)
+
 
 [CMS design picture]
 [CMS design picture]
