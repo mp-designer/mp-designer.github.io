@@ -61,6 +61,22 @@ module.exports = {
           fontWeight: "500",
         },
       ],
+      hXS: [
+        "1.25rem",
+        {
+          lineHeight: "1.4em",
+          letterSpacing: "0.02em",
+          fontWeight: "500",
+        },
+      ],
+      h2XS: [
+        "1.125rem",
+        {
+          lineHeight: "1.4em",
+          letterSpacing: "0.02em",
+          fontWeight: "500",
+        },
+      ],
       element: [
         "1.125rem",
         {
