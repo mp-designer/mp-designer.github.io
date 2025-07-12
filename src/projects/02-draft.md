@@ -17,6 +17,12 @@ meta:
 
 https://www.markdownguide.org/cheat-sheet/
 
+### Heading (h3)
+
+#### Heading (h4)
+
+##### Heading (h5)
+
 ### Basic text:
 
 **Bold**

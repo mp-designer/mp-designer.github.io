@@ -7,10 +7,10 @@ const headingClassesMap = {
   h1: "mb-8 text-grey6 font-sans-heading text-hL md:text-hXL",
   h2: "mb-4 mt-14 md:mt-20 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase",
   h3: "mb-[0.875rem] md:mb-4 mt-8 md:mt-10 text-grey6 font-sans-heading text-hS md:text-hM",
+  h4: "my-3 text-grey6 font-sans-heading text-hXS md:text-hS",
+  h5: "my-2 text-grey6 font-sans-heading text-h2XS md:text-hXS",
   // most likely unused
-  h4: "my-3 text-grey6 font-sans-heading text-hS",
-  h5: "my-2 text-grey6 font-sans-heading text-hS",
-  h6: "my-1 text-grey6 font-sans-heading text-hS",
+  h6: "my-1 text-grey6 font-sans-heading text-h2XS",
 };
 const maxWidthClass = "max-w-[793px] mx-auto";
 

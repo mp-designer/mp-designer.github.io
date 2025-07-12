@@ -1,4 +1,5 @@
 ---
+permalink: /projects/example/index.html
 title: Example project
 description: Example project description
 imgSrc: /assets/images/project-image-fallback.jpeg
