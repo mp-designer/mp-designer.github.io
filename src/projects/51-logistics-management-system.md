@@ -1,4 +1,5 @@
 ---
+permalink: /projects/logistics-management-system
 title: Logistics Management System
 description: A centralized web platform for the logistics department, featuring an inventory database, transparent employee workflows, a ticketing system, and equipment location tracking.
 imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/be798141-6f79-465f-84e6-ef19da050d31

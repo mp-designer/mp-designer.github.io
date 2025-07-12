@@ -1,4 +1,5 @@
 ---
+permalink: /projects/mining-service-ecosystem
 title: Mining Service Ecosystem
 description: A complex innovation ecosystem for efficient mining including industrial mining infrastructure, repair shop chain and professional mining equipment marketplace.
 imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/f79ec3bf-abcb-4ca5-bdf5-cf3d2640a0f6
