@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% if isDraft %}
+      <meta name="robots" content="index, nofollow">
+    {% endif %}
     <title>{{ title + " | " + global.siteTitle if title else global.siteTitle }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

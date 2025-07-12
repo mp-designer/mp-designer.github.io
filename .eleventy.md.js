@@ -12,7 +12,7 @@ const headingClassesMap = {
   h5: "my-2 text-grey6 font-sans-heading text-hS",
   h6: "my-1 text-grey6 font-sans-heading text-hS",
 };
-const maxWidthClass = "max-w-[793px] mx-auto"
+const maxWidthClass = "max-w-[793px] mx-auto";
 
 let md = markdownIt({
   html: true,
@@ -26,25 +26,29 @@ let md = markdownIt({
 // });
 
 // Add a custom plugin to add classes to headings
-md.renderer.rules.heading_open = function (
-  tokens,
-  idx,
-  options,
-  env,
-  self
-) {
+md.renderer.rules.heading_open = function (tokens, idx, options, env, self) {
   const token = tokens[idx];
   // Add a class based on the heading level
   if (headingClassesMap[token.tag]) {
-    token.attrSet("class", `md ${headingClassesMap[token.tag]} ${maxWidthClass}`);
+    token.attrSet(
+      "class",
+      `md ${headingClassesMap[token.tag]} ${maxWidthClass}`
+    );
   }
 
   return self.renderToken(tokens, idx, options);
 };
-md.renderer.rules.paragraph_open = (tokens, idx, options, env, self) => `<p class="md mb-[0.875rem] ${maxWidthClass}">`;
-md.renderer.rules.image_open = (tokens, idx, options, env, self) => `<img class="md mb-20 w-full">`;
-md.renderer.rules.bullet_list_open = (tokens, idx, options, env, self) => `<ul class="md pl-8 list-disc ${maxWidthClass}">`;
-md.renderer.rules.ordered_list_open = (tokens, idx, options, env, self) => `<ol class="md pl-8 list-decimal ${maxWidthClass}">`;
-md.renderer.rules.link_open = (tokens, idx, options, env, self) => `<a class="md cursor-pointer hover:underline">`;
+md.renderer.rules.paragraph_open = (tokens, idx, options, env, self) =>
+  `<p class="md mb-[0.875rem] ${maxWidthClass}">`;
+md.renderer.rules.image_open = (tokens, idx, options, env, self) =>
+  `<img class="md mb-20 w-full">`;
+md.renderer.rules.bullet_list_open = (tokens, idx, options, env, self) =>
+  `<ul class="md pl-8 list-disc ${maxWidthClass}">`;
+md.renderer.rules.ordered_list_open = (tokens, idx, options, env, self) =>
+  `<ol class="md pl-8 list-decimal ${maxWidthClass}">`;
+md.renderer.rules.link_open = (tokens, idx, options, env, self) =>
+  `<a class="md cursor-pointer hover:underline">`;
+md.renderer.rules.table_open = (tokens, idx, options, env, self) =>
+  `<table class="md mb-[0.875rem] w-full ${maxWidthClass}">`;
 
 module.exports = md;
