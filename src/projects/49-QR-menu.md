@@ -48,12 +48,13 @@ Explored 6 major global QR menu systems and about 10 Portuguese solutions.
 2. Portuguese offerings were underdesigned, mostly PDFs behind QR codes, with negligible traffic (≤200 users).
 3. **Gap:** no local, lightweight, cheap SaaS menu editor with native usability and mobile-first CMS.
 
+<!--
 ### Brainstorm
 
 Prior to conducting in-depth interviews, our small team held a brainstorming session to explore potential features and strategies for scaling the QR menu product.
 
 ![Brainstorm](https://github.com/user-attachments/assets/ffa5f238-93c8-4d86-bc21-3e67f771f461)
-
+-->
 ### User Interviews: Restaurant Owners
 
 10+ interviews with small-to-medium business owners gave me valuable findings.
@@ -131,7 +132,7 @@ Tech-savvy and health-conscious, he needs a multilingual QR menu with clear phot
 
 ![User Persona - Alex Kowalski](https://github.com/user-attachments/assets/ed80e55b-56b9-4bbd-b157-d832d0171efa)
 
-## Job Stories
+<!--## Job Stories
 Based on user interviews, I transformed core pain points into structured job stories, which guided the definition of essential product features and flows.
 
 _"When I update my menu frequently (e.g. new drinks or ingredients), 
@@ -166,7 +167,7 @@ _"When I'm choosing a dish,
 I want to know if it’s meant for sharing or is an individual portion,
 so I don’t overorder or waste food."_
 
-[carousel with pictures]
+[carousel with pictures]-->
 
 ## Market Insights
 * About **42,000** potential establishments in Portugal
@@ -191,7 +192,6 @@ so I don’t overorder or waste food."_
 3. Cafe location/contact integration
 
 ![Wireframes](https://github.com/user-attachments/assets/5a55851a-2fe2-4d1a-bc51-3c113b29bc55)
-
 ![QR MENU design](https://github.com/user-attachments/assets/40eaf73c-710d-47bb-be62-304710c17894)
 
 #### Admin CMS:
@@ -201,7 +201,6 @@ so I don’t overorder or waste food."_
 
 ![CMS design presentation2](https://github.com/user-attachments/assets/e2fcf64f-2257-4d90-be93-745f48edf66b)
 ![QR MENU Admin presentation4](https://github.com/user-attachments/assets/119bb9e1-8c43-4afe-ad74-1ade9ee8bfe5)
-
 
 [CMS design picture]
 [CMS design picture]
