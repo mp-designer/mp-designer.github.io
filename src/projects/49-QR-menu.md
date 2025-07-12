@@ -1,5 +1,5 @@
 ---
-permalink: /projects/QR-menu
+permalink: /projects/QR-menu/index.html
 title: QR menu 
 description: QR Menu is a lightweight digital menu and CMS system designed for small restaurants and cafés.
 imgSrc: https://github.com/user-attachments/assets/2b289149-7792-41ab-9d32-b2e136523785
