@@ -8,6 +8,10 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KMXTST5M');</script>
     <!-- End Google Tag Manager -->
+
+    {% if isDraft %}
+      <meta name="robots" content="noindex, nofollow">
+    {% endif %}
     <title>{{ title + " | " + global.siteTitle if title else global.siteTitle }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

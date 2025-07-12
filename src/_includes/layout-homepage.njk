@@ -2,20 +2,27 @@
 {% block main %}
   <main id="maincontent" class="container flex-grow">
     <div class="min-h-[calc(75vh-4rem)] py-8 flex items-center">
-      <div class="">
-        <h1 class="mb-3 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
-        <div class="text-bodyM md:text-bodyXL">
-          {{ content | safe }}
+      <div class="grid grid-cols-1 lg:grid-cols-[19rem_auto] gap-9">
+        <div>
+          <div class="overflow-hidden rounded-[50%] w-full max-w-[25rem] md:max-w-[19.0625rem] aspect-square">
+            <img src="{{ imgSrc }}" alt="Photo of {{ global.fullName }}" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <h1 class="mb-3 text-grey6 font-sans-heading text-hL md:text-hXL uppercase">{{ title }}</h1>
+          <div class="text-bodyM md:text-bodyXL">
+            {{ content | safe }}
+          </div>
         </div>
       </div>
     </div>
     <div id="projects" class="pb-16 md:pb-[7.5rem] lg:pb-40">
       <h2 class="mb-8 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">Projects</h2>
-      <div class="grid gap-20 grid-cols-1">
+      <div class="grid gap-y-20 gap-x-10 grid-cols-1 lg:grid-cols-2">
         {% for project in collections.projects %}
           <a href="{{ project.url }}" class="group">
-            <div class="mb-4 md:mb-8 overflow-hidden">
-              <img src="{{ project.data.imgSrc }}" class="object-cover w-full aspect-square md:aspect-[696/540] lg:aspect-[1200/540] group-hover:scale-110 transition-all ease-out duration-300" alt="Illustration of {{ project.data.title }}" style="view-transition-name: project-image-{{ project.data.index }}"/>
+            <div class="mb-4 md:mb-8 overflow-hidden rounded-2xl">
+              <img src="{{ project.data.imgSrc }}" class="object-cover w-full aspect-square md:aspect-[696/540] lg:aspect-[560/540] group-hover:scale-110 transition-all ease-out duration-300" alt="Illustration of {{ project.data.title }}" style="view-transition-name: project-image-{{ project.data.index }}"/>
             </div>
             <div class="flex flex-col justify-between items-start">
               <div class="max-w-[793px]">
