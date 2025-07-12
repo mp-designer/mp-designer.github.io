@@ -1088,6 +1088,13 @@ video {
   font-weight: 400;
 }
 
+.text-h2XS {
+  font-size: 1.125rem;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
 .text-hL {
   font-size: 2rem;
   line-height: 1.4em;
@@ -1097,6 +1104,13 @@ video {
 
 .text-hS {
   font-size: 1.5rem;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.text-hXS {
+  font-size: 1.25rem;
   line-height: 1.4em;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -1423,11 +1437,25 @@ p.md:has(img, picture, video, iframe) {
     font-weight: 500;
   }
 
+  .md\:text-hS {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+
   .md\:text-hXL {
     font-size: 3.75rem;
     line-height: 1.4em;
     letter-spacing: 0.02em;
     font-weight: 700;
+  }
+
+  .md\:text-hXS {
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+    font-weight: 500;
   }
 }
 

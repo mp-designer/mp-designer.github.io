@@ -637,6 +637,9 @@
     <div class="container _project-content mb-16 md:mb-[7.5rem]">
       <h2 class="md mb-4 mt-14 md:mt-20 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase max-w-[793px] mx-auto">See cheat sheet</h2>
 <p class="md mb-[0.875rem] max-w-[793px] mx-auto"><a class="md cursor-pointer hover:underline">https://www.markdownguide.org/cheat-sheet/</a></p>
+<h3 class="md mb-[0.875rem] md:mb-4 mt-8 md:mt-10 text-grey6 font-sans-heading text-hS md:text-hM max-w-[793px] mx-auto">Heading (h3)</h3>
+<h4 class="md my-3 text-grey6 font-sans-heading text-hXS md:text-hS max-w-[793px] mx-auto">Heading (h4)</h4>
+<h5 class="md my-2 text-grey6 font-sans-heading text-h2XS md:text-hXS max-w-[793px] mx-auto">Heading (h5)</h5>
 <h3 class="md mb-[0.875rem] md:mb-4 mt-8 md:mt-10 text-grey6 font-sans-heading text-hS md:text-hM max-w-[793px] mx-auto">Basic text:</h3>
 <p class="md mb-[0.875rem] max-w-[793px] mx-auto"><strong>Bold</strong></p>
 <p class="md mb-[0.875rem] max-w-[793px] mx-auto"><em>Italic</em></p>
