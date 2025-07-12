@@ -4,4 +4,6 @@ title: Hi, I'm Margo.
 imgSrc: /assets/images/project-image-fallback.jpeg
 ---
 
-UX/UI designer | Product designer, based in Lisbon, Portugal. Welcome to my portfolio.
+Product Designer and Accessibility Enthusiast 
+based in Viseu, Portugal. 
+Welcome to my portfolio.
