@@ -181,30 +181,29 @@ so I don’t overorder or waste food."_
 
 ### Concept Ideation
 
-**Client-side:** mobile-friendly web menu, filters, dish visuals, and dish info.
-**Admin-side (CMS):** simple category & position editor, QR generator, rush hour analytics.
+According to research it was clear that we need to create front office – mobile web menu representation for customers, and backoffice – CMS (Content Management System) for managers to create and edit information about menu positions and restaurant itself. To speed up the prototyping process and streamline CMS implementation, I decided to use the MUI React component library.
 
 ### MVP Prioritization
 
-#### Client View:
-1. Browse by filters (categories and food preferencies, e.g. vegan, spicy)
+After prioritizing the full feature scope, we defined the core minimal functionality needed to validate the concept.
+
+#### Front office (for customers):
+1. Browse by filters (categories and food preferencies, e.g. vegetarian, spicy)
 2. Photos, ingredients, portion sizing
 3. Cafe location/contact integration
 
 ![Wireframes](https://github.com/user-attachments/assets/5a55851a-2fe2-4d1a-bc51-3c113b29bc55)
-![QR MENU design](https://github.com/user-attachments/assets/40eaf73c-710d-47bb-be62-304710c17894)
+![QR MENU front office](https://github.com/user-attachments/assets/d92ac0ce-99bc-421b-acd9-7ad1a3f913f4)
 
-#### Admin CMS:
+
+#### Back office CMS (for restaurant managers):
 1. Menu builder with drag-and-drop dish editor
 2. QR code generation for download/print
 3. Analytics: scans per day/hour, dish views
 
-![CMS design presentation2](https://github.com/user-attachments/assets/e2fcf64f-2257-4d90-be93-745f48edf66b)
 ![QR MENU Admin presentation4](https://github.com/user-attachments/assets/119bb9e1-8c43-4afe-ad74-1ade9ee8bfe5)
+![QR MENU back office](https://github.com/user-attachments/assets/d935fe7e-5523-4c79-80df-b3ccf38a2f62)
 
-[CMS design picture]
-[CMS design picture]
-[UI KIT picture]
 
 ## Validation Activities
 * Clickable prototype shared with café owners in Viseu
