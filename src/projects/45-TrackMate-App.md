@@ -20,7 +20,10 @@ TrackMate is a mindful time and activity tracker that helps you plan, log, and g
 
 ## Context and Problem
 
-Despite the popularity of automatic time trackers, they fail to capture how people truly spend their time across devices and contexts. Activity is fragmented between phones, laptops, and tablets, while meaningful offline moments—like meetings, workouts, or deep thinking—go entirely unnoticed. These tools offer raw data without context, creating the illusion of control but rarely driving reflection or change. Users see numbers, not insight. This case explores how to design a more mindful, cross-context tracking experience that supports awareness, intention, and better time choices.
+Despite the popularity of automatic time trackers, they fail to capture how people truly spend their time across devices and contexts. 
+Activity is fragmented between phones, laptops, and tablets, while meaningful offline moments go entirely unnoticed, like meetings, workouts, or deep thinking.
+These tools offer raw data without context, creating the illusion of control but rarely driving reflection or change. Users see numbers, not insight. 
+This case explores how to design a more mindful, cross-context tracking experience that supports awareness, intention, and better time choices.
 
 ## Goals
 
