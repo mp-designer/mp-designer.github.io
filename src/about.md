@@ -6,12 +6,18 @@ cvUrl: https://github.com/user-attachments/files/19511337/CV_Product-designer_Pe
 
 ---
 
-Hi, I'm Marharyta Perevalova, or simply Margo. I'm a UX designer from Ukraine.
+Hi, I'm Margo. A Product Designer from Ukraine with over 4 years of experience building clear and effective digital solutions.
 
-When I was a child, my mother, a skilled seamstress, inspired my creativity. I started designing and creating dresses for my dolls with the leftover fabric scraps from her sewing projects. When my parents asked me who I wanted to be, I answered, "A designer of clothes." It was my childhood dream.
+I bring a strategic view to my work, informed by an interest in business, marketing, and accessibility. I believe great products are built when teams collaborate effectively.
 
-My passion for design and art began at a young age: I sewed clothes for dolls, drew pictures and banners, tried body art, academic painting, photo shooting and retouching.
+My experience includes:
 
-Finally, my dream came true through a long life path. Now, I'm an experienced UX designer, or "designer of cloth" for user interfaces. After entering the UX sphere, I started to value a minimalist lifestyle and simple things. I sincerely enjoy the usability of everyday things such as food packages or household items.
+• Complex ecosystems, CRMs, and admin panels
+• MVPs and concept design for startups
+• Mobile apps and responsive websites
+• Design systems and brand identity
+• Usability and Accessibility audits
 
-My experience in UX design has taught me to think several steps ahead, be curious about how things work and strive for simplicity and efficiency in all design aspects. I approach each project with a passion for creating seamless user experiences, always aiming to make the digital world more intuitive and enjoyable for everyone.
+Outside of work, I'm enthusiastic about building community by organizing events for fellow digital nomads. 
+
+I source my energy from two passions. A deep engagement with the arts—painting, cinema, live music, and a book club—sharpens my creative perspective and eye for detail. In parallel, an active and challenging lifestyle builds the resilience and focus needed to tackle any complex design problem.
