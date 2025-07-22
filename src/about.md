@@ -6,7 +6,7 @@ cvUrl: https://github.com/user-attachments/files/19511337/CV_Product-designer_Pe
 
 ---
 
-Hi, I'm Margo. A Product Designer from Ukraine with over 4 years of experience building clear and effective digital solutions.
+Hi, I'm Margo. A Product Designer from Ukraine with 5 years of experience building clear and effective digital solutions.
 
 I bring a strategic view to my work, informed by an interest in business, marketing, and accessibility. I believe great products are built when teams collaborate effectively.
 
