@@ -15,9 +15,10 @@ My experience includes:
 • Complex ecosystems, CRMs, and admin panels
 • MVPs and concept design for startups
 • Mobile apps and responsive websites
-• Design systems and brand identity
+• Design systems and guidelines
 • Usability and Accessibility audits
+• Brand identity
 
 Outside of work, I'm enthusiastic about building community by organizing events for fellow digital nomads. 
 
-I source my energy from two passions. A deep engagement with the arts—painting, cinema, live music, and a book club—sharpens my creative perspective and eye for detail. In parallel, an active and challenging lifestyle builds the resilience and focus needed to tackle any complex design problem.
+I source my energy from two passions. A deep engagement with the arts — painting, cinema, live music, and a book club — that sharpens my creative perspective and eye for detail. In parallel, an active and challenging lifestyle builds the resilience and focus needed to tackle any complex design problem.
