@@ -1,7 +1,7 @@
 ---
 permalink: /projects/qr-menu/
 title: QR menu 
-description: QR Menu is a lightweight digital menu and CMS system designed for small restaurants and cafés.
+description: A lightweight digital menu and CMS system designed for small restaurants, cafés, bars and food trucks.
 imgSrc: https://github.com/user-attachments/assets/2b289149-7792-41ab-9d32-b2e136523785
 keywords:
   - Product design
@@ -17,7 +17,7 @@ meta:
 ---
 ## Project Overview
 
-QR Menu is a lightweight digital menu and CMS system designed for small restaurants and cafés. It helps customers browse menus visually with translations and filters, while giving business owners a simple tool to update dishes, manage info, and share menus via QR codes — all without needing tech expertise.
+QR Menu is a lightweight digital menu and CMS system designed for small restaurants, cafés, bars and food trucks. It helps customers browse menus visually with translations and filters, while giving business owners a simple tool to update dishes, manage info, and share menus via QR codes — all without needing tech expertise.
 
 ## Context and Problem
 
