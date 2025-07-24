@@ -1,5 +1,5 @@
 ---
-permalink: /projects/QR-menu/index.html
+permalink: /projects/qr-menu/
 title: QR menu 
 description: QR Menu is a lightweight digital menu and CMS system designed for small restaurants and cafés.
 imgSrc: https://github.com/user-attachments/assets/2b289149-7792-41ab-9d32-b2e136523785
@@ -183,24 +183,24 @@ so I don’t overorder or waste food."_
 
 According to research it was clear that we need to create front office – mobile web menu representation for customers, and backoffice – CMS (Content Management System) for managers to create and edit information about menu positions and restaurant itself. To speed up the prototyping process and streamline CMS implementation, I decided to use the MUI React component library.
 
-### MVP Prioritization
+### Prioritization
 
 After prioritizing the full feature scope, we defined the core minimal functionality needed to validate the concept.
 
 #### Front office (for customers):
 1. Browse by filters (categories and food preferencies, e.g. vegetarian, spicy)
-2. Photos, ingredients, portion sizing
-3. Cafe location/contact integration
-
+2. Dish photos, ingredients, price 
+3. Restaurant contacts and location integration
 ![Wireframes](https://github.com/user-attachments/assets/5a55851a-2fe2-4d1a-bc51-3c113b29bc55)
 ![QR MENU front office](https://github.com/user-attachments/assets/d92ac0ce-99bc-421b-acd9-7ad1a3f913f4)
 
 
 #### Back office CMS (for restaurant managers):
-1. Menu builder with drag-and-drop dish editor
-2. QR code generation for download/print
-3. Analytics: scans per day/hour, dish views
-
+1. Restaurant information
+2. Menu builder with drag-and-drop dish editor
+3. QR code generation for download/print
+4. Analytics: scans per day and hour, unique users
+5. Dashboard with main info and activities
 ![QR MENU Admin presentation4](https://github.com/user-attachments/assets/119bb9e1-8c43-4afe-ad74-1ade9ee8bfe5)
 ![QR MENU back office](https://github.com/user-attachments/assets/d935fe7e-5523-4c79-80df-b3ccf38a2f62)
 
@@ -215,7 +215,7 @@ After prioritizing the full feature scope, we defined the core minimal functiona
 Despite promising feedback, we made a deliberate decision to pause.
 
 **Why:**
-* MVP lacked enough "product-led growth" hook to justify even low-cost subscriptions
+* Concept lacked enough "product-led growth" hook to justify even low-cost subscriptions
 * Without external funding or organic virality, releasing it for free wasn’t sustainable
 * Further investment would’ve required deeper integration (e.g., POS, orders, payments)
 
