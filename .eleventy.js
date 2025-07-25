@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.setLibrary("md", mdLibrary);
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addNunjucksAsyncShortcode(
     "svgIcon",
     async (path, alt, sizes) => {
