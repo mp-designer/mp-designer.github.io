@@ -1,6 +1,6 @@
 ---
 permalink: /projects/qr-menu/
-title: QR menu 
+title: QR menu with CMS
 description: A lightweight digital menu and CMS system designed for small restaurants, cafés, bars and food trucks.
 imgSrc: https://github.com/user-attachments/assets/2b289149-7792-41ab-9d32-b2e136523785
 keywords:
