@@ -196,6 +196,7 @@ After prioritizing the full feature scope, we defined the core minimal functiona
 ![QR MENU front office](https://github.com/user-attachments/assets/d92ac0ce-99bc-421b-acd9-7ad1a3f913f4)
 
 
+
 #### Back office CMS (for restaurant managers):
 1. Restaurant information
 2. Menu builder with drag-and-drop dish editor
