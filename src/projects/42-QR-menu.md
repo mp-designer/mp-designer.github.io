@@ -191,6 +191,7 @@ After prioritizing the full feature scope, we defined the core minimal functiona
 1. Browse by filters (categories and food preferencies, e.g. vegetarian, spicy)
 2. Dish photos, ingredients, price 
 3. Restaurant contacts and location integration
+
 ![Wireframes](https://github.com/user-attachments/assets/5a55851a-2fe2-4d1a-bc51-3c113b29bc55)
 ![QR MENU front office](https://github.com/user-attachments/assets/d92ac0ce-99bc-421b-acd9-7ad1a3f913f4)
 
@@ -201,6 +202,7 @@ After prioritizing the full feature scope, we defined the core minimal functiona
 3. QR code generation for download/print
 4. Analytics: scans per day and hour, unique users
 5. Dashboard with main info and activities
+
 ![QR MENU Admin presentation4](https://github.com/user-attachments/assets/119bb9e1-8c43-4afe-ad74-1ade9ee8bfe5)
 ![QR MENU back office](https://github.com/user-attachments/assets/d935fe7e-5523-4c79-80df-b3ccf38a2f62)
 
