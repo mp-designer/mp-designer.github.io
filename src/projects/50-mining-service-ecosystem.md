@@ -34,7 +34,7 @@ To develop and maintain a design system to keep all products consistent.
 
 ### About project
 
-Hosting is a monitoring system for all clients' devices set on the mining firm, a transparent invoice payment system, and device settings.
+Hosting is a monitoring system for all clients' devices set on the mining farm, a transparent invoice payment system, and device settings.
 
 ![Hosting solution](https://github.com/user-attachments/assets/4fe229a2-71c1-41fc-af6b-7f64b3f3d451)
 
@@ -65,7 +65,7 @@ Main challenge: payment process with order from different sellers and capable pa
 
 ### About project
 
-Service is a project, providing client a transparent system of repair service for their devices on the mining firm. 
+Service is a project, providing client a transparent system of repair service for their devices on the mining farm. 
 
 ![Service solutions](https://github.com/user-attachments/assets/c0519c8a-20b9-42c8-9610-2c40696bbc7a)
 
