@@ -1,8 +1,9 @@
 ---
-permalink: /projects/mining-service-ecosystem/index.html
+permalink: /projects/mining-service-ecosystem/
 title: Mining Service Ecosystem
 description: A complex innovation ecosystem for efficient mining including industrial mining infrastructure, repair shop chain and professional mining equipment marketplace.
-imgSrc: https://github.com/em-per/em-per.github.io/assets/163604385/f79ec3bf-abcb-4ca5-bdf5-cf3d2640a0f6
+imgSrc: https://github.com/user-attachments/assets/8cb97976-b242-4208-a95d-2865be590050
+
 keywords:
   - Product design
   - UX design
@@ -17,7 +18,7 @@ meta:
 
 ## Product Overview
 
-MYRIG ecosystem is an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
+It's an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
 
 ## Goals
 
@@ -35,7 +36,7 @@ To develop and maintain a design system to keep all products consistent.
 
 Hosting is a monitoring system for all clients' devices set on the mining firm, a transparent invoice payment system, and device settings.
 
-![Hosting solution](https://github.com/em-per/em-per.github.io/assets/163604385/55259dba-94c2-415c-a0bd-6d44f35dfe89)
+![Hosting solution](https://github.com/user-attachments/assets/4fe229a2-71c1-41fc-af6b-7f64b3f3d451)
 
 ### My impact
 
@@ -49,7 +50,7 @@ Hosting is a monitoring system for all clients' devices set on the mining firm, 
 
 Miners online shop is an e-commerce project including payment system and transparent history of orders.
 
-![miners shop](https://github.com/em-per/em-per.github.io/assets/163604385/43dc326d-b246-43e5-84cb-96d74ca0f31f)
+![miners shop](https://github.com/user-attachments/assets/11b21ee5-769a-4195-a35d-63149839c203)
 
 ### My impact
 
@@ -66,7 +67,7 @@ Main challenge: payment process with order from different sellers and capable pa
 
 Service is a project, providing client a transparent system of repair service for their devices on the mining firm. 
 
-![Service solutions](https://github.com/em-per/em-per.github.io/assets/163604385/015459c4-20c4-4bee-8f78-0f6bd7e96648)
+![Service solutions](https://github.com/user-attachments/assets/c0519c8a-20b9-42c8-9610-2c40696bbc7a)
 
 ### My impact
 
@@ -79,7 +80,7 @@ Service is a project, providing client a transparent system of repair service f
 
 ### About project
 
-MYRIG Design System is developed on the principles of Atomic design, starting from the base simplest elements and creating together more complex components, templates and pages. 
+Design System is developed on the principles of Atomic design, starting from the base simplest elements and creating together more complex components, templates and pages. 
 
 ![Design system](https://github.com/em-per/em-per.github.io/assets/163604385/88daeac7-f888-4ece-9d61-e3b50329356e)
 
