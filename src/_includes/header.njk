@@ -1,143 +1,167 @@
 {% from "components/button.njk" import button %}
-<div class="sticky z-10 top-0 left-0 right-0 bg-white text-grey6 text-h4">
-  <div class="container">
-    <div class="h-16 md:h-[3.75rem] md:my-4 flex justify-between items-center">
-      <div class="h-full">
-        <a id="logo-link" href="/#" class="h-full inline-flex items-center -ml-3.5" aria-label="Homepage" onClick="_headerMenuHide()">
-          {% svgIcon '/assets/icons/logo-animated.svg' %}
-        </a>
-        <div id="logo-wrapper" class="hidden fixed w-full h-full top-0 left-0 z-50 flex items-center justify-center">
-          <div id="logo-overlay" class="absolute -z-10 w-full h-full bg-white transition-opacity ease-in-out duration-700"></div>
-
-          <style>#logo-transitioned > svg {width: 100%; height: 100%} </style>
-          <div id="logo-transitioned" class="w-[200px] h-[96px] md:w-[626px] md:h-[300px] transition-transform ease-in-out duration-700">
+<div id="logo-wrapper" class="hidden fixed w-full h-full top-0 left-0 z-50 flex items-center justify-center text-grey6">
+  <div id="logo-overlay" class="absolute -z-10 w-full h-full bg-white transition-opacity ease-in-out duration-700"></div>
+  <style>
+    #logo-transitioned > svg {
+      width: 100%;
+      height: 100%
+    }
+  </style>
+  <div
+    id="logo-transitioned"
+    class="w-[200px] h-[96px] md:w-[626px] md:h-[300px] transition-transform ease-in-out duration-700">
+    {% svgIcon '/assets/icons/logo-animated.svg' %}
+  </div>
+</div>
+<div class="relative z-10 text-grey6 group">
+  <div
+    id="menu"
+    class="flex md:hidden bg-grey1_5 pt-16 pb-5 px-5 fixed -z-10 top-2 bottom-[12%] left-2 right-2 rounded-[1.25rem]
+      backdrop-blur-lg flex-col items-center justify-between -translate-y-[105%] transition-transform duration-300 ease-out">
+    <div></div>
+    <div>
+      <nav class="flex flex-col items-center space-y-1" aria-labelledby="menu-button">
+        {% for text, link in global.menuLinks %}
+          <a href="{{ link }}" class="text-element uppercase group inline-flex items-center h-16" onClick="_headerMenuHide()">
+            <span class="custom-underline">{{ text }}</span>
+          </a>
+        {% endfor %}
+      </nav>
+      <div class="w-full flex flex-wrap justify-center mt-2 space-x-3">
+        {% for name, link in global.socialLinks %}
+          <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
+            {% svgIcon '/assets/icons/' + name + '-24px.svg' %}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    {{ button(tag="a", attrs={
+    href: 'mailto:' + global.email
+  }, text="Contact" ) }}
+  </div>
+  <div id="menu-overlay" class="fixed hidden -z-20 top-0 bottom-0 left-0 right-0" onClick="_headerMenuHide()"></div>
+  <div class="fixed z-10 top-2 md:top-5 left-0 right-0 px-2 md:px-5 h-0">
+    <div class="max-w-[810px] mx-auto md:py-[0.3125rem] pl-[0.4375rem] pr-[0.6875rem] rounded-[1.25rem] text-grey6 text-h4
+        group-has-[#menu.translate-y-0]:backdrop-blur-0 backdrop-blur-lg group-has-[#menu.translate-y-0]:bg-transparent
+        bg-grey1_5">
+      <div class="h-[3.125rem] md:h-[3.75rem] flex justify-between items-center">
+        <div class="h-full">
+          <a id="logo-link" href="/#" class="h-full inline-flex items-center" aria-label="Homepage" onClick="_headerMenuHide()">
             {% svgIcon '/assets/icons/logo-animated.svg' %}
+          </a>
+        </div>
+        <div class="flex md:hidden flex-col items-end">
+          <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
+            {% svgIcon '/assets/icons/menu-24px.svg' %}
+          </button>
+        </div>
+        <div class="h-full hidden md:flex items-center">
+          <nav class="flex h-full space-x-8">
+            {% for text, link in global.menuLinks %}
+              <a href="{{ link }}" class="group text-element uppercase inline-flex items-center">
+                <span class="custom-underline">{{ text }}</span>
+              </a>
+            {% endfor %}
+          </nav>
+          <div class="ml-8">
+            {{ button(tag="a", attrs={
+            href: 'mailto:' + global.email
+          }, text="Contact" ) }}
           </div>
         </div>
       </div>
-      <div class="flex md:hidden flex-col items-end">
-        <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
-          {% svgIcon '/assets/icons/menu-24px.svg' %}
-        </button>
-      </div>
-      <div class="h-full hidden md:flex items-center">
-        <nav class="flex h-full space-x-8">
-          {% for text, link in global.menuLinks %}
-            <a href="{{ link }}" class="group text-element uppercase inline-flex items-center">
-              <span class="custom-underline">{{ text }}</span>
-            </a>
-          {% endfor %}
-        </nav>
-        <div class="ml-8">
-          {{ button(tag="a", attrs={
-            href: 'mailto:' + global.email
-          }, text="Contact" ) }}
-        </div>
-      </div>
     </div>
-    <div
-      id="menu"
-      class="flex hidden md:hidden bg-white pt-16 pb-10 px-5 fixed -z-10 top-0 bottom-0 left-0 right-0 flex-col items-center
-        justify-between">
-      <div></div>
-      <div>
-        <nav class="flex flex-col items-center space-y-1" aria-labelledby="menu-button">
-          {% for text, link in global.menuLinks %}
-            <a href="{{ link }}" class="text-element uppercase group inline-flex items-center h-16" onClick="_headerMenuHide()">
-              <span class="custom-underline">{{ text }}</span>
-            </a>
-          {% endfor %}
-        </nav>
-        <div class="w-full flex flex-wrap justify-center mt-2 space-x-3">
-          {% for name, link in global.socialLinks %}
-            <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
-              {% svgIcon '/assets/icons/' + name + '-24px.svg' %}
-            </a>
-          {% endfor %}
-        </div>
-      </div>
-      {{ button(tag="a", attrs={
-        href: 'mailto:' + global.email
-      }, text="Contact" ) }}
-    </div>
-    <script>
-      function _headerMenuToggle() {
-        document
-          .getElementById('menu')
-          .classList
-          .toggle('hidden');
-        document
-          .getElementById('menu-button')
-          .classList
-          .toggle('active');
-        document
-          .querySelector('body')
-          .classList
-          .toggle('overflow-hidden');
-      }
-      function _headerMenuHide() {
-        document
-          .getElementById('menu')
-          .classList
-          .add('hidden');
-        document
-          .getElementById('menu-button')
-          .classList
-          .remove('active');
-        document
-          .querySelector('body')
-          .classList
-          .remove('overflow-hidden');
-      }
-      (function _animateEntry() {
-        const isVisited = window.sessionStorage.getItem('isVisited');
-        if (isVisited) return;
-        window.sessionStorage.setItem('isVisited', 'true');
-
-        const bodyEl = document.querySelector('body');
-        const logoWrapperEl = document.getElementById('logo-wrapper');
-        const logoOverlayEl = document.getElementById('logo-overlay');
-        const logoTransitionedEl = document.getElementById('logo-transitioned');
-        const logoEl = document.querySelector('#logo-link .logo-animated');
-
-        // block body scroll
-        bodyEl.classList.add('overflow-hidden');
-        // show transitioned logo
-        logoWrapperEl.classList.remove('hidden');
-        // hide original logo
-        logoEl.classList.add('opacity-0');
-        // activate logo built in animation
-        logoTransitionedEl.querySelector('.logo-animated').classList.add('active');
-
-        // wait for logo built in animation
-        setTimeout(() => {
-          // shrink animation to put back logo
-          let isAnimated = true;
-          const updateCoordinates = () => {
-            const logoElRect = logoEl.getBoundingClientRect();
-            const logoCenterDiffX = window.innerWidth / 2 - (logoElRect.left + logoElRect.width / 2);
-            const logoCenterDiffY = window.innerHeight / 2 - (logoElRect.top + logoElRect.height / 2);
-            logoTransitionedEl.style.transform = `translate(${-logoCenterDiffX}px, ${-logoCenterDiffY}px) scale(${window.innerWidth >= 744 ? 1/6.26 : 1/2})`;
-
-            if (isAnimated) window.requestAnimationFrame(updateCoordinates);
-          }
-          updateCoordinates();
-
-          // overlay disappear animation
-          logoOverlayEl.style.opacity = '0';
-
-          setTimeout(() => {
-            // stop transitioned logo position update
-            let isAnimated = false;
-            // unblock body scroll
-            bodyEl.classList.remove('overflow-hidden');
-            // hide overlay
-            logoWrapperEl.classList.add('hidden');
-            // show original logo
-            logoEl.classList.remove('opacity-0');
-          }, 700);
-        }, 1500);
-      })();
-    </script>
   </div>
+  <script>
+    function _headerMenuToggle() {
+      document
+        .getElementById('menu')
+        .classList
+        .toggle('translate-y-0');
+      document
+        .getElementById('menu-overlay')
+        .classList
+        .toggle('hidden');
+      document
+        .getElementById('menu-button')
+        .classList
+        .toggle('active');
+      document
+        .querySelector('body')
+        .classList
+        .toggle('overflow-hidden');
+    }
+    function _headerMenuHide() {
+      document
+        .getElementById('menu')
+        .classList
+        .remove('translate-y-0');
+      document
+        .getElementById('menu-overlay')
+        .classList
+        .add('hidden');
+      document
+        .getElementById('menu-button')
+        .classList
+        .remove('active');
+      document
+        .querySelector('body')
+        .classList
+        .remove('overflow-hidden');
+    }(function _animateEntry() {
+      const isVisited = window.sessionStorage.getItem('isVisited');
+      if (isVisited)
+        return;
+
+      window.sessionStorage.setItem('isVisited', 'true');
+      const bodyEl = document.querySelector('body');
+      const logoWrapperEl = document.getElementById('logo-wrapper');
+      const logoOverlayEl = document.getElementById('logo-overlay');
+      const logoTransitionedEl = document.getElementById('logo-transitioned');
+      const logoEl = document.querySelector('#logo-link .logo-animated');
+      // block body scroll
+      bodyEl.classList.add('overflow-hidden');
+      // show transitioned logo
+      logoWrapperEl.classList.remove('hidden');
+      // hide original logo
+      logoEl.classList.add('opacity-0');
+      // activate logo built in animation
+      logoTransitionedEl
+        .querySelector('.logo-animated')
+        .classList
+        .add('active');
+      // wait for logo built in animation
+      setTimeout(() => { // shrink animation to put back logo
+        let isAnimated = true;
+        const updateCoordinates = () => {
+          const logoElRect = logoEl.getBoundingClientRect();
+          const logoCenterDiffX = window.innerWidth / 2 - (logoElRect.left + logoElRect.width / 2);
+          const logoCenterDiffY = window.innerHeight / 2 - (logoElRect.top + logoElRect.height / 2);
+          logoTransitionedEl.style.transform = `translate(${ - logoCenterDiffX
+          }px, ${ - logoCenterDiffY
+          }px) scale(${
+            window.innerWidth >= 744
+              ? 1 / 6.26
+              : 1 / 2
+            })`;
+          if (isAnimated)
+            window.requestAnimationFrame(updateCoordinates);
+
+        }
+        // start
+        updateCoordinates();
+        // overlay disappear animation
+        logoOverlayEl.style.opacity = '0';
+        setTimeout(() => { // stop transitioned logo position update
+          let isAnimated = false;
+          // unblock body scroll
+          bodyEl.classList.remove('overflow-hidden');
+          // hide overlay
+          logoWrapperEl.classList.add('hidden');
+          // show original logo
+          logoEl.classList.remove('opacity-0');
+        }, 700);
+      }, 1500);
+    })();
+  </script>
 </div>
