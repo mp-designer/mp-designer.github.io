@@ -1,9 +1,9 @@
 <footer>
-  <div class="bg-grey1 py-9 md:py-10">
+  <div class="bg-grey6 text-grey2 py-8 lg:py-14 lg:mx-6 rounded-t-[2.5rem]">
     <div class="container">
       <div class="flex justify-between flex-col md:flex-row space-y-12 md:space-y-0">
         <div class="flex flex-col">
-          <h2 class="mb-4 font-sans-heading text-hS md:text-hM text-grey6">{{ global.fullName }}</h2>
+          <h2 class="mb-4 font-sans-heading text-hS md:text-hM text-white">{{ global.fullName }}</h2>
 
           <div class="h-9 md:h-10 inline-flex items-center">
             <a href="mailto:{{ global.email }}" aria-label="Send an email to {{ global.fullName }}" class="hover:underline">{{ global.email }}</a>
@@ -13,7 +13,7 @@
             <p>{{ global.address }}</p>
           </div>
 
-          <div class="-ml-2 mt-6 flex flex-wrap justify-start space-x-3 text-grey6">
+          <div class="-ml-2 mt-6 flex flex-wrap justify-start space-x-3 text-white">
             {% for name, link in global.socialLinks %}
               <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
                 {% svgIcon '/assets/icons/' + name + '-24px.svg' %}
@@ -23,7 +23,7 @@
         </div>
 
         <div class="flex flex-col">
-          <h2 class="mb-4 font-sans-heading text-hS md:text-hM text-grey6">Projects</h2>
+          <h2 class="mb-4 font-sans-heading text-hS md:text-hM text-white">Projects</h2>
 
           {% for project in collections.projects %}
             <div class="h-9 md:h-10 inline-flex items-center">
