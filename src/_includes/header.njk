@@ -20,10 +20,10 @@
       backdrop-blur-lg flex-col items-center justify-between -translate-y-[105%] transition-transform duration-300 ease-out">
     <div></div>
     <div>
-      <nav class="flex flex-col items-center space-y-1" aria-labelledby="menu-button">
+      <nav class="flex flex-col items-center space-y-1 text-nowrap" aria-labelledby="menu-button">
         {% for text, link in global.menuLinks %}
-          <a href="{{ link }}" class="text-element uppercase group inline-flex items-center h-16" onClick="_headerMenuHide()">
-            <span class="custom-underline">{{ text }}</span>
+          <a href="{{ link }}" class="text-element h-16" onClick="_headerMenuHide()">
+            <span class="">{{ text }}</span>
           </a>
         {% endfor %}
       </nav>
@@ -36,12 +36,12 @@
       </div>
     </div>
     {{ button(tag="a", attrs={
-    href: 'mailto:' + global.email
-  }, text="Contact" ) }}
+      href: 'mailto:' + global.email
+    }, text="Contact" ) }}
   </div>
   <div id="menu-overlay" class="fixed hidden -z-20 top-0 bottom-0 left-0 right-0" onClick="_headerMenuHide()"></div>
   <div class="fixed z-10 top-2 md:top-5 left-0 right-0 px-2 md:px-5 h-0">
-    <div class="max-w-[810px] mx-auto md:py-[0.3125rem] pl-[0.4375rem] pr-[0.6875rem] rounded-[1.25rem] text-grey6 text-h4
+    <div class="max-w-[600px] mx-auto md:py-[0.25rem] pl-[0.4375rem] pr-[0.625rem] rounded-[1.25rem] text-grey6 text-h4
         group-has-[#menu.translate-y-0]:backdrop-blur-0 backdrop-blur-lg group-has-[#menu.translate-y-0]:bg-transparent
         bg-grey1_5">
       <div class="h-[3.125rem] md:h-[3.75rem] flex justify-between items-center">
@@ -55,19 +55,18 @@
             {% svgIcon '/assets/icons/menu-24px.svg' %}
           </button>
         </div>
-        <div class="h-full hidden md:flex items-center">
-          <nav class="flex h-full space-x-8">
-            {% for text, link in global.menuLinks %}
-              <a href="{{ link }}" class="group text-element uppercase inline-flex items-center">
-                <span class="custom-underline">{{ text }}</span>
-              </a>
-            {% endfor %}
-          </nav>
-          <div class="ml-8">
-            {{ button(tag="a", attrs={
-            href: 'mailto:' + global.email
-          }, text="Contact" ) }}
-          </div>
+        <nav class="hidden md:flex space-x-8 text-nowrap">
+          {% for text, link in global.menuLinks %}
+            <a href="{{ link }}" class="custom-link relative text-element">
+              <span class="custom-link-hover text-grey5" aria-hidden="true">{{ text }}</span>
+              <span class="custom-link-default">{{ text }}</span>
+            </a>
+          {% endfor %}
+        </nav>
+        <div class="hidden md:block pl-4">
+          {{ button(tag="a", attrs={
+          href: 'mailto:' + global.email
+        }, text="Contact" ) }}
         </div>
       </div>
     </div>

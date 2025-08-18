@@ -24,28 +24,29 @@ html {
   top: 10px;
 }
 
-.custom-underline {
-  text-decoration: none;
-  position: relative;
+.custom-link {
+  overflow: hidden;
 }
 
-.custom-underline::after {
-  content: "";
+.custom-link-default {
+  display: inline-block;
+  transform: translateY(0%);
+  transition: transform 250ms ease-in-out;
+}
+
+.custom-link-hover {
+  display: inline-block;
   position: absolute;
-  height: 1px;
-  width: 100%;
-  background: currentColor;
-  bottom: -0.5rem;
-  left: 0;
-  right: 0;
-  transform: scaleX(0);
-  opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
 }
 
-.group:hover > .custom-underline::after {
-  opacity: 1;
-  transform: scaleX(1);
+.custom-link:hover > .custom-link-default {
+  transform: translateY(-100%);
+}
+
+.custom-link:hover > .custom-link-hover {
+  transform: translateY(0%);
 }
 
 /* additional md styles */
