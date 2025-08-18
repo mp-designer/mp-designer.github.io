@@ -1179,9 +1179,9 @@ video {
   text-transform: uppercase;
 }
 
-.text-grey2 {
+.text-grey3 {
   --tw-text-opacity: 1;
-  color: rgb(222 222 223 / var(--tw-text-opacity));
+  color: rgb(161 161 161 / var(--tw-text-opacity));
 }
 
 .text-grey4 {
