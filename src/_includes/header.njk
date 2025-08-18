@@ -14,69 +14,97 @@
   </div>
 </div>
 <div class="relative z-10 text-grey6 group">
-  <div
-    id="menu"
-    class="flex md:hidden bg-grey1_5 pt-16 pb-5 px-5 fixed -z-10 top-2 bottom-[12%] left-2 right-2 rounded-[1.25rem]
-      backdrop-blur-lg flex-col items-center justify-between -translate-y-[105%] transition-transform duration-300 ease-out">
-    <div></div>
-    <div>
-      <nav class="flex flex-col items-center space-y-1 text-nowrap" aria-labelledby="menu-button">
-        {% for text, link in global.menuLinks %}
-          <a href="{{ link }}" class="text-element h-16" onClick="_headerMenuHide()">
-            <span class="">{{ text }}</span>
-          </a>
-        {% endfor %}
-      </nav>
-      <div class="w-full flex flex-wrap justify-center mt-2 space-x-3">
-        {% for name, link in global.socialLinks %}
-          <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
-            {% svgIcon '/assets/icons/' + name + '-24px.svg' %}
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-    {{ button(tag="a", attrs={
-      href: 'mailto:' + global.email
-    }, text="Contact" ) }}
-  </div>
-  <div id="menu-overlay" class="fixed hidden -z-20 top-0 bottom-0 left-0 right-0" onClick="_headerMenuHide()"></div>
-  <div class="fixed z-10 top-2 md:top-5 left-0 right-0 px-2 md:px-5 h-0">
-    <div class="max-w-[600px] mx-auto md:py-[0.25rem] pl-[0.4375rem] pr-[0.625rem] rounded-[1.25rem] text-grey6 text-h4
-        group-has-[#menu.translate-y-0]:backdrop-blur-0 backdrop-blur-lg group-has-[#menu.translate-y-0]:bg-transparent
-        bg-grey1_5">
-      <div class="h-[3.125rem] md:h-[3.75rem] flex justify-between items-center">
-        <div class="h-full">
-          <a id="logo-link" href="/#" class="h-full inline-flex items-center" aria-label="Homepage" onClick="_headerMenuHide()">
-            {% svgIcon '/assets/icons/logo-animated.svg' %}
-          </a>
-        </div>
-        <div class="flex md:hidden flex-col items-end">
-          <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
-            {% svgIcon '/assets/icons/menu-24px.svg' %}
-          </button>
-        </div>
-        <nav class="hidden md:flex space-x-8 text-nowrap">
-          {% for text, link in global.menuLinks %}
-            <a href="{{ link }}" class="custom-link relative text-element">
-              <span class="custom-link-hover text-grey5" aria-hidden="true">{{ text }}</span>
-              <span class="custom-link-default">{{ text }}</span>
+  <div id="menu-overlay" class="fixed hidden md:hidden -z-20 top-0 bottom-0 left-0 right-0" onClick="_headerMenuHide()"></div>
+  <div class="fixed z-10 top-2 md:top-5 left-2 right-2 md:left-5 md:right-5">
+    <div id="header-menu" class="max-w-[600px] mx-auto text-grey6 relative h-[85svh] h-auto md:h-auto flex flex-col">
+      <div
+        id="header-background"
+        class="absolute -z-10 left-0 right-0 top-0 bottom-0 backdrop-blur-lg bg-grey1_5 rounded-[1.25rem] transition-all ease-out
+          duration-300"></div>
+      <div class="md:py-[0.25rem] pl-[0.4375rem] pr-[0.625rem] flex-grow-0">
+        <div class="h-[3.125rem] md:h-[3.75rem] flex justify-between items-center">
+          <div class="h-full">
+            <a id="logo-link" href="/#" class="h-full inline-flex items-center" aria-label="Homepage" onClick="_headerMenuHide()">
+              {% svgIcon '/assets/icons/logo-animated.svg' %}
             </a>
-          {% endfor %}
-        </nav>
-        <div class="hidden md:block pl-4">
-          {{ button(tag="a", attrs={
+          </div>
+          <div class="flex md:hidden flex-col items-end">
+            <button id="menu-button" aria-controls="menu" aria-label="Menu" class="p-2 text-grey6" onClick="_headerMenuToggle()">
+              {% svgIcon '/assets/icons/menu-24px.svg' %}
+            </button>
+          </div>
+          <nav class="hidden md:flex space-x-8 text-nowrap">
+            {% for text, link in global.menuLinks %}
+              <a href="{{ link }}" class="custom-link relative text-element">
+                <span class="custom-link-hover text-grey5" aria-hidden="true">{{ text }}</span>
+                <span class="custom-link-default">{{ text }}</span>
+              </a>
+            {% endfor %}
+          </nav>
+          <div class="hidden md:block pl-4">
+            {{ button(tag="a", attrs={
+            href: 'mailto:' + global.email
+          }, text="Contact" ) }}
+          </div>
+        </div>
+      </div>
+      <div
+        id="menu"
+        class="flex hidden md:hidden pt-16 pb-5 px-5 flex-col items-center justify-between flex-grow opacity-1 opacity-0
+          transition-opacity delay-200 duration-300 ease-in">
+        <div></div>
+        <div>
+          <nav class="flex flex-col items-center space-y-1 text-nowrap" aria-labelledby="menu-button">
+            {% for text, link in global.menuLinks %}
+              <a href="{{ link }}" class="text-element h-16" onClick="_headerMenuHide()">
+                <span class="">{{ text }}</span>
+              </a>
+            {% endfor %}
+          </nav>
+          <div class="w-full flex flex-wrap justify-center mt-2 space-x-3">
+            {% for name, link in global.socialLinks %}
+              <a href="{{ link }}" target="_blank" class="p-2" aria-label="{{ name }}">
+                {% svgIcon '/assets/icons/' + name + '-24px.svg' %}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+        {{ button(tag="a", attrs={
           href: 'mailto:' + global.email
         }, text="Contact" ) }}
-        </div>
       </div>
     </div>
   </div>
   <script>
     function _headerMenuToggle() {
+      const headerElRect = document.getElementById('header-menu').getBoundingClientRect();
+      document
+        .getElementById('header-background')
+        .style
+        .height = `${
+        headerElRect.height
+      }px`;
+      document
+        .getElementById('header-menu')
+        .classList
+        .toggle('h-auto');
       document
         .getElementById('menu')
         .classList
-        .toggle('translate-y-0');
+        .toggle('hidden');
+      setTimeout(() => {
+        document
+          .getElementById('menu')
+          .classList
+          .toggle('opacity-0');
+      });
+      const headerElRect2 = document.getElementById('header-menu').getBoundingClientRect();
+      document
+        .getElementById('header-background')
+        .style
+        .height = `${
+        headerElRect2.height
+      }px`;
       document
         .getElementById('menu-overlay')
         .classList
@@ -89,12 +117,40 @@
         .querySelector('body')
         .classList
         .toggle('overflow-hidden');
+      setTimeout(() => {
+        document
+          .getElementById('header-background')
+          .style
+          .height = 'initial';
+      }, 200);
     }
     function _headerMenuHide() {
+      const headerElRect = document.getElementById('header-menu').getBoundingClientRect();
+      document
+        .getElementById('header-background')
+        .style
+        .height = `${
+        headerElRect.height
+      }px`;
+      document
+        .getElementById('header-menu')
+        .classList
+        .add('h-auto');
       document
         .getElementById('menu')
         .classList
-        .remove('translate-y-0');
+        .add('hidden');
+      document
+        .getElementById('menu')
+        .classList
+        .add('opacity-0');
+      const headerElRect2 = document.getElementById('header-menu').getBoundingClientRect();
+      document
+        .getElementById('header-background')
+        .style
+        .height = `${
+        headerElRect2.height
+      }px`;
       document
         .getElementById('menu-overlay')
         .classList
@@ -107,6 +163,12 @@
         .querySelector('body')
         .classList
         .remove('overflow-hidden');
+      setTimeout(() => {
+        document
+          .getElementById('header-background')
+          .style
+          .height = 'initial';
+      }, 200);
     }(function _animateEntry() {
       const isVisited = window.sessionStorage.getItem('isVisited');
       if (isVisited)
