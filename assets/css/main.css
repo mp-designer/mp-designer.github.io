@@ -720,10 +720,6 @@ video {
   margin-left: 1rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -848,12 +844,12 @@ video {
   max-width: 568px;
 }
 
-.max-w-\[793px\] {
-  max-width: 793px;
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
-.max-w-\[810px\] {
-  max-width: 810px;
+.max-w-\[793px\] {
+  max-width: 793px;
 }
 
 .max-w-xl {
@@ -1100,6 +1096,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
 }
@@ -1108,8 +1108,8 @@ video {
   padding-left: 0.4375rem;
 }
 
-.pr-\[0\.6875rem\] {
-  padding-right: 0.6875rem;
+.pr-\[0\.625rem\] {
+  padding-right: 0.625rem;
 }
 
 .pt-16 {
@@ -1270,28 +1270,29 @@ html {
   top: 10px;
 }
 
-.custom-underline {
-  text-decoration: none;
-  position: relative;
+.custom-link {
+  overflow: hidden;
 }
 
-.custom-underline::after {
-  content: "";
+.custom-link-default {
+  display: inline-block;
+  transform: translateY(0%);
+  transition: transform 250ms ease-in-out;
+}
+
+.custom-link-hover {
+  display: inline-block;
   position: absolute;
-  height: 1px;
-  width: 100%;
-  background: currentColor;
-  bottom: -0.5rem;
-  left: 0;
-  right: 0;
-  transform: scaleX(0);
-  opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
 }
 
-.group:hover > .custom-underline::after {
-  opacity: 1;
-  transform: scaleX(1);
+.custom-link:hover > .custom-link-default {
+  transform: translateY(-100%);
+}
+
+.custom-link:hover > .custom-link-hover {
+  transform: translateY(0%);
 }
 
 /* additional md styles */
@@ -1392,6 +1393,10 @@ p.md:has(img, picture, video, iframe) {
     margin-top: 5rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1472,9 +1477,9 @@ p.md:has(img, picture, video, iframe) {
     padding-right: 1.75rem;
   }
 
-  .md\:py-\[0\.3125rem\] {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
+  .md\:py-\[0\.25rem\] {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .md\:pb-\[7\.5rem\] {
