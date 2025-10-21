@@ -53,7 +53,15 @@ The main strategic directions were:
 * Design and launch a landing page for early traffic testing and analytics setup
 * Align every design decision with future subscription model and growth plans
 
-<video src="https://github.com/user-attachments/assets/d89a5626-988a-47b1-b6d6-38671cce7651"></video>
+<iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dc3ue8fmx&public_id=Tracking_gn05if&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
 
 
 ## Summary
@@ -141,9 +149,9 @@ I researched notification best practices, interviewed users, and designed a gent
 1. Remind about active timers
 2. Gently bring users back into the app without annoyance
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/wFOmzJg9KTHGsyBY5Tfpbd/TrackMate.-Gentle-Notification.-Tracking-page?node-id=1-3&embed-host=share" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="auto" src="https://embed.figma.com/board/wFOmzJg9KTHGsyBY5Tfpbd/TrackMate.-Gentle-Notification.-Tracking-page?node-id=1-3&embed-host=share" allowfullscreen></iframe>
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/yZuyZ817uBaoTNenelxwVR/TrackMate.-Gentle-Notification.-Settings-page?node-id=1-2&embed-host=share" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="auto" src="https://embed.figma.com/board/yZuyZ817uBaoTNenelxwVR/TrackMate.-Gentle-Notification.-Settings-page?node-id=1-2&embed-host=share" allowfullscreen></iframe>
 
 ![Gentle notification-min](https://github.com/user-attachments/assets/115e0c86-d3ad-4a61-a0cd-045636ad3024)
 
@@ -173,7 +181,15 @@ Within two months, the app achieved:
 3. Improved engagement and retention (by 2%)
 
 
-<video src="https://github.com/user-attachments/assets/6122c726-18a0-437b-bcc1-eeb3275a8e78"></video>
+<iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dc3ue8fmx&public_id=Log_Untracked_Time_pevwpj&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
 
 
 ## Learnings
