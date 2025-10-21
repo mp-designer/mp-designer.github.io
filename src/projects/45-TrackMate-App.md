@@ -149,9 +149,9 @@ I researched notification best practices, interviewed users, and designed a gent
 1. Remind about active timers
 2. Gently bring users back into the app without annoyance
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="auto" src="https://embed.figma.com/board/wFOmzJg9KTHGsyBY5Tfpbd/TrackMate.-Gentle-Notification.-Tracking-page?node-id=1-3&embed-host=share" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500" src="https://embed.figma.com/board/wFOmzJg9KTHGsyBY5Tfpbd/TrackMate.-Gentle-Notification.-Tracking-page?node-id=1-3&embed-host=share" allowfullscreen></iframe>
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="auto" src="https://embed.figma.com/board/yZuyZ817uBaoTNenelxwVR/TrackMate.-Gentle-Notification.-Settings-page?node-id=1-2&embed-host=share" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500" src="https://embed.figma.com/board/yZuyZ817uBaoTNenelxwVR/TrackMate.-Gentle-Notification.-Settings-page?node-id=1-2&embed-host=share" allowfullscreen></iframe>
 
 ![Gentle notification-min](https://github.com/user-attachments/assets/115e0c86-d3ad-4a61-a0cd-045636ad3024)
 
