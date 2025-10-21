@@ -1,6 +1,6 @@
 ---
 permalink: /projects/TrackMate-app/
-title: TrackMate Web App and Landing page 
+title: Time tracking Web App and Landing page 
 description: TrackMate is a mindful time and activity tracker that helps plan, log, and get insights manually without relying on algorithms.
 imgSrc: https://github.com/user-attachments/assets/2eae7974-1f99-4654-814b-f6a8481ebcb5
 keywords:
@@ -14,43 +14,141 @@ keywords:
 meta:
   Role: Product designer, Stakeholder | 2025
   Team: Small team of Product designer and Software Engineer
-  Scope: UX and UI changes, landing page, user testing,  
+  Scope: Desig strategy, UX/UI changes, landing page, user testing  
 ---
 ## Project Overview
 
 TrackMate is a mindful, manual time tracker built as a Progressive Web App, designed not just for logging hours but for generating insights into time quality and encouraging reflection.
 
-TrackMate is a mindful time and activity tracker that helps you plan, log, and get insights manually and with intention across all your devices, without relying on algorithms.
+## Problem
 
-## Context and Problem
+Nowadays people are often overwhelmed, especially those working online — they multitask, procrastinate, and by the end of the day can’t even recall what they actually did. Many actions become automated and mindless, leading to burnout and the feeling of lost time.
 
-Saturated Market: The internet is flooded with automatic and manual time trackers, making it difficult for new entries to stand out.
+The product aimed to help people be more mindful of how they spend their time, find balance between work and rest, and build awareness of daily habits.
 
-Quantitative Limitation: Existing solutions primarily focus on the quantity of time spent, providing raw data (e.g., hours and minutes) but failing to capture its context or quality.
-
-Lack of Actionable Insights: Users are left with numerical logs but no understanding of their focus levels, energy expenditure, or the effectiveness of their work sessions. This prevents meaningful reflection and improvement.
-
-The Opportunity: To develop a new class of time tracker that shifts the focus from simple measurement to qualitative analysis, helping users understand the story behind their time and address specific activity-related challenges.
+However, users struggled to see clear patterns or reflect on their activity. The app’s structure didn’t support that awareness — it tracked time but didn’t help understand it.
 
 ## Goals
 
-* To design MVP for launch and first adapters testing;
-* Improve acquisition, engagement and reduce retention of users; 
-* Collect feedback and improve user experience;
-* Contribute to iteration planning;
-* Prepare base for SaaS model: freemium and subscription set of features.
+The goal was to redesign the app to help users understand how they spend their time — not just track it.
+
+The focus was on creating a more mindful and balanced experience, where users could reflect on their work patterns, recognize moments of rest, and stay aware of daily habits without feeling pressured or overwhelmed.
+
+At the same time, my task was to make the product ready for beta testing and future subscription-based growth — improving usability, consistency, and engagement to form a solid foundation for future iterations.
+
+## Solution
+
+To redesign the app and prepare it for beta testing, I focused on usability, consistency, and testing speed.
+
+My approach combined Lean UX, fast iteration, and constant user validation to quickly identify and fix usability issues.
+The main strategic directions were:
+
+* Redefine visual and interaction design to make the experience clean and human
+* Restructure information architecture for clarity and future scalability
+* Build flows that support motivation and reduce friction
+* Reuse and adapt the Neobrutalism UI library to speed up development
+* Continuously test with real users to validate small iterations before scaling
+* Design and launch a landing page for early traffic testing and analytics setup
+* Align every design decision with future subscription model and growth plans
 
 ## Summary
 
-Redesigned and kept the project consistent, improved core flows, and identified UX gaps through testing that led to new features. Contributed to iteration planning, worked with analytics to improve acquisition, engagement, and retention. Proposed guest mode as a solution for increasing sign-ups. Researched and implemented non-intrusive notification flows.
+My design improvements led to visible progress in usability, engagement, and conversions.
 
+### Quantitative results:
 
+* Conversion rate increased by 4% after the new landing page and flow optimization
+* Retention improved by 2% after adding gentle notifications
+* Sign-up completion grew significantly after introducing guest visit
 
-![Hand and iPhone 16 Pro](https://github.com/user-attachments/assets/b1bc7d24-b29d-4356-83d7-e29c337aa259)
-![Hand and iPhone 16 Pro copy](https://github.com/user-attachments/assets/60a641dc-5222-412c-94d7-e1c52e3b8e4c)
-![Hand and iPhone 16 Pro-3](https://github.com/user-attachments/assets/ac99f330-562d-4a1e-932d-8eab742f641d)
-![Hand and iPhone 16 Pro-2](https://github.com/user-attachments/assets/f388fed1-74eb-40f0-88ea-300ced5018dd)
+### Qualitative results:
 
+* Users described the app as cleaner and more attractive and intuitive
+* Enhanced clarity of data visualization — users better understood their progress
+* Improved visual accessibility
+* Identified bottlenecks blocking new users on the stage of signing up and suggested solution of guest visit
+* The owner got a clear product foundation ready for beta and future SaaS growth
 
-# Full description is coming soon
+### Team/Process impact:
 
+* Improved collaboration through prioritization sessions and clear iteration cycles
+* Delivered end-to-end solutions under short deadlines without compromising quality
+
+## Process
+
+### Review
+
+I joined the project when the app was already functional but lacked clear UX structure and design consistency. It was developed using AI tools, so the developer could make small edits but needed a UX expert to bring usability, logic, and structure.
+
+#### Actions taken:
+
+* Conducted a full UX audit of the app
+* Found issues with sign-up flows, tracking logic, and page hierarchy
+* Proposed to move tracking controls to the bottom to improve mobile usability
+* Led a prioritization session to identify key features to focus on
+* After discussions with the owner and developer, I presented a new UI version
+* Fixed the sign-up flow (added view/hide password, recovery, and forgot password functions)
+* Proposed a new Settings page structure, preparing for a scalable, subscription-based model
+* Decided to work iteratively — small changes → test → improve (Lean UX cycle)
+
+### Tracking Page Evolution
+
+Suggested making “Tip of the Day” optional, as many users ignored it. Added a toggle in Settings to turn it on/off.
+While testing, found that deleting an active timer required saving it first. Added a Delete button directly in the saving stage.
+Also found missing logic for saving under a new category, researched best patterns, and implemented a smoother experience.
+
+### Statistics Page Evolution
+
+Enhanced visualization and added more useful analytics:
+
+* Flexible time range: Today, 7 days, 30 days, Custom
+* Added “fun tendency” to show personal trends
+* Introduced the idea of AI-generated reports with insights from a certified psychologist
+* Intermediate solution: download report + suggestion to check with AI chat
+* Improved table layout to make data more human and less technical
+
+### Settings Page
+
+Rebuilt the structure for clarity and future scalability (user email, password change, notifications, etc.)
+
+### Guest Visit Flow
+
+Analytics showed strong website traffic but low registrations due to mandatory sign-up. Proposed Guest Visit — allowing first-time users to explore base features before registration. Designed and implemented the full flow.
+
+### Gentle Notifications
+
+Many users forgot to stop the timer or return to the app.
+I researched notification best practices, interviewed users, and designed a gentle reminder system to balance business goal and user needs:
+
+1. Remind about active timers
+2. Gently bring users back into the app without annoyance
+
+### Landing Page Development
+
+I implemented a fully functional landing page to reduce developer workload and test conversions faster.
+
+Version 1: Used template blocks in Framer, customized icons, and static screens for quick release.
+Version 2: After testing, improved results by:
+
+* Increasing button contrast
+* Changing content 
+* Replacing static images with video previews of features
+
+This led to higher click-through and engagement rates.
+
+### Testing and Validation
+
+Through analytics, user feedback, and continuous testing, I identified and resolved key usability gaps.
+Within two months, the app achieved:
+
+1. Measurable conversion growth (by 4%)
+2. First wave of organic users
+3. Improved engagement and retention (2%)
+
+## Learnings
+
+* Working in Framer requires small changes, fast testing, and immediate iterations
+* Best media setup for website performance: video hosted externally and integrated (not GIFs)
+* Always compress media for optimization
+* On iPhones, Low Power Mode may hide media — clear cache after testing
+* Continuous cycle of user flow mapping, analytics tracking, and feedback loops provides the best base for significant improvements
