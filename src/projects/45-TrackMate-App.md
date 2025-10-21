@@ -161,6 +161,7 @@ I researched notification best practices, interviewed users, and designed a gent
 I implemented a fully functional landing page to reduce developer workload and test conversions faster.
 
 Version 1: Used template blocks in Framer, customized icons, and static screens for quick release.
+
 Version 2: After testing, improved results by:
 
 * Increasing button contrast
@@ -174,6 +175,7 @@ This led to higher click-through and engagement rates.
 ### Testing and Validation
 
 Through analytics, user feedback, and continuous testing, I identified and resolved key usability gaps.
+
 Within two months, the app achieved:
 
 1. Measurable conversion growth (by 4%)
