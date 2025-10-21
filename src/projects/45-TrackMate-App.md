@@ -2,7 +2,7 @@
 permalink: /projects/TrackMate-app/
 title: Time tracking Web App and Landing page 
 description: TrackMate is a mindful time and activity tracker that helps plan, log, and get insights manually without relying on algorithms.
-imgSrc: https://github.com/user-attachments/assets/2eae7974-1f99-4654-814b-f6a8481ebcb5
+imgSrc: https://github.com/user-attachments/assets/e4f0766b-f418-42dc-8c36-e60ade90b8d6
 keywords:
   - Product design
   - MVP
@@ -10,7 +10,8 @@ keywords:
   - Startup
   - PWA
   - Landing page
- 
+
+
 meta:
   Role: Product designer, Stakeholder | 2025
   Team: Small team of Product designer and Software Engineer
@@ -51,6 +52,10 @@ The main strategic directions were:
 * Design and launch a landing page for early traffic testing and analytics setup
 * Align every design decision with future subscription model and growth plans
 
+
+https://github.com/user-attachments/assets/d89a5626-988a-47b1-b6d6-38671cce7651
+
+
 ## Summary
 
 My design improvements led to visible progress in usability, engagement, and conversions.
@@ -74,6 +79,7 @@ My design improvements led to visible progress in usability, engagement, and con
 * Improved collaboration through prioritization sessions and clear iteration cycles
 * Delivered end-to-end solutions under short deadlines without compromising quality
 
+
 ## Process
 
 ### Review
@@ -91,13 +97,17 @@ I joined the project when the app was already functional but lacked clear UX str
 * Proposed a new Settings page structure, preparing for a scalable, subscription-based model
 * Decided to work iteratively — small changes → test → improve (Lean UX cycle)
 
-### Tracking Page Evolution
+
+### Timer Page 
 
 Suggested making “Tip of the Day” optional, as many users ignored it. Added a toggle in Settings to turn it on/off.
 While testing, found that deleting an active timer required saving it first. Added a Delete button directly in the saving stage.
 Also found missing logic for saving under a new category, researched best patterns, and implemented a smoother experience.
 
-### Statistics Page Evolution
+![Timer](https://github.com/user-attachments/assets/50b636e7-fcdf-4b68-ba6e-828a4830db0e)
+![Save time period](https://github.com/user-attachments/assets/fc9b915a-bf14-4223-8da5-1e74794056e7)
+
+### Statistics Page 
 
 Enhanced visualization and added more useful analytics:
 
@@ -107,13 +117,19 @@ Enhanced visualization and added more useful analytics:
 * Intermediate solution: download report + suggestion to check with AI chat
 * Improved table layout to make data more human and less technical
 
+![Statistics](https://github.com/user-attachments/assets/1ae26230-a6a5-4c52-acdc-3bc879c968e5)
+
 ### Settings Page
 
 Rebuilt the structure for clarity and future scalability (user email, password change, notifications, etc.)
 
+![Settings](https://github.com/user-attachments/assets/8c1e78dd-89a4-4f7d-bcd0-ba6cabe31087)
+
 ### Guest Visit Flow
 
 Analytics showed strong website traffic but low registrations due to mandatory sign-up. Proposed Guest Visit — allowing first-time users to explore base features before registration. Designed and implemented the full flow.
+
+![sign up-min](https://github.com/user-attachments/assets/9b3f0819-96ea-406f-87ec-a30a4ae1288a)
 
 ### Gentle Notifications
 
@@ -122,6 +138,11 @@ I researched notification best practices, interviewed users, and designed a gent
 
 1. Remind about active timers
 2. Gently bring users back into the app without annoyance
+
+![TrackMate _ Untracked time](https://github.com/user-attachments/assets/31c56f78-9248-434d-a0a2-7ae1833f5bb7)
+![TrackMate _ Untracked timeh](https://github.com/user-attachments/assets/9e6ce579-f0ca-4757-bdf0-3cf9fd4f6c50)
+![Gentle notification-min](https://github.com/user-attachments/assets/115e0c86-d3ad-4a61-a0cd-045636ad3024)
+
 
 ### Landing Page Development
 
@@ -136,6 +157,8 @@ Version 2: After testing, improved results by:
 
 This led to higher click-through and engagement rates.
 
+![Landing page](https://github.com/user-attachments/assets/de911f6f-d7bf-45dc-9039-a54f1794d0f1)
+
 ### Testing and Validation
 
 Through analytics, user feedback, and continuous testing, I identified and resolved key usability gaps.
@@ -143,7 +166,11 @@ Within two months, the app achieved:
 
 1. Measurable conversion growth (by 4%)
 2. First wave of organic users
-3. Improved engagement and retention (2%)
+3. Improved engagement and retention (by 2%)
+
+
+https://github.com/user-attachments/assets/6122c726-18a0-437b-bcc1-eeb3275a8e78
+
 
 ## Learnings
 
