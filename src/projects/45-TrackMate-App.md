@@ -174,7 +174,7 @@ https://github.com/user-attachments/assets/6122c726-18a0-437b-bcc1-eeb3275a8e78
 
 ## Learnings
 
-* Working in Framer requires small changes, fast testing, and immediate iterations
+* Working with Framer requires small changes, fast testing, and immediate iterations
 * Best media setup for website performance: video hosted externally and integrated (not GIFs)
 * Always compress media for optimization
 * On iPhones, Low Power Mode may hide media — clear cache after testing
