@@ -6,4 +6,4 @@ imgSrc: https://github.com/mp-designer/mp-designer.github.io/assets/163604385/b7
 
 Product Designer and Accessibility Advocate 
 Based in Viseu, Portugal.
-Welcome to my portfolio.
+
