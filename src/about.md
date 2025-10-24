@@ -13,7 +13,7 @@ I bring a strategic view to my work, informed by an interest in business, market
 
 My experience includes:
 
-• Complex ecosystems, CRMs, and admin panels
+• Complex ecosystems, ERP, CRMs, and admin panels
 • MVPs and concept design for startups
 • Mobile apps and responsive websites
 • Design systems and guidelines
