@@ -59,24 +59,25 @@ To **unify the fragmented user experience** across nine interconnected products,
 * 3-person marketing team supporting all products
 * Dedicated stakeholders per project
 
+
 #### How We Worked Together
 
 ##### Discovery & Strategy
 Stakeholders and Business Analysts defined business requirements and product direction.
 
-**Research & Ideation**
+##### Research & Ideation
 Business Analysts partnered with designers to research user needs and explore solutions.
 
-**Design & Development**
+##### Design & Development
 Designers used **Design Thinking** methodology, collaborating closely with dev teams to implement features.
 
-**Testing & Refinement**
+##### Testing & Refinement
 Continuous cycles of development, testing, and improvements.
 
-**Our Approach**
+##### Our Approach
 The design team maintained full visibility across all projects. We each owned specific areas but shared knowledge through regular workshops, ensuring everyone could support any project when needed.
 
-**Working Methods**
+##### Working Methods
 Design team operated in **Kanban** for flexibility, while dev teams used **Scrum**. To stay aligned, designers actively participated in key **Scrum ceremonies** including daily standups, pre-grooming sessions, grooming, and retrospectives. This embedded collaboration ensured design stayed synchronized with development priorities and timelines.
 
 ## Hosting
@@ -89,13 +90,13 @@ Hosting is a monitoring system for all clients' devices set on the mining farm, 
 
 ### My impact
 
-### Mobile Dashboard Optimization
+#### Mobile Dashboard Optimization
 
 Redesigned high-density data dashboards for mobile to serve 60% of users who were struggling with complex tables and graphs on smaller screens. 
 
 Improved readability and interaction patterns for data-heavy interfaces, ensuring critical information remained accessible across devices.
 
-### Data Visualization & Filtering Enhancement
+#### Data Visualization & Filtering Enhancement
 
 **Enhanced data visualization** in tables across desktop and mobile after new data types were introduced. 
 
@@ -103,22 +104,22 @@ Conducted **domain expert interviews** and analyzed **customer feedback** from a
 
 **Redesigned filtering system** to handle increased data complexity while maintaining usability.
 
-### Sales Backoffice Tools
+#### Sales Backoffice Tools
 
 Supported and improved the backoffice system used by sales managers to generate client bills based on individual usage data.
 
-### Client Database Optimization
+#### Client Database Optimization
 
 **Increased readability and efficiency** for sales team working with massive client database tables. 
 
 Conducted employee **interviews** to identify workflow bottlenecks, defined key pain points, designed solutions, and validated improvements through **testing** with sales staff.
 
-### Collaborative Design Process
+#### Collaborative Design Process
 Practiced paired design with 2nd designer and with Business Analysts, accelerating the iteration process and improving requirement alignment.
 
-### Audit
+#### Audit
 
-Conducted thorough heuristic and accessibility audits of the hosting platform. Found critical usability and accessibility problems, then provided clear recommendations and solutions to improve product quality and make it more accessible to all users.
+Conducted thorough **heuristic and accessibility audits** of the hosting platform. Found **critical usability and accessibility problems**, then provided clear recommendations and solutions to improve product quality and make it more accessible to all users.
 
 ## Miners shop
 
@@ -136,6 +137,7 @@ Miners online shop is an e-commerce project including payment system and transpa
 * Adapted new features for mobile experience
 * Evolved the CMS system to support expanded e-commerce functionality
 
+
 #### Marketplace Transformation
 
 Led the **strategic design vision** for transforming the online store into a multi-vendor marketplace. Created two-phase concept with high-level requirements:
@@ -143,13 +145,15 @@ Led the **strategic design vision** for transforming the online store into a mul
 *Phase 1* – Core marketplace functionality to **meet immediate business goals**  
 *Phase 2* – Full-featured marketplace with complete vendor ecosystem
 
-**Complex Features Solved**
+
+##### Complex Features Solved
 
 * Advanced search with intelligent **filtering system** 
 * **Multi-vendor checkout** flow handling orders from different sellers
 * Flexible delivery and payment configurations per vendor
 
-**Main Design Challenge**
+
+##### Main Design Challenge
 
 Designing a seamless payment experience where customers could purchase from multiple sellers in a single transaction, while accommodating each seller's unique delivery options and payment methods.
 
