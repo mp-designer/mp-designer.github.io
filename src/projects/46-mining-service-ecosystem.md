@@ -61,7 +61,7 @@ To **unify the fragmented user experience** across nine interconnected products,
 
 #### How We Worked Together
 
-**Discovery & Strategy**
+##### Discovery & Strategy
 Stakeholders and Business Analysts defined business requirements and product direction.
 
 **Research & Ideation**
