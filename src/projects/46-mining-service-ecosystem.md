@@ -1,34 +1,83 @@
 ---
 permalink: /projects/mining-service-ecosystem/
-title: Mining Service Ecosystem
+title: Mining Service Ecosystem (SaaS)
 description: A complex innovation ecosystem for efficient mining including industrial mining infrastructure, repair shop chain and professional mining equipment marketplace.
 imgSrc: https://github.com/user-attachments/assets/8cb97976-b242-4208-a95d-2865be590050
 
 keywords:
   - Product design
-  - UX design
-  - Concept design
-  - UX research
+  - SaaS B2B/B2C
+  - Dashboards
+  - ERP
   - Design system
 meta:
   Role: UX Designer | 2021-2023
   Team: Dedicated teams of UX designers, BAs, stakeholders, developers, QAs, marketing and project managers
-  Scope: Product design, conceptualisation, testing and improvement
+  Scope: End-to-end product’s evolution
 ---
 
 ## Product Overview
 
-It's an innovation ecosystem for efficient mining, including industrial mining infrastructure, a repair shop chain, and a professional mining equipment marketplace.
+A unified digital environment combining 9 interconnected products, linking customers, partners, sales, and technical teams across front- and back-office operations.
+
+The ecosystem covers industrial infrastructure management, monitoring, repair network coordination, logistics management, and a professional equipment e-commerce platform — streamlining collaboration and improving transparency across the mining value chain.
+
+## Problem
+
+Developed independently by 3 separate teams, the platform evolved without a unified UX vision — resulting in **inconsistent interfaces, duplicated patterns, and fragmented workflows** across nine interconnected products.
+
+Continuous feature expansion added layers of **complexity**, making everyday operations **confusing and inefficient for users**.
+
+On the customer side, the platform **lacked proper mobile adaptation**, despite a growing mobile user base.
+
+As the company prepared to **enter the B2B market**, these issues exposed the urgent need for a cohesive and **scalable design** foundation.
 
 ## Goals
 
-To enhance the user experience across all products within the ecosystem.
+To **unify the fragmented user experience** across nine interconnected products, **simplify complex workflows**, and establish a **scalable UX foundation** that supports both web and mobile users — preparing the ecosystem for B2B market expansion.
 
-To develop concepts based on high-level requirement concepts for testing hypotheses before implementing new features.
+## Summary
 
-Implement new features that cover both user needs and business requirements.
+* **Adapted data-heavy dashboards for mobile** (~60% users) — improved usability and optimized large tables with smarter filtering.
+* Validated a new **payment flow** through iterative user testing and feedback synthesis.
+* Unified client and back-office repair workflows to ensure **consistency across the ecosystem**.
+* Maintained and evolved an **Atomic Design-based system**, accelerating delivery through reusable components.
+* Researched transition from online store to marketplace and designed complete **B2B SaaS concept**, including **multi-seller checkout** functionality.
+* Designed **sub-account management system** enabling B2B account managers to monitor and manage multiple client accounts within a single interface.
+* Conducted cross-team workshops to standardize UI element naming conventions, **improving communication efficiency** between developers, designers, and business analysts.
+* **Reduced design-to-development time** for backoffice products through creation of a comprehensive internal design system.
+* **Led conceptual UX design** for major product evolution — defining the experience vision, unifying system logic, and setting direction for a **scalable redesign**.
 
-To develop and maintain a design system to keep all products consistent.
+## Process
+
+### Team Structure & Collaboration
+
+#### The Setup
+
+* 3 development teams (each with developers, PMs, QAs, and Business Analysts)
+* 3-person design team with flexible project ownership
+* 3-person marketing team supporting all products
+* Dedicated stakeholders per project
+
+#### How We Worked Together
+
+**Discovery & Strategy**
+Stakeholders and Business Analysts defined business requirements and product direction.
+
+**Research & Ideation**
+Business Analysts partnered with designers to research user needs and explore solutions.
+
+**Design & Development**
+Designers used **Design Thinking** methodology, collaborating closely with dev teams to implement features.
+
+**Testing & Refinement**
+Continuous cycles of development, testing, and improvements.
+
+**Our Approach**
+The design team maintained full visibility across all projects. We each owned specific areas but shared knowledge through regular workshops, ensuring everyone could support any project when needed.
+
+**Working Methods**
+Design team operated in **Kanban** for flexibility, while dev teams used **Scrum**. To stay aligned, designers actively participated in key **Scrum ceremonies** including daily standups, pre-grooming sessions, grooming, and retrospectives. This embedded collaboration ensured design stayed synchronized with development priorities and timelines.
 
 ## Hosting
 
@@ -40,9 +89,36 @@ Hosting is a monitoring system for all clients' devices set on the mining farm, 
 
 ### My impact
 
-* Actively worked on mobile adaptation;
-* Conducted 15 user and domain expert interviews and 17 usability tests;
-* Was responsible for work with payments page and its improvement.
+### Mobile Dashboard Optimization
+
+Redesigned high-density data dashboards for mobile to serve 60% of users who were struggling with complex tables and graphs on smaller screens. 
+
+Improved readability and interaction patterns for data-heavy interfaces, ensuring critical information remained accessible across devices.
+
+### Data Visualization & Filtering Enhancement
+
+**Enhanced data visualization** in tables across desktop and mobile after new data types were introduced. 
+
+Conducted **domain expert interviews** and analyzed **customer feedback** from account managers to identify pain points. 
+
+**Redesigned filtering system** to handle increased data complexity while maintaining usability.
+
+### Sales Backoffice Tools
+
+Supported and improved the backoffice system used by sales managers to generate client bills based on individual usage data.
+
+### Client Database Optimization
+
+**Increased readability and efficiency** for sales team working with massive client database tables. 
+
+Conducted employee **interviews** to identify workflow bottlenecks, defined key pain points, designed solutions, and validated improvements through **testing** with sales staff.
+
+### Collaborative Design Process
+Practiced paired design with 2nd designer and with Business Analysts, accelerating the iteration process and improving requirement alignment.
+
+### Audit
+
+Conducted thorough heuristic and accessibility audits of the hosting platform. Found critical usability and accessibility problems, then provided clear recommendations and solutions to improve product quality and make it more accessible to all users.
 
 ## Miners shop
 
@@ -54,12 +130,28 @@ Miners online shop is an e-commerce project including payment system and transpa
 
 ### My impact
 
-Designed high level requirements concept of online shop transformation into marketplace in 2 versions:
+#### Product Enhancements
 
-* 1st – closing business goal;
-* 2nd – target version of fully developed marketplace;
+* Designed marketing assets for promotions and feature launches
+* Adapted new features for mobile experience
+* Evolved the CMS system to support expanded e-commerce functionality
 
-Main challenge: payment process with order from different sellers and capable parameters of delivery and payment.
+#### Marketplace Transformation
+
+Led the **strategic design vision** for transforming the online store into a multi-vendor marketplace. Created two-phase concept with high-level requirements:
+
+*Phase 1* – Core marketplace functionality to **meet immediate business goals**  
+*Phase 2* – Full-featured marketplace with complete vendor ecosystem
+
+**Complex Features Solved**
+
+* Advanced search with intelligent **filtering system** 
+* **Multi-vendor checkout** flow handling orders from different sellers
+* Flexible delivery and payment configurations per vendor
+
+**Main Design Challenge**
+
+Designing a seamless payment experience where customers could purchase from multiple sellers in a single transaction, while accommodating each seller's unique delivery options and payment methods.
 
 ## Service
 
@@ -71,10 +163,17 @@ Service is a project, providing client a transparent system of repair service f
 
 ### My impact
 
-* Was key designer of the project; 
-* Designed high level requirements concept of integration service confirmation and payment feature into the monitoring dashboard;
-* Designed settings for automation of device repair; 
-* Achieved consistency of the project and bug fixing.
+#### Cross-Platform Integration
+
+* Implemented cross-platform repair approval workflows across client and back-office interfaces; advocated for functional and visual consistency between independently developed modules.
+
+#### Repair Management System Evolution
+
+Redesigned the backoffice repair management platform to **improve operational efficiency**. Contributed into intuitive task management, real-time equipment monitoring for mining farm hardware, and transparent **repair tracking workflows**. The solution gave technicians and managers clear visibility into equipment status and repair progress, **reducing delays** and improving accountability.
+
+#### Component Library Development
+
+Built a comprehensive component library based on **MUI React** to match the product's technical foundation. This established visual **consistency** across the platform and dramatically **reduced design-to-development handoff time**, enabling the team to ship features faster.
 
 ## Design system
 
@@ -86,7 +185,13 @@ Design System is developed on the principles of Atomic design, starting from the
 
 ### My impact
 
-* Created flexible and well adaptive components with ready interactions, that helped to optimise the process of design and prototyping of design team;
-* Wrote about 80% of detailed guidelines for design system;
-* After tight work with Material design and some issues with creation of new components in design system I influenced the other designers to keep the principles of material design.
+#### Component Library
+Built a flexible component library with ready-to-use interactions that sped up the team's design and prototyping process.
+
+#### Documentation
+Wrote approximately 80% of the design system guidelines, creating clear standards for the entire product ecosystem.
+
+#### Design Standards & Advocacy
+Through working extensively with Material Design—including solving challenges when building custom components—I saw the value of its core principles. I pushed the team to follow Material Design standards and championed consistency across the entire ecosystem, ensuring users had a unified experience across all products.
+
 
