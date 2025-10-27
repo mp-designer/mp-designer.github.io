@@ -20,33 +20,33 @@ meta:
 
 A unified digital environment combining **9 interconnected products**, linking customers, partners, sales, and technical teams across front- and back-office operations.
 
-The ecosystem covers **industrial infrastructure management, monitoring, repair network coordination, logistics management**, and a professional equipment **e-commerce platform** — streamlining collaboration and improving transparency across the mining value chain.
+The ecosystem covers industrial **infrastructure** management, **monitoring**, repair network coordination, **logistics** management, and a professional equipment **e-commerce** platform — streamlining collaboration and improving transparency across the mining value chain.
 
 ## Problem
 
-Developed independently by 3 separate teams, the platform evolved without a unified UX vision — resulting in **inconsistent interfaces, duplicated patterns, and fragmented workflows** across nine interconnected products.
+Developed independently by 3 separate teams, the platform evolved without a unified UX vision — resulting in **inconsistent** interfaces, duplicated patterns, and fragmented workflows across nine interconnected products.
 
-Continuous feature expansion added layers of **complexity**, making everyday operations **confusing and inefficient for users**.
+Continuous feature expansion added layers of **complexity**, making everyday operations **confusing** and inefficient for users.
 
-On the customer side, the platform **lacked proper mobile adaptation**, despite a growing mobile user base.
+On the customer side, the platform lacked proper **mobile adaptation**, despite a growing mobile user base.
 
-As the company prepared to **enter the B2B market**, these issues exposed the urgent need for a cohesive and **scalable design** foundation.
+As the company prepared to enter the **B2B** market, these issues exposed the urgent need for a cohesive and **scalable design** foundation.
 
 ## Goals
 
-To **unify the fragmented user experience** across nine interconnected products, **simplify complex workflows**, and establish a **scalable UX foundation** that supports both web and mobile users — preparing the ecosystem for B2B market expansion.
+To **unify** the fragmented user experience across nine interconnected products, **simplify** complex workflows, and establish a **scalable UX foundation** that supports both web and mobile users — preparing the ecosystem for B2B market expansion.
 
 ## Summary
 
-* **Adapted data-heavy dashboards for mobile** (~60% users) — improved usability and optimized large tables with smarter filtering.
+* Adapted **data-heavy dashboards** for mobile (~60% users) — improved usability and optimized large tables with smarter filtering.
 * Validated a new **payment flow** through iterative user testing and feedback synthesis.
-* Unified client and back-office repair workflows to ensure **consistency across the ecosystem**.
+* Unified client and back-office repair workflows to ensure **consistency** across the ecosystem.
 * Maintained and evolved an **Atomic Design-based system**, accelerating delivery through reusable components.
-* Researched transition from online store to marketplace and designed complete **B2B SaaS concept**, including **multi-seller checkout** functionality.
-* Designed **sub-account management system** enabling B2B account managers to monitor and manage multiple client accounts within a single interface.
-* Conducted cross-team workshops to standardize UI element naming conventions, **improving communication efficiency** between developers, designers, and business analysts.
-* **Reduced design-to-development time** for backoffice products through creation of a comprehensive internal design system.
-* **Led conceptual UX design** for major product evolution — defining the experience vision, unifying system logic, and setting direction for a **scalable redesign**.
+* Researched transition from online store to marketplace and designed complete **B2B SaaS** concept, including **multi-seller checkout** functionality.
+* Designed **sub-account** management system enabling B2B account managers to monitor and manage multiple client accounts within a single interface.
+* Conducted cross-team workshops to standardize UI element naming conventions, improving communication **efficiency** between developers, designers, and business analysts.
+* **Reduced** design-to-development **time** for backoffice products through creation of a comprehensive internal design system.
+* Led **conceptual** UX design for major product evolution — defining the experience vision, unifying system logic, and setting direction for a **scalable** redesign.
 
 ## Process
 
@@ -91,11 +91,11 @@ Improved readability and interaction patterns for data-heavy interfaces, ensurin
 
 ### Data Visualization & Filtering Enhancement
 
-**Enhanced data visualization** in tables across desktop and mobile after new data types were introduced. 
+Enhanced **data visualization** in tables across desktop and mobile after new data types were introduced. 
 
-Conducted **domain expert interviews** and analyzed **customer feedback** from account managers to identify pain points. 
+Conducted domain expert **interviews** and analyzed customer **feedback** from account managers to identify pain points. 
 
-**Redesigned filtering system** to handle increased data complexity while maintaining usability.
+Redesigned **filtering** system to handle increased data complexity while maintaining usability.
 
 ### Sales Backoffice Tools
 
@@ -103,7 +103,7 @@ Supported and improved the backoffice system used by sales managers to generate 
 
 ### Client Database Optimization
 
-**Increased readability and efficiency** for sales team working with massive client database tables. 
+Increased **readability** and **efficiency** for sales team working with massive client database tables. 
 
 Conducted employee **interviews** to identify workflow bottlenecks, defined key pain points, designed solutions, and validated improvements through **testing** with sales staff.
 
@@ -112,30 +112,30 @@ Practiced paired design with 2nd designer and with Business Analysts, accelerati
 
 ### Audit
 
-Conducted thorough **heuristic and accessibility audits** of the hosting platform. Found **critical usability and accessibility problems**, then provided clear recommendations and solutions to improve product quality and make it more accessible to all users.
+Conducted thorough **heuristic** and **accessibility** audits of the hosting platform. Found critical usability and accessibility problems, then provided clear recommendations and solutions to improve product quality and make it more accessible to all users.
 
 ## Miners shop
 
-Miners online shop is an e-commerce project including payment system and transparent history of orders.
+Miners online shop is an **e-commerce** project including payment system and transparent history of orders.
 
 ![miners shop](https://github.com/user-attachments/assets/11b21ee5-769a-4195-a35d-63149839c203)
 
 ### Product Enhancements
 
 * Designed marketing assets for promotions and feature launches
-* Adapted new features for mobile experience
-* Evolved the CMS system to support expanded e-commerce functionality
+* Adapted new features for **mobile** experience
+* Evolved the **CMS** system to support expanded e-commerce functionality
 
 ### Marketplace Transformation
 
 Led the **strategic design vision** for transforming the online store into a multi-vendor marketplace. Created two-phase concept with high-level requirements:
 
-*Phase 1* – Core marketplace functionality to **meet immediate business goals**  
-*Phase 2* – Full-featured marketplace with complete vendor ecosystem
+**Phase 1** – Core marketplace functionality to meet immediate **business goals**  
+**Phase 2** – Full-featured **marketplace** with complete vendor ecosystem
 
 #### Complex Features Solved
 
-* Advanced search with intelligent **filtering system** 
+* Advanced search with intelligent **filtering** system 
 * **Multi-vendor checkout** flow handling orders from different sellers
 * Flexible delivery and payment configurations per vendor
 
@@ -152,29 +152,29 @@ Service is a project, providing client a transparent system of repair service f
 
 ### Cross-Platform Integration
 
-Implemented **cross-platform repair approval workflows** across client and back-office interfaces; advocated for **functional and visual consistency** between independently developed modules.
+Implemented **cross-platform** repair approval workflows across client and back-office interfaces; advocated for functional and visual **consistency** between independently developed modules.
 
 ### Repair Management System Evolution
 
-Redesigned the backoffice repair management platform to **improve operational efficiency**. Contributed into intuitive task management, real-time equipment monitoring for mining farm hardware, and transparent **repair tracking workflows**. The solution gave technicians and managers clear visibility into equipment status and repair progress, **reducing delays** and improving accountability.
+Redesigned the backoffice repair management platform to improve operational efficiency. Contributed into intuitive **task management**, real-time equipment **monitoring** for mining farm hardware, and transparent **repair** tracking **workflows**. The solution gave technicians and managers clear visibility into equipment status and repair progress, **reducing delays** and improving accountability.
 
 ### Component Library Development
 
-Built a comprehensive component library based on **MUI React** to match the product's technical foundation. This established visual **consistency** across the platform and dramatically **reduced design-to-development handoff time**, enabling the team to ship features faster.
+Built a comprehensive component library based on **MUI React** to match the product's technical foundation. This established visual consistency across the platform and dramatically **reduced** design-to-development **handoff time**, enabling the team to ship features faster.
 
 ## Design system
 
-Design System is developed on the principles of Atomic design, starting from the base simplest elements and creating together more complex components, templates and pages. 
+Design System is developed on the principles of **Atomic design**, starting from the base simplest elements and creating together more complex components, templates and pages. 
 
 ![Design system](https://github.com/em-per/em-per.github.io/assets/163604385/88daeac7-f888-4ece-9d61-e3b50329356e)
 
 ### Component Library
-Built a flexible component library with ready-to-use interactions that **sped up the team's design and prototyping** process.
+Built a flexible component library with ready-to-use interactions that sped up the team's design and **prototyping** process.
 
 ### Documentation
-Wrote approximately **80% of the design system guidelines**, creating clear standards for the entire product ecosystem.
+Wrote approximately **80%** of the design system **guidelines**, creating clear **standards** for the entire product ecosystem.
 
 ### Design Standards & Advocacy
-Through working extensively with Material Design, including solving challenges when building custom components, I saw the value of its core principles. I persuaded the team to follow Material Design base principles (like interactions, naming, sizes, etc) and championed consistency across the entire ecosystem, ensuring users had a unified experience across all products.
+Through working extensively with Material Design, including solving challenges when building custom components, I saw the value of its core principles. I **persuaded** the team to follow Material Design base principles (like interactions, naming, sizes, etc) and championed consistency across the entire ecosystem, ensuring users had a unified experience across all products.
 
 
