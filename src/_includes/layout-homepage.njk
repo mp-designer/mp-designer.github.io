@@ -18,6 +18,66 @@
         </div>
       </div>
     </div>
+    {# cards block #}
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-16">
+
+      <!-- Card 1 - Design -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+        <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg mb-4">
+          <svg
+            class="w-6 h-6 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11
+                7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ cardTitle1 }}</h3>
+        <p class="text-gray-600 leading-relaxed">{{ cardContent1 }}</p>
+      </div>
+      <!-- Card 2 - Development -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+        <div class="flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg mb-4">
+          <svg
+            class="w-6 h-6 text-green-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ cardTitle2 }}</h3>
+        <p class="text-gray-600 leading-relaxed">{{ cardContent2 }}</p>
+      </div>
+      <!-- Card 3 - Analytics -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+        <div class="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg mb-4">
+          <svg
+            class="w-6 h-6 text-purple-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002
+                2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ cardTitle3 }}</h3>
+        <p class="text-gray-600 leading-relaxed">{{ cardContent3 }}</p>
+      </div>
+    </div>
     <div id="projects" class="pb-24 md:pb-[7.5rem] lg:pb-40">
       <h2 class="mb-8 text-grey6 font-sans-heading text-hS md:text-hL font-bold uppercase">Projects</h2>
       <div class="grid gap-y-20 gap-x-10 grid-cols-1 lg:grid-cols-2">

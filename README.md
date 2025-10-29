@@ -2,7 +2,11 @@
 
 # MP portfolio
 
-## Install
+## Prerequisites
+
+- node.js
+
+## Install dependencies
 
 ```
 npm i

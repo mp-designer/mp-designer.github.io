@@ -17,6 +17,7 @@ meta:
   Team: Small team of Product designer and Software Engineer
   Scope: Desig strategy, UX/UI changes, landing page, user testing  
 ---
+
 ## Project Overview
 
 A Progressive Web App, designed not just for logging hours but for generating insights into time quality and encouraging reflection.
