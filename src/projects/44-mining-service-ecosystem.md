@@ -150,7 +150,7 @@ Redesigned the backoffice repair management platform to improve operational effi
 
 ![Service BO](https://github.com/user-attachments/assets/a0d4ea68-9a6c-490b-ac21-ed9d90052b40)
 
-![Header](https://github.com/user-attachments/assets/26f5601f-ed5d-41b1-99cd-ab70e395080c)
+![Header-min](https://github.com/user-attachments/assets/40a2e1b0-de0e-4902-9e84-e4ebaa6a17f9)
 
 ### Component Library Development
 
