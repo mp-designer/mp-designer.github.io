@@ -48,6 +48,8 @@ To **unify** the fragmented user experience across nine interconnected products,
 * **Reduced** design-to-development **time** for backoffice products through creation of a comprehensive internal design system.
 * Led **conceptual** UX design for major product evolution — defining the experience vision, unifying system logic, and setting direction for a **scalable** redesign.
 
+![Repair approval-min](https://github.com/user-attachments/assets/c79f4dcd-83c6-4727-836e-871425ba112a)
+
 ## Process
 
 ### Team Structure 
@@ -97,6 +99,17 @@ Conducted domain expert **interviews** and analyzed customer **feedback** from a
 
 Redesigned **filtering** system to handle increased data complexity while maintaining usability.
 
+### Shift to a B2B SaaS model
+
+I designed a **sub-account system** that allows **B2B** customers, who manage devices on behalf of multiple end-clients, to clearly separate devices by client, monitor each client’s device group, and download billing files at the client level. The feature also enables giving each client limited dashboard access so they only see data related to their own devices.
+
+I **collaborated** closely with a team of designers and business analysts to define the end-to-end interaction model, ensuring the feature aligned with the workflows and constraints of every product in the ecosystem. The proposal was **validated by stakeholders** and approved for full implementation, becoming the foundation for the system’s new multi-account operations.
+
+![Business account](https://github.com/user-attachments/assets/03a265a5-aac4-421a-a633-646918721ddb)
+
+![Sub-acc](https://github.com/user-attachments/assets/3f8a6968-d772-42be-a6b2-6df776ac3c9d)
+
+
 ### Sales Backoffice Tools
 
 Supported and improved the backoffice system used by sales managers to generate client bills based on individual usage data.
@@ -108,11 +121,39 @@ Increased **readability** and **efficiency** for sales team working with massive
 Conducted employee **interviews** to identify workflow bottlenecks, defined key pain points, designed solutions, and validated improvements through **testing** with sales staff.
 
 ### Collaborative Design Process
+
 Practiced paired design with 2nd designer and with Business Analysts, accelerating the iteration process and improving requirement alignment.
 
 ### Audit
 
 Conducted thorough **heuristic** and **accessibility** audits of the hosting platform. Found critical usability and accessibility problems, then provided clear recommendations and solutions to improve product quality and make it more accessible to all users.
+
+
+## Service
+
+Service is a project, providing client a transparent system of repair service for their devices on the mining farm. 
+
+![Service solutions](https://github.com/user-attachments/assets/c0519c8a-20b9-42c8-9610-2c40696bbc7a)
+
+### Cross-Platform Integration
+
+Implemented **cross-platform** repair approval workflows across client and back-office interfaces; advocated for functional and visual **consistency** between independently developed modules.
+
+![Repair approval-min](https://github.com/user-attachments/assets/39fe2917-1c0e-4916-a517-9b42915249f1)
+
+![Repair approval BO](https://github.com/user-attachments/assets/a852fdf5-7db4-492a-beb7-0503de6ce3cf)
+
+### Repair Management System Evolution
+
+Redesigned the backoffice repair management platform to improve operational efficiency. Contributed into intuitive **task management**, real-time equipment **monitoring** for mining farm hardware, and transparent **repair** tracking **workflows**. The solution gave technicians and managers clear visibility into equipment status and repair progress, **reducing delays** and improving accountability.
+
+![Service BO](https://github.com/user-attachments/assets/a0d4ea68-9a6c-490b-ac21-ed9d90052b40)
+
+![Header](https://github.com/user-attachments/assets/26f5601f-ed5d-41b1-99cd-ab70e395080c)
+
+### Component Library Development
+
+Built a comprehensive component library based on **MUI React** to match the product's technical foundation. This established visual consistency across the platform and dramatically **reduced** design-to-development **handoff time**, enabling the team to ship features faster.
 
 ## Miners shop
 
@@ -144,23 +185,6 @@ Led the **strategic design vision** for transforming the online store into a mul
 
 Designing a seamless payment experience where customers could purchase from multiple sellers in a single transaction, while accommodating each seller's unique delivery options and payment methods.
 
-## Service
-
-Service is a project, providing client a transparent system of repair service for their devices on the mining farm. 
-
-![Service solutions](https://github.com/user-attachments/assets/c0519c8a-20b9-42c8-9610-2c40696bbc7a)
-
-### Cross-Platform Integration
-
-Implemented **cross-platform** repair approval workflows across client and back-office interfaces; advocated for functional and visual **consistency** between independently developed modules.
-
-### Repair Management System Evolution
-
-Redesigned the backoffice repair management platform to improve operational efficiency. Contributed into intuitive **task management**, real-time equipment **monitoring** for mining farm hardware, and transparent **repair** tracking **workflows**. The solution gave technicians and managers clear visibility into equipment status and repair progress, **reducing delays** and improving accountability.
-
-### Component Library Development
-
-Built a comprehensive component library based on **MUI React** to match the product's technical foundation. This established visual consistency across the platform and dramatically **reduced** design-to-development **handoff time**, enabling the team to ship features faster.
 
 ## Design system
 
