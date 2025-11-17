@@ -156,6 +156,8 @@ Redesigned the backoffice repair management platform to improve operational effi
 
 Built a comprehensive component library based on **MUI React** to match the product's technical foundation. This established visual consistency across the platform and dramatically **reduced** design-to-development **handoff time**, enabling the team to ship features faster.
 
+![UI kit](https://github.com/em-per/em-per.github.io/assets/163604385/0ecb1b9e-ad53-4044-a1ae-7edf3cdda001)
+
 ## Miners shop
 
 Miners online shop is an **e-commerce** project including payment system and transparent history of orders.
