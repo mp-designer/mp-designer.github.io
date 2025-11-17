@@ -48,7 +48,8 @@ To **unify** the fragmented user experience across nine interconnected products,
 * **Reduced** design-to-development **time** for backoffice products through creation of a comprehensive internal design system.
 * Led **conceptual** UX design for major product evolution — defining the experience vision, unifying system logic, and setting direction for a **scalable** redesign.
 
-![Repair approval-min](https://github.com/user-attachments/assets/c79f4dcd-83c6-4727-836e-871425ba112a)
+![Repair approval-min](https://github.com/user-attachments/assets/c404ec4a-d303-470c-84a9-4bbb0ebba637)
+
 
 ## Process
 
@@ -139,7 +140,7 @@ Service is a project, providing client a transparent system of repair service f
 
 Implemented **cross-platform** repair approval workflows across client and back-office interfaces; advocated for functional and visual **consistency** between independently developed modules.
 
-![Repair approval-min](https://github.com/user-attachments/assets/39fe2917-1c0e-4916-a517-9b42915249f1)
+![Repair approval-min](https://github.com/user-attachments/assets/c404ec4a-d303-470c-84a9-4bbb0ebba637)
 
 ![Repair approval BO](https://github.com/user-attachments/assets/a852fdf5-7db4-492a-beb7-0503de6ce3cf)
 
