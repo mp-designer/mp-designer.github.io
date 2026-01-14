@@ -36,7 +36,7 @@ The existing homepage of the student loan management tool had several critical i
 
 <br>
 
-![Goals](https://github.com/user-attachments/assets/d09696a8-68a5-480b-9358-beb91822b6b4)
+![Goals](https://github.com/user-attachments/assets/5a8d3cc8-5783-460f-aca0-bdd67e4b706d)
 
 <br>
 <br>
